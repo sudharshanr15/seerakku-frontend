@@ -2,6 +2,7 @@ import GetInvolved from "@/features/home/components/GetInvolved";
 import HeroBanner from "@/features/home/components/HeroBanner";
 import Initiatives from "@/features/home/components/Initiatives";
 import Intro from "@/features/home/components/Intro";
+import ValuableCount from "@/features/home/components/ValuableCount";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Intro />
       <Initiatives />
       <GetInvolved />
+      <ValuableCount />
     </main>
   );
 }
