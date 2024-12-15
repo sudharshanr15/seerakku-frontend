@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FED049",
+        secondary: {
+          gold: "#FED049",
+          mint: "#CFFDE1",
+          forest: "#3D5656",
+        },
       },
     },
   },
