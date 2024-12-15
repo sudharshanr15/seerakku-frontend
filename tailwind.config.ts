@@ -11,7 +11,7 @@ export default {
       colors: {
         primary: "#FED049",
         secondary: {
-          gold: "#FED049",
+          "silver-green": "#68B984",
           mint: "#CFFDE1",
           forest: "#3D5656",
         },
