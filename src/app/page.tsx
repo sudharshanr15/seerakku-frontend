@@ -4,6 +4,7 @@ import Initiatives from "@/features/home/components/Initiatives";
 import Intro from "@/features/home/components/Intro";
 import ValuableCount from "@/features/home/components/ValuableCount";
 import Support from "@/features/home/components/Support";
+import Partners from "@/features/home/components/Partners";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <GetInvolved />
       <ValuableCount />
       <Support />
+      <Partners />
     </main>
   );
 }
