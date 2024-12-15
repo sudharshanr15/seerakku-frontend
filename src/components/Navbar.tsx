@@ -44,7 +44,7 @@ const Navbar = () => {
           <div>
             <DonateNow
               type={ButtonType.secondary_silver_green}
-              className="me-4"
+              className="me-4 text-black"
             />
             <Button type={ButtonType.primary}>Become A Volunteer</Button>
           </div>

@@ -4,7 +4,7 @@ import { ButtonType } from "@/components/buttons/type";
 
 const HeroBanner = () => {
   return (
-    <section className="absolute top-0 left-0 w-full h-screen bg-black">
+    <section className="relative top-0 left-0 w-full h-screen bg-black">
       <div className="flex flex-col items-center justify-center h-full">
         <h1 className="uppercase text-white text-center title font-normal text-7xl leading-[80px]">
           JOIN THE CHANGE, ACT FOR THE PLANET

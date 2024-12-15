@@ -8,7 +8,7 @@ const DonateNow = ({
   className?: string;
 }) => {
   return (
-    <button className={`py-3 px-5 ${type} uppercase ${className}`}>
+    <button className={`py-3 px-5 ${type} uppercase ${className} text-lg`}>
       Donate Now
     </button>
   );
