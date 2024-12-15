@@ -30,7 +30,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="w-full py-6 bg-black">
+    <header className="w-full py-6 bg-black z-50">
       <div className="max-w-screen-xl mx-auto">
         <nav className="flex justify-between items-center gap-8 text-white">
           <Link href={"/"}>Home</Link>
