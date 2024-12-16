@@ -16,6 +16,7 @@ export default {
           mint: "#CFFDE1",
           forest: "#3D5656",
         },
+        footer: "#111111",
       },
     },
   },
