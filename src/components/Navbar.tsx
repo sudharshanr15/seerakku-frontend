@@ -2,6 +2,8 @@ import Link from "next/link";
 import DonateNow from "./buttons/DonateNow";
 import { ButtonType } from "./buttons/type";
 import Button from "./buttons/Button";
+import Image from "next/image";
+import { logo_text } from "@/assets";
 
 const Navbar = () => {
   const nav_links: {
@@ -33,7 +35,9 @@ const Navbar = () => {
     <header className="fixed w-full py-6 bg-transparent z-50">
       <div className="max-w-screen-xl mx-auto">
         <nav className="flex justify-between items-center gap-8 text-white">
-          <Link href={"/"}>Home</Link>
+          <Link href={"/"}>
+            <Image src={logo_text} alt="Seerakku Logo" />
+          </Link>
           <ul className="flex gap-6 text-white">
             {nav_links.map((link, count) => (
               <li className="uppercase text-lg font-normal" key={count}>
