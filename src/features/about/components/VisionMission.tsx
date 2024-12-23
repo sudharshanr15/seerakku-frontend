@@ -5,14 +5,14 @@ function VissionMission() {
     <section className="layout-section-xl">
       <div className="grid grid-cols-2 gap-4">
         <div className="bg-secondary-light-green p-20">
-          <h2 className="heading-2 mb-5">Our Vision</h2>
+          <h2 className="heading-2">Our Vision</h2>
           <p className="text-xl">
             Our vision is a carbon-neutral India where individuals and
             organizations prioritize sustainable practices
           </p>
         </div>
         <div className="bg-primary p-20">
-          <h2 className="heading-2 mb-5">Our Mission</h2>
+          <h2 className="heading-2">Our Mission</h2>
           <p className="text-xl">
             Our mission is to create a sustainable future by enabling
             individuals to offset their carbon footprint and fund reforestation

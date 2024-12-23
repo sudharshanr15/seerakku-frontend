@@ -13,7 +13,7 @@ function WhoWeAre() {
         <div className="w-[60%] -ms-14 relative z-20">
           <div className="bg-white border border-primary-green relative">
             <div className="p-10">
-              <h2 className="heading-2 mb-5">Who We Are</h2>
+              <h2 className="heading-2">Who We Are</h2>
               <p className="text-xl mb-5">
                 We are a non-profit organization committed to mitigating the
                 effects of climate change through a range of initiatives in
