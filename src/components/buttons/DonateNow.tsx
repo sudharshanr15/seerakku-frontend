@@ -1,21 +1,33 @@
 import Image from "next/image";
-import { ButtonType } from "./type";
+import { ButtonFill, ButtonOutline, ButtonType } from "./type";
 import HeartPlus from "@/components/icons/HeartPlus";
+import { IconColorsFill, IconColorsOutline } from "../icons/types";
+import Button from "./Button";
 
 const DonateNow = ({
   type,
   className,
+  outline,
+  icon,
 }: {
   type: ButtonType;
   className?: string;
+  icon?: boolean;
+  outline?: boolean;
 }) => {
+  const icon_colors = outline
+    ? IconColorsOutline[ButtonType[type]]
+    : IconColorsFill[ButtonType[type]];
+
   return (
-    <button className={`py-3 px-5 ${type} uppercase ${className} text-lg`}>
+    <Button type={ButtonType.secondary_silver_green} className={className}>
       Donate Now
-      <span className="ms-3">
-        <HeartPlus className="stroke-1 stroke-black inline" />
-      </span>
-    </button>
+      {icon && (
+        <span className="ms-3">
+          <HeartPlus className="inline" fill={icon_colors} />
+        </span>
+      )}
+    </Button>
   );
 };
 
