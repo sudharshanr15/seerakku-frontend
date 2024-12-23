@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .heading-1 {
+        @apply uppercase text-center font-normal text-7xl leading-[80px];
+    }
+
+    .heading-2 {
+        @apply font-normal text-5xl uppercase;
+    }
+
+    .layout-section-xl {
+        @apply max-w-screen-xl mx-auto py-20;
+    }
+}
+
 @layer utilities {
     .partner-pagination .swiper-pagination-bullet {
         @apply w-3 h-3 bg-transparent border border-black;

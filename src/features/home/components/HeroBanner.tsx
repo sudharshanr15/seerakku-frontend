@@ -17,7 +17,7 @@ const HeroBanner = () => {
       <div className="bg-gradient-to-t absolute top-0 left-0 w-full h-full from-transparent from-5% to-black"></div>
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="flex flex-col items-center justify-center h-full">
-          <h1 className="uppercase text-white text-center title font-normal text-7xl leading-[80px]">
+          <h1 className="uppercase text-white text-center font-normal text-7xl leading-[80px]">
             JOIN THE CHANGE, ACT FOR THE PLANET
             <br />
             <span className="text-primary">PLANTING TREES</span>
