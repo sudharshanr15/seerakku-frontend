@@ -10,10 +10,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FED049",
+        primary: {
+          DEFAULT: "#FED049",
+          yellow: "#FED049",
+          green: "#68B984",
+        },
         secondary: {
-          "silver-green": "#68B984",
-          mint: "#CFFDE1",
+          "light-green": "#CFFDE1",
           forest: "#3D5656",
         },
         footer: "#111111",

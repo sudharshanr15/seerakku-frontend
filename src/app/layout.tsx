@@ -31,11 +31,11 @@ export default function RootLayout({
       <body
         className={`bg-foreground ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Theme>
-          <Navbar />
-          {children}
-          <Footer />
-        </Theme>
+        {/* <Theme> */}
+        <Navbar />
+        {children}
+        <Footer />
+        {/* </Theme> */}
       </body>
     </html>
   );

@@ -24,9 +24,7 @@ const HeroBanner = () => {
           </h1>
           <div className="flex gap-8 mt-8">
             <DonateNow type={ButtonType.primary} />
-            <Button type={ButtonType.secondary_silver_green}>
-              See Our Works
-            </Button>
+            <Button type={ButtonType.primary_green}>See Our Works</Button>
           </div>
         </div>
       </div>

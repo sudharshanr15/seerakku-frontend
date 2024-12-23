@@ -4,7 +4,7 @@ function VissionMission() {
   return (
     <section className="layout-section-xl">
       <div className="grid grid-cols-2 gap-4">
-        <div className="bg-secondary-mint p-20">
+        <div className="bg-secondary-light-green p-20">
           <h2 className="heading-2 mb-5">Our Vision</h2>
           <p className="text-xl">
             Our vision is a carbon-neutral India where individuals and

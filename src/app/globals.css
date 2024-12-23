@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    color: black;
+}
+
 @layer components {
     .heading-1 {
-        @apply uppercase text-center font-normal text-7xl leading-[80px];
+        @apply uppercase text-center font-normal text-7xl leading-[80px] mb-4;
     }
 
     .heading-2 {
-        @apply font-normal text-5xl uppercase;
+        @apply font-normal text-5xl uppercase mb-4;
+    }
+
+    .heading-3 {
+        @apply font-normal text-4xl uppercase mb-4;
     }
 
     .layout-section-xl {

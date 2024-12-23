@@ -36,14 +36,14 @@ const GetInvolved = () => {
                       Join our dedicated team of volunteers and actively
                       participate in our initiatives.
                     </p>
-                    <Button type={ButtonType.secondary_silver_green}>
+                    <Button type={ButtonType.primary_green}>
                       Register Here
                     </Button>
                   </div>
                 </div>
               </ImageTint>
             </div>
-            <div className="w-full bg-secondary-silver-green text-white relative overflow-hidden aspect-square max-w-[413px]">
+            <div className="w-full bg-primary-green text-white relative overflow-hidden aspect-square max-w-[413px]">
               <Image
                 src={get_involved_image_1}
                 alt="Image 1"

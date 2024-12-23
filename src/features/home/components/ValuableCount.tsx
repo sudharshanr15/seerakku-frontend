@@ -25,7 +25,7 @@ const ValuableCount = () => {
               .fill(0)
               .map((el, index) => (
                 <div
-                  className="odd:bg-secondary-silver-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center aspect-square"
+                  className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center aspect-square"
                   key={index}
                 >
                   <h4 className="text-white text-7xl">400</h4>

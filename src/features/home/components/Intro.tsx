@@ -16,7 +16,7 @@ const Intro = () => {
           generations to come. So, we were planning to offset our baby’s future
           carbon emissions with a food forest.
         </p>
-        <Button type={ButtonType.secondary_silver_green}>Learn More</Button>
+        <Button type={ButtonType.primary_green}>Learn More</Button>
       </div>
     </section>
   );
