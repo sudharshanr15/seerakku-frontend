@@ -20,7 +20,7 @@ const DonateNow = ({
     : IconColorsFill[ButtonType[type]];
 
   return (
-    <Button type={type} className={className}>
+    <Button type={type} className={className} outline={outline}>
       Donate Now
       {icon && (
         <span className="ms-3">
