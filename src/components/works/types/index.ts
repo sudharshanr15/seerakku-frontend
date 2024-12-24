@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type InitiativesListType = {
+export type WorksItemType = {
   title: string;
   desc: string;
   image: StaticImageData;

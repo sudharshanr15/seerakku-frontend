@@ -1,8 +1,8 @@
 "use client";
 
-import { works_1 } from "../assets";
+import { works_1 } from "./assets";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { WorksItemType } from "../types";
+import { WorksItemType } from "./types/index";
 import WorksItem from "./WorksItem";
 import { Navigation } from "swiper/modules";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";

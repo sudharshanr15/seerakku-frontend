@@ -1,6 +1,6 @@
 import ImageTint from "@/components/ImageTint";
 import Image from "next/image";
-import { WorksItemType } from "../types";
+import { WorksItemType } from "./types/index";
 
 function WorksItem({ item }: { item: WorksItemType }) {
   return (
