@@ -1,7 +1,51 @@
+import ImageTint from "@/components/ImageTint";
+import Image, { StaticImageData } from "next/image";
+import {
+  initiative_1,
+  initiative_2,
+  initiative_3,
+  initiative_4,
+  initiative_5,
+  support_image,
+} from "../assets";
+import { InitiativesListType } from "../types";
+import InitiativesItem from "./InitiativesItem";
+
+const initiatives_list_1: InitiativesListType[] = [
+  {
+    title: "Tree For Sparrows",
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    image: initiative_1,
+  },
+  {
+    title: "Tree For Sparrows",
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    image: initiative_2,
+  },
+];
+
+const initiatives_list_2: InitiativesListType[] = [
+  {
+    title: "Tree For Elephants",
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    image: initiative_3,
+  },
+  {
+    title: "Tree For Sparrows",
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    image: initiative_4,
+  },
+  {
+    title: "Tree For Sparrows",
+    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    image: initiative_5,
+  },
+];
+
 const Initiatives = () => {
   return (
-    <section className="">
-      <div className="max-w-screen-lg mx-auto text-center py-20">
+    <section className="layout-section-xl">
+      <div className="layout-section-lg p-0 text-center mb-10">
         <h2 className="heading-2">Our Initiatives</h2>
         <p className="text-center mb-5">
           At Seerakku, we are dedicated to creating a sustainable future through
@@ -9,8 +53,88 @@ const Initiatives = () => {
           contributing to environmental conservation with the following
           programs:
         </p>
-        <div className="grid grid-rows-2 grid-flow-col gap-8"></div>
       </div>
+      <div className="flex gap-6">
+        <div className="w-1/3">
+          <div className="flex flex-col gap-6 h-full">
+            {initiatives_list_1.map((ele, index) => (
+              <InitiativesItem item={ele} key={index} className="flex-grow" />
+            ))}
+          </div>
+        </div>
+        <div className="w-2/3">
+          <div className="grid grid-cols-2 gap-6">
+            {initiatives_list_2.map((ele, index) => (
+              // <div
+              //   className={`relative ${initiatives_list_2.length == index + 1 && index % 2 == 0 ? "last:col-span-2" : ""}`}
+              //   key={index}
+              // >
+              //   <div className="w-full">
+              //     <Image
+              //       src={ele.image}
+              //       alt="Get Involved"
+              //       className="w-full object-contain"
+              //     />
+              //   </div>
+              //   <ImageTint>
+              //     <div className="flex items-end p-7 h-full">
+              //       <div className="text-white">
+              //         <h3 className="heading-3">{ele.title}</h3>
+              //         <p>{ele.desc}</p>
+              //       </div>
+              //     </div>
+              //   </ImageTint>
+              // </div>
+              <InitiativesItem
+                item={ele}
+                key={index}
+                className={
+                  initiatives_list_2.length == index + 1 && index % 2 == 0
+                    ? "last:col-span-2"
+                    : ""
+                }
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* <div className="grid grid-cols-3 gap-6">
+        {initiatives_list.map((ele, index) => {
+          const length = initiatives_list.length;
+          let col_span;
+          if (length == index + 1) {
+            switch (index % 3) {
+              case 0:
+                col_span = "last:col-span-3";
+                break;
+              case 1:
+                col_span = "last:col-span-2";
+                break;
+              case 2:
+                break;
+            }
+          }
+          return (
+            <div className={`relative ${col_span}`} key={index}>
+              <div className="w-full h-full">
+                <Image
+                  src={ele.image}
+                  alt="Get Involved"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <ImageTint>
+                <div className="flex items-end p-7 h-full">
+                  <div className="text-white">
+                    <h3 className="heading-3">{ele.title}</h3>
+                    <p>{ele.desc}</p>
+                  </div>
+                </div>
+              </ImageTint>
+            </div>
+          );
+        })}
+      </div> */}
     </section>
   );
 };
