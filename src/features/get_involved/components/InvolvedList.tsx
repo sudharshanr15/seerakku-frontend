@@ -59,19 +59,21 @@ function InvolvedList() {
                     index % 2 == 0 ? ColorType.primary_green : ColorType.primary
                   }
                 >
-                  <h2 className="heading-2">{item.title}</h2>
-                  {item.desc.map((text, index) => (
-                    <p className="pb-4" key={index}>
-                      {text}
-                    </p>
-                  ))}
-                  <DonateNow
-                    type={
-                      index % 2 == 0
-                        ? ButtonType.primary_green
-                        : ButtonType.primary
-                    }
-                  />
+                  <div className="p-10">
+                    <h2 className="heading-2">{item.title}</h2>
+                    {item.desc.map((text, index) => (
+                      <p className="pb-4" key={index}>
+                        {text}
+                      </p>
+                    ))}
+                    <DonateNow
+                      type={
+                        index % 2 == 0
+                          ? ButtonType.primary_green
+                          : ButtonType.primary
+                      }
+                    />
+                  </div>
                 </ShadowContainer>
               </div>
             </div>

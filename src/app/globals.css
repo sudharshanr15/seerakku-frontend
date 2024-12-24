@@ -8,7 +8,7 @@ html {
 
 @layer components {
     .heading-1 {
-        @apply uppercase text-center font-normal text-7xl leading-[80px] mb-4 font-big-noodle-titling;
+        @apply uppercase font-normal text-[80px] leading-[88px] mb-4 font-big-noodle-titling;
     }
 
     .heading-2 {
@@ -16,7 +16,7 @@ html {
     }
 
     .heading-3 {
-        @apply font-normal text-4xl uppercase mb-4 font-big-noodle-titling;
+        @apply font-normal text-[40px] uppercase mb-3 font-big-noodle-titling;
     }
 
     .layout-section-xl {

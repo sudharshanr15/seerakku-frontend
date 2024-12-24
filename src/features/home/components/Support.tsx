@@ -5,6 +5,9 @@ import { support_image } from "../assets";
 import { useEffect, useState } from "react";
 import Button from "@/components/buttons/Button";
 import { ButtonType } from "@/components/buttons/type";
+import DonateNow from "@/components/buttons/DonateNow";
+import ShadowContainer from "@/components/ShadowContainer";
+import { ColorType } from "@/types/ColorType";
 
 const amount_options: {
   name: string;
@@ -37,18 +40,15 @@ const Support = () => {
     <section className="py-20">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-2 gap-5">
-          <div className="relative">
+          <ShadowContainer theme={ColorType.primary} shadowTo="left">
             <Image
               src={support_image}
               alt="Support Image"
               className="w-full h-full object-cover bg-center"
             />
-            <div className="absolute top-5 -left-5 w-full h-full bg-primary -z-10"></div>
-          </div>
+          </ShadowContainer>
           <div className="p-4">
-            <h2 className="text-7xl uppercase mb-5">
-              Support For Sustainability
-            </h2>
+            <h2 className="heading-1">Support For Sustainability</h2>
             <p className="font-normal mb-5">
               Your donation can help us continue our important work in creating
               a sustainable future. Every contribution, no matter the size,
@@ -84,7 +84,7 @@ const Support = () => {
                   onChange={(e) => setAmount(Number(e.target.value))}
                 />
               </div>
-              <Button type={ButtonType.primary}>Donate Now</Button>
+              <DonateNow type={ButtonType.primary} icon />
             </form>
           </div>
         </div>
