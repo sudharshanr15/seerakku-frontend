@@ -21,6 +21,9 @@ export default {
         },
         footer: "#111111",
       },
+      fontFamily: {
+        sans: ["var(--font-itc-avant-garde)"],
+      },
     },
   },
   plugins: [],
