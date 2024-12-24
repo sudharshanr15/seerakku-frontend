@@ -32,7 +32,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="fixed w-full py-6 bg-transparent z-50">
+    <header className="fixed w-full py-6 bg-transparent z-50 font-big-noodle-titling">
       <div className="max-w-screen-xl mx-auto">
         <nav className="flex justify-between items-center gap-8 text-white">
           <Link href={"/"}>
@@ -40,7 +40,10 @@ const Navbar = () => {
           </Link>
           <ul className="flex gap-6 text-white">
             {nav_links.map((link, count) => (
-              <li className="uppercase text-lg font-normal" key={count}>
+              <li
+                className="uppercase text-lg font-normal font-big-noodle-titling"
+                key={count}
+              >
                 <Link href={link.href}>{link.name}</Link>
               </li>
             ))}

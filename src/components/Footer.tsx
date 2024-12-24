@@ -95,10 +95,10 @@ const Footer = () => {
                 className="w-full"
               />
             </div>
-            <h2 className="text-4xl uppercase font-normal mb-5 text-white">
+            <h2 className="heading-2">
               Committed to overcoming the stigma of AIDS
             </h2>
-            <p className="text-white font-light mb-5">
+            <p className="text-white mb-5">
               Your donation can help us continue our important work in creating
               a sustainable future. Every contribution, no matter the size,
               makes a difference. Join us in our mission and make a donation
@@ -110,32 +110,27 @@ const Footer = () => {
           </div>
           <div className="flex-grow flex-shrink-0">
             <div className="flex gap-5 mb-10 mx-auto justify-between">
-              <Link href={""} className="font-light text-white">
+              <Link href={""} className="text-white">
                 Terms &amp; Conditions
               </Link>
-              <Link href={""} className="font-light text-white">
+              <Link href={""} className="text-white">
                 Privacy Policy
               </Link>
-              <Link href={""} className="font-light text-white">
+              <Link href={""} className="text-white">
                 Conflict of Interest Policy
               </Link>
-              <Link href={""} className="font-light text-white">
+              <Link href={""} className="text-white">
                 Complaints Policy
               </Link>
             </div>
             <div className="grid grid-cols-3 gap-20">
               {footer_links.map((link_block, index) => (
                 <div className="" key={index}>
-                  <h4 className="uppercase text-white text-3xl mb-4">
-                    {link_block.name}
-                  </h4>
+                  <h4 className="heading-3">{link_block.name}</h4>
                   <ul>
                     {link_block.links.map((link, index) => (
                       <li className="mb-3" key={index}>
-                        <Link
-                          href={link.href}
-                          className="text-white font-light"
-                        >
+                        <Link href={link.href} className="text-white">
                           {link.name}
                         </Link>
                       </li>

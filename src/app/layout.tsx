@@ -6,6 +6,7 @@ import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
+import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-foreground ${itcAvanteGarde.className} antialiased`}>
+      <body
+        className={`bg-foreground ${itcAvanteGarde.className} ${bigNoodleTitling.variable} antialiased`}
+      >
         {/* <Theme> */}
         <Navbar />
         {children}
