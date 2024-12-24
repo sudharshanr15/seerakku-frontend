@@ -36,4 +36,9 @@ html {
     .partner-pagination .swiper-pagination-bullet-active {
         @apply bg-primary border-0;
     }
+
+    .swiper-prev-btn:disabled,
+    .swiper-next-btn:disabled {
+        @apply opacity-50;
+    }
 }

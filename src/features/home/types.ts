@@ -5,3 +5,9 @@ export type InitiativesListType = {
   desc: string;
   image: StaticImageData;
 };
+
+export type WorksItemType = {
+  title: string;
+  desc: string;
+  image: StaticImageData;
+};

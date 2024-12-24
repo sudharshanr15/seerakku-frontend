@@ -5,6 +5,7 @@ import Intro from "@/features/home/components/Intro";
 import ValuableCount from "@/features/home/components/ValuableCount";
 import Support from "@/features/home/components/Support";
 import Partners from "@/features/home/components/Partners";
+import Works from "@/features/home/components/Works";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro />
       <Initiatives />
       <GetInvolved />
+      <Works />
       <ValuableCount />
       <Support />
       <Partners />
