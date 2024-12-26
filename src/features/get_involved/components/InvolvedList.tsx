@@ -43,16 +43,16 @@ function InvolvedList() {
     <section className="layout-section-xl">
       {involved_list.map((item, index) => (
         <div className="mb-16 group relative" key={index}>
-          <div className="flex items-center">
-            <div className="max-w-lg z-0 group-even:order-2">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:max-w-lg w-full z-0 md:group-even:order-2">
               <Image
                 src={item.image}
                 alt=""
-                className="w-full object-contain"
+                className="w-full max-md:aspect-video object-cover"
               />
             </div>
-            <div className="w-2/3 z-10 group-even:order-1">
-              <div className="relative group-odd:right-14 group-even:-right-14 top-0 w-full">
+            <div className="w-full md:w-2/3 z-10 md:group-even:order-1">
+              <div className="relative md:group-odd:right-14 md:group-even:-right-14 top-0 w-full">
                 <ShadowContainer
                   shadowTo={index % 2 == 0 ? "right" : "left"}
                   theme={
