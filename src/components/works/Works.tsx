@@ -56,10 +56,10 @@ function Works() {
             spaceBetween={30}
             breakpoints={{
               640: {
-                slidesPerView: 1.75,
+                slidesPerView: 1.25,
               },
               1024: {
-                slidesPerView: 2.75,
+                slidesPerView: 2.25,
               },
             }}
             centeredSlides={true}
