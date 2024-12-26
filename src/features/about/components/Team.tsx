@@ -124,7 +124,7 @@ function Team() {
   return (
     <section className="layout-section-xl">
       <h1 className="heading-2 text-center">Our Team</h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
         {team_list.map((ele, index) => (
           <div key={index}>
             <div className="aspect-video w-full bg-gray-300 mb-5"></div>

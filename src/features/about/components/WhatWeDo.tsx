@@ -53,7 +53,7 @@ function WhatWeDo() {
           climate change.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {what_we_do.map((ele, index) => (
           <div className="bg-primary-green bg-opacity-20" key={index}>
             <div className="w-full">

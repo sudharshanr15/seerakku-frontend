@@ -5,12 +5,12 @@ import { ButtonType } from "@/components/buttons/type";
 
 function WhoWeAre() {
   return (
-    <section className="layout-section-xl pb-0">
-      <div className="flex items-center">
-        <div className="w-1/2 max-w-1/2 relative z-0">
+    <section className="layout-section-xl">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/2 max-w-1/2 relative z-0">
           <Image src={who_we_are} className="w-full" alt="Who We Are" />
         </div>
-        <div className="w-[60%] -ms-14 relative z-20">
+        <div className="w-full md:w-[60%] md:-ms-14 relative z-20">
           <div className="bg-white border border-primary-green relative">
             <div className="p-10">
               <h2 className="heading-2">Who We Are</h2>
