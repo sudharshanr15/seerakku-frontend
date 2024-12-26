@@ -59,7 +59,7 @@ function FocusItem({ item }: { item: FocusListType }) {
 function FocusList() {
   return (
     <section className="layout-section-xl">
-      <div className="grid grid-cols-2 gap-x-5 gap-y-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-7">
         {focus_list.map((item, index) => (
           <FocusItem item={item} key={index} />
         ))}

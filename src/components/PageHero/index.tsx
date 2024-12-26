@@ -1,7 +1,7 @@
 function PageHero({ children }: { children: React.ReactNode }) {
   return (
-    <section className="bg-black py-32 pt-56">
-      <div className="text-center max-w-[540px] mx-auto">{children}</div>
+    <section className="bg-black pt-24">
+      <div className="text-center layout-section-sm">{children}</div>
     </section>
   );
 }

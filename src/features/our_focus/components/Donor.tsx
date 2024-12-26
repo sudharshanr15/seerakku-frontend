@@ -3,9 +3,9 @@ import { ButtonType } from "@/components/buttons/type";
 
 function Donor() {
   return (
-    <section className="layout-section-xl">
+    <section className="layout-section-xl max-md:p-0">
       <div className="bg-primary p-12">
-        <div className="w-2/3">
+        <div className="lg:w-2/3">
           <h2 className="heading-2">Become A Donor</h2>
           <p className="mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
