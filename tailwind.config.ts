@@ -18,6 +18,7 @@ export default {
         secondary: {
           "light-green": "#CFFDE1",
           forest: "#3D5656",
+          "yellow" : "#FED04933"
         },
         footer: "#111111",
       },

@@ -18,7 +18,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-secondary-silver-green px-8 py-10 z-10">
+        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-primary-green px-8 py-10 z-10">
           <h2 className="text-4xl font-bold uppercase mb-6">
             Tree Plantation Projects
           </h2>
@@ -65,7 +65,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-primary px-8 py-10 z-10">
+        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-primary-yellow px-8 py-10 z-10">
           <h2 className="text-4xl font-bold uppercase mb-6">
           Corporate Volunteering Activities          </h2>
           <div className="space-y-4">
@@ -106,7 +106,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-secondary-mint px-8 py-10 z-10">
+        <div className="relative -mt-20 w-full max-w-4xl bg-white  shadow-xl border-8 border-secondary-light-green px-8 py-10 z-10">
           <h2 className="text-4xl font-bold uppercase mb-6">
             Tree Plantation Projects
           </h2>
