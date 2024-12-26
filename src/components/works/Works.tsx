@@ -50,26 +50,36 @@ function Works() {
         </div>
       </div>
       <div className="mb-20 relative">
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          centeredSlides={true}
-          navigation={{
-            nextEl: ".works-next-item",
-            prevEl: ".works-prev-item",
-            enabled: true,
-          }}
-          watchOverflow={true}
-          initialSlide={1}
-          modules={[Navigation]}
-          allowTouchMove={true}
-        >
-          {works_list.map((ele, index) => (
-            <SwiperSlide key={index}>
-              <WorksItem item={ele} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="mx-4 xl:m-0">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            breakpoints={{
+              640: {
+                slidesPerView: 1.75,
+              },
+              1024: {
+                slidesPerView: 2.75,
+              },
+            }}
+            centeredSlides={true}
+            navigation={{
+              nextEl: ".works-next-item",
+              prevEl: ".works-prev-item",
+              enabled: true,
+            }}
+            watchOverflow={true}
+            modules={[Navigation]}
+            initialSlide={1}
+            allowTouchMove={true}
+          >
+            {works_list.map((ele, index) => (
+              <SwiperSlide key={index}>
+                <WorksItem item={ele} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
         <div className="flex justify-between top-1/2 w-full absolute -translate-y-1/2 z-10">
           <button className="swiper-prev-btn works-prev-item bg-white shadow-md p-2 rounded-full">
             <ArrowBackIcon />

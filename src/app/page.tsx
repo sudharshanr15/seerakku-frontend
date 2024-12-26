@@ -16,7 +16,7 @@ export default function Home() {
       <GetInvolved />
       <Works />
       <ValuableCount />
-      <Support />
+      {/* <Support /> */}
       <Partners />
     </main>
   );

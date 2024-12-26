@@ -1,31 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html {
-    color: black;
-}
-
-@layer components {
-    .heading-1 {
-        @apply uppercase text-center font-normal text-7xl leading-[80px] mb-4;
-    }
-
-    .heading-2 {
-        @apply font-normal text-5xl uppercase mb-7;
-    }
-
-    .heading-3 {
-        @apply font-normal text-4xl uppercase mb-4;
-    }
-
-    .layout-section-xl {
-        @apply max-w-screen-xl mx-auto py-20;
-    }
-
-    .layout-section-lg {
-        @apply max-w-screen-lg mx-auto py-20;
-    }
-}
 
 html {
     color: black;
@@ -33,23 +8,23 @@ html {
 
 @layer components {
     .heading-1 {
-        @apply uppercase font-normal text-[80px] leading-[88px] mb-4 font-big-noodle-titling;
+        @apply uppercase font-normal text-40 xl:text-80 mb-4 font-big-noodle-titling;
     }
 
     .heading-2 {
-        @apply font-normal text-5xl uppercase mb-7 font-big-noodle-titling;
+        @apply font-normal text-40 xl:text-50 uppercase mb-7 font-big-noodle-titling;
     }
 
     .heading-3 {
-        @apply font-normal text-[40px] uppercase mb-3 font-big-noodle-titling;
+        @apply font-normal text-30 xl:text-40 uppercase mb-3 font-big-noodle-titling;
     }
 
     .layout-section-xl {
-        @apply max-w-[1200px] mx-auto py-20;
+        @apply max-w-screen-xl mx-auto px-5 2xl:px-0 py-10 xl:py-20;
     }
 
     .layout-section-lg {
-        @apply max-w-screen-lg mx-auto py-20;
+        @apply max-w-screen-lg mx-auto px-5 xl:px-0 py-10 xl:py-20;
     }
 }
 

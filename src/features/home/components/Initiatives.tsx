@@ -54,16 +54,16 @@ const Initiatives = () => {
           programs:
         </p>
       </div>
-      <div className="flex gap-6">
-        <div className="w-1/3">
+      <div className="flex flex-col md:flex-row xl:flex-row gap-6">
+        <div className="w-full md:w-[49%] xl:w-1/3">
           <div className="flex flex-col gap-6 h-full">
             {initiatives_list_1.map((ele, index) => (
               <InitiativesItem item={ele} key={index} className="flex-grow" />
             ))}
           </div>
         </div>
-        <div className="w-2/3">
-          <div className="grid grid-cols-2 gap-6">
+        <div className="w-full md:w-1/2 xl:w-2/3">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
             {initiatives_list_2.map((ele, index) => (
               // <div
               //   className={`relative ${initiatives_list_2.length == index + 1 && index % 2 == 0 ? "last:col-span-2" : ""}`}
@@ -90,7 +90,7 @@ const Initiatives = () => {
                 key={index}
                 className={
                   initiatives_list_2.length == index + 1 && index % 2 == 0
-                    ? "last:col-span-2"
+                    ? "xl:last:col-span-2"
                     : ""
                 }
               />

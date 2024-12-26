@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <header className="absolute w-full py-6 bg-transparent z-50 font-big-noodle-titling">
       <div className="max-w-screen-xl mx-auto">
-        <nav className="flex justify-between items-center gap-8 text-white">
+        <nav className="hidden even:flex justify-between items-center gap-8 text-white">
           <Link href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>

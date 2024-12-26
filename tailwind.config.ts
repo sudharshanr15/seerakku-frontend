@@ -25,6 +25,16 @@ export default {
         sans: ["var(--font-itc-avant-garde)"],
         "big-noodle-titling": ["var(--font-big-noodle-titling)"],
       },
+      fontSize: {
+        "30": ["30px", "38px"],
+        "40": ["40px", "48px"],
+        "50": ["50px", "58px"],
+        "80": ["80px", "88px"],
+      },
+      screens: {
+        sm: "576px",
+        xl: "1200px",
+      },
     },
   },
   plugins: [],

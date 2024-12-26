@@ -5,21 +5,20 @@ import { WorksItemType } from "./types/index";
 function WorksItem({ item }: { item: WorksItemType }) {
   return (
     <div className="relative">
-      <div className="w-full">
+      <ImageTint className="-z-10"></ImageTint>
+      <div className="absolute top-0 left-0 -z-20 w-full h-full">
         <Image
           src={item.image}
           alt="Work Image 1"
-          className="w-full object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
-      <ImageTint>
-        <div className="h-full flex items-end">
-          <div className="text-white p-7">
-            <h2 className="heading-2 text-white">{item.title}</h2>
-            <p className="text-white">{item.desc}</p>
-          </div>
+      <div className="h-full flex items-end aspect-video">
+        <div className="text-white p-7">
+          <h2 className="heading-3 text-white">{item.title}</h2>
+          <p className="text-white">{item.desc}</p>
         </div>
-      </ImageTint>
+      </div>
     </div>
   );
 }
