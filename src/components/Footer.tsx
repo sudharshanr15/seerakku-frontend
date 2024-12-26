@@ -161,16 +161,18 @@ const Footer = () => {
   return (
     <footer className="bg-footer text-white">
       <div className="layout-section-xl">
+        <div className="w-full flex flex-col xl:flex-row xl:justify-between xl:items-center mb-6">
+          <div className="max-w-[234px] mb-6 xl:m-0">
+            <Image
+              src={logo_text_footer}
+              alt="Seerakku Logo"
+              className="w-full"
+            />
+          </div>
+          <QuickLinks />
+        </div>
         <div className="flex flex-col xl:flex-row gap-7 xl:gap-20">
           <div className="flex flex-col gap-6 items-start">
-            <div className="max-w-[234px]">
-              <Image
-                src={logo_text_footer}
-                alt="Seerakku Logo"
-                className="w-full"
-              />
-            </div>
-            <QuickLinks className="xl:hidden" />
             <h2 className="heading-2 m-0">
               Committed to overcoming the stigma of AIDS
             </h2>
@@ -186,7 +188,7 @@ const Footer = () => {
             <SocialLinks />
           </div>
           <div className="flex-grow flex-shrink-0">
-            <QuickLinks className="mb-10 hidden xl:flex" />
+            {/* <QuickLinks className="mb-10 hidden xl:flex" /> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 xl:gap-20">
               {footer_links.map((link_block, index) => (
                 <div className="" key={index}>
