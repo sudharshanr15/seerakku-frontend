@@ -24,9 +24,9 @@ export default function RootLayout({
         className={`bg-foreground ${itcAvanteGarde.className} ${bigNoodleTitling.variable} antialiased`}
       >
         {/* <Theme> */}
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         {/* </Theme> */}
       </body>
     </html>
