@@ -12,12 +12,12 @@ import Button from "@/components/buttons/Button";
 const Initiative = () => {
   return (
     <main>
-      <section className=" my-20 flex justify-center mx-auto w-4/5 items-center">
-        <div className=" w-1/2">
+      <section className="my-20 flex lg:flex-row flex-col  justify-center  mx-auto lg:w-4/5 items-center px-5 lg:px-0 gap-10">
+        <div className=" lg:w-1/2">
           <Image src={nova} alt="NOVA"></Image>
         </div>
 
-        <div className=" h-full w-1/2 ">
+        <div className=" h-full lg:w-1/2 ">
           <p className=" heading-2">NOVA</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
@@ -39,13 +39,13 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 bg-secondary-yellow py-10">
-        <div className="flex flex-row-reverse gap-20 justify-center  mx-auto w-4/5 items-center ">
-          <div className=" w-1/2">
+      <section className=" my-20 bg-secondary-yellow py-10 px-5 lg:px-0">
+        <div className="flex flex-col lg:flex-row-reverse gap-20 justify-center  mx-auto lg:w-4/5 items-center ">
+          <div className=" lg:w-1/2">
             <Image src={newImage} alt="New Tree for New Life"></Image>
           </div>
 
-          <div className=" h-full w-1/2">
+          <div className=" h-full lg:w-1/2">
             <p className=" heading-2">NEW TREE FOR NEW LIFE</p>
             <div className="pb-10 flex flex-col gap-5 text-lg">
               <p>
@@ -63,12 +63,12 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 flex  justify-center  mx-auto w-4/5 items-center">
-        <div className=" w-1/2">
+      <section className=" my-20 flex lg:flex-row flex-col  justify-center  mx-auto lg:w-4/5 items-center px-5 lg:px-0 gap-10">
+        <div className=" lg:w-1/2">
           <Image src={one} alt="One Student : One Life"></Image>
         </div>
 
-        <div className=" h-full w-1/2 ">
+        <div className=" h-full lg:w-1/2 ">
           <p className=" heading-2">ONE STUDENT : ONE LIFE</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
@@ -85,13 +85,13 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 bg-secondary-light-green py-10">
-        <div className="flex flex-row-reverse gap-20 justify-center  mx-auto w-4/5 items-center ">
-          <div className=" w-1/2">
+      <section className=" my-20 bg-secondary-light-green px-5 lg:px-0 py-10">
+        <div className="flex flex-col lg:flex-row-reverse gap-20 justify-center  mx-auto lg:w-4/5 items-center ">
+          <div className=" lg:w-1/2">
             <Image src={plant} alt="Plant and Greet"></Image>
           </div>
 
-          <div className=" h-full w-1/2">
+          <div className=" h-full lg:w-1/2">
             <p className=" heading-2">PLANT & GREET</p>
             <div className="pb-10 flex flex-col gap-5 text-lg">
               <p>
@@ -105,12 +105,12 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 flex  justify-center  mx-auto w-4/5 items-center">
-        <div className=" w-1/2">
+      <section className=" my-20 flex lg:flex-row flex-col  justify-center  mx-auto lg:w-4/5 items-center px-5 lg:px-0 gap-10">
+        <div className=" lg:w-1/2">
           <Image src={farmers} alt="Tree for Farmers"></Image>
         </div>
 
-        <div className=" h-full w-1/2 ">
+        <div className=" h-full lg:w-1/2 ">
           <p className=" heading-2">TREE FOR FARMERS</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
@@ -127,14 +127,14 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 bg-secondary-yellow py-10">
-      <div className="flex flex-row-reverse gap-20 justify-center  mx-auto w-4/5 items-center ">
+      <section className=" my-20 bg-secondary-yellow py-10 px-5 lg:px-0">
+      <div className="flex flex-col lg:flex-row-reverse gap-20 justify-center  mx-auto lg:w-4/5 items-center ">
 
-        <div className=" w-1/2">
+        <div className=" lg:w-1/2">
           <Image src={sparrow} alt="Tree for Sparrows"></Image>
         </div>
 
-        <div className=" h-full w-1/2 ">
+        <div className=" h-full lg:w-1/2 ">
           <p className=" heading-2">TREE FOR SPARROWS</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
@@ -152,12 +152,12 @@ const Initiative = () => {
         </div>
       </section>
 
-      <section className=" my-20 flex  justify-center  mx-auto w-4/5 items-center">
-        <div className=" w-1/2">
+      <section className=" my-20 flex lg:flex-row flex-col  justify-center  mx-auto lg:w-4/5 items-center px-5 lg:px-0 gap-10">
+        <div className=" lg:w-1/2">
           <Image src={elephant} alt="TREE FOR ELEPHANTS"></Image>
         </div>
 
-        <div className=" h-full w-1/2 ">
+        <div className=" h-full lg:w-1/2 ">
           <p className=" heading-2">TREE FOR ELEPHANTS</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
