@@ -1,5 +1,4 @@
 import Button from "@/components/buttons/Button";
-import { ButtonType } from "@/components/buttons/type";
 
 const ValuableCount = () => {
   return (
@@ -15,7 +14,7 @@ const ValuableCount = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
-          <Button type={ButtonType.primary}>View More</Button>
+          <Button type="primary">View More</Button>
         </div>
         <div className="w-full xl:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-shrink-0">
           {Array(6)

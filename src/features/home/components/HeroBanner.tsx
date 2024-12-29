@@ -1,6 +1,5 @@
 import Button from "@/components/buttons/Button";
 import DonateNow from "@/components/buttons/DonateNow";
-import { ButtonType } from "@/components/buttons/type";
 import Image from "next/image";
 import { hero_image } from "../assets";
 
@@ -23,8 +22,8 @@ const HeroBanner = () => {
             <span className="text-primary">PLANTING TREES</span>
           </h1>
           <div className="flex gap-8 xl:mt-8">
-            <DonateNow type={ButtonType.primary} icon />
-            <Button type={ButtonType.primary_green}>See Our Works</Button>
+            <DonateNow type="primary" icon />
+            <Button type="primary_green">See Our Works</Button>
           </div>
         </div>
       </div>

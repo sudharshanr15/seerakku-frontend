@@ -1,10 +1,12 @@
-export enum ButtonType {
-  primary = "primary",
-  primary_green = "primary_green",
-  secondary_light_green = "secondary_light_green",
-  secondary_forest = "secondary_forest",
-  void = "void",
-}
+export const ButtonType = {
+  primary: "primary",
+  primary_green: "primary_green",
+  secondary_light_green: "secondary_light_green",
+  secondary_forest: "secondary_forest",
+  void: "void",
+};
+
+export type ButtonType = keyof typeof ButtonType;
 
 export enum ButtonFill {
   primary = "bg-primary text-black",

@@ -11,9 +11,7 @@ const Button = ({
   className?: string;
   outline?: boolean;
 }) => {
-  const class_name = outline
-    ? ButtonOutline[ButtonType[type]]
-    : ButtonFill[ButtonType[type]];
+  const class_name = outline ? ButtonOutline[type] : ButtonFill[type];
 
   return (
     <button

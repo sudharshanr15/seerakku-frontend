@@ -1,5 +1,4 @@
 import DonateNow from "@/components/buttons/DonateNow";
-import { ButtonType } from "@/components/buttons/type";
 
 function Donor() {
   return (
@@ -13,7 +12,7 @@ function Donor() {
             eu, varius metus. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Suspendisse sed scelerisque ex.
           </p>
-          <DonateNow type={ButtonType.secondary_forest} icon />
+          <DonateNow type="secondary_forest" icon />
         </div>
       </div>
     </section>

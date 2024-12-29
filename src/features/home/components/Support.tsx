@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { support_image } from "../assets";
 import { useEffect, useState } from "react";
-import { ButtonType } from "@/components/buttons/type";
 import DonateNow from "@/components/buttons/DonateNow";
 import ShadowContainer from "@/components/ShadowContainer";
 import { ColorType } from "@/types/ColorType";
@@ -83,7 +82,7 @@ const Support = () => {
                   onChange={(e) => setAmount(Number(e.target.value))}
                 />
               </div>
-              <DonateNow type={ButtonType.primary} icon />
+              <DonateNow type="primary" icon />
             </form>
           </div>
         </div>

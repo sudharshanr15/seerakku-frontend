@@ -1,5 +1,4 @@
 import Button from "@/components/buttons/Button";
-import { ButtonType } from "@/components/buttons/type";
 
 const Intro = () => {
   return (
@@ -14,7 +13,7 @@ const Intro = () => {
           generations to come. So, we were planning to offset our baby’s future
           carbon emissions with a food forest.
         </p>
-        <Button type={ButtonType.primary_green}>Learn More</Button>
+        <Button type="primary_green">Learn More</Button>
       </div>
     </section>
   );

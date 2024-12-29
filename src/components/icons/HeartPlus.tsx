@@ -1,6 +1,4 @@
-import { IconColors } from "./types";
-
-function HeartPlus(props: { className: string; fill: IconColors }) {
+function HeartPlus(props: { className: string; fill: string }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} {...props}>
       <path

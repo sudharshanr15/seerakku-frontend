@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { who_we_are } from "../assets";
 import DonateNow from "@/components/buttons/DonateNow";
-import { ButtonType } from "@/components/buttons/type";
 
 function WhoWeAre() {
   return (
@@ -19,7 +18,7 @@ function WhoWeAre() {
                 effects of climate change through a range of initiatives in
                 India.
               </p>
-              <DonateNow type={ButtonType.primary} icon />
+              <DonateNow type="primary" icon />
             </div>
             <div className="w-full h-full bg-primary-green absolute top-6 left-6 -z-10"></div>
           </div>

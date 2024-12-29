@@ -1,5 +1,4 @@
 import DonateNow from "@/components/buttons/DonateNow";
-import { ButtonType } from "@/components/buttons/type";
 import ShadowContainer from "@/components/ShadowContainer";
 import { ColorType } from "@/types/ColorType";
 import Image, { StaticImageData } from "next/image";
@@ -67,11 +66,7 @@ function InvolvedList() {
                       </p>
                     ))}
                     <DonateNow
-                      type={
-                        index % 2 == 0
-                          ? ButtonType.primary_green
-                          : ButtonType.primary
-                      }
+                      type={index % 2 == 0 ? "primary_green" : "primary"}
                     />
                   </div>
                 </ShadowContainer>

@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Button from "@/components/buttons/Button";
-import { ButtonType } from "@/components/buttons/type";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
@@ -68,11 +67,7 @@ function GalleryList() {
               {gallery_list.map((item, index) => (
                 <SwiperSlide key={index} className="!w-max">
                   <Button
-                    type={
-                      item.id == currentGalleryItem
-                        ? ButtonType.primary
-                        : ButtonType.void
-                    }
+                    type={item.id == currentGalleryItem ? "primary" : "void"}
                     className=""
                   >
                     {item.name}

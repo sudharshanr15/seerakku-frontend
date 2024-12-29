@@ -1,4 +1,4 @@
-import { ButtonType } from "./type";
+import { type ButtonType } from "./type";
 import HeartPlus from "@/components/icons/HeartPlus";
 import { IconColorsFill, IconColorsOutline } from "../icons/types";
 import Button from "./Button";
@@ -14,9 +14,7 @@ const DonateNow = ({
   icon?: boolean;
   outline?: boolean;
 }) => {
-  const icon_colors = outline
-    ? IconColorsOutline[ButtonType[type]]
-    : IconColorsFill[ButtonType[type]];
+  const icon_colors = outline ? IconColorsOutline[type] : IconColorsFill[type];
 
   return (
     <Button type={type} className={className} outline={outline}>

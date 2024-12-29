@@ -1,5 +1,4 @@
 import Button from "@/components/buttons/Button";
-import { ButtonType } from "@/components/buttons/type";
 import Image from "next/image";
 import { get_involved_image_1 } from "../assets";
 import ImageTint from "@/components/ImageTint";
@@ -37,9 +36,7 @@ const GetInvolved = () => {
                         Join our dedicated team of volunteers and actively
                         participate in our initiatives.
                       </p>
-                      <Button type={ButtonType.primary_green}>
-                        Register Here
-                      </Button>
+                      <Button type="primary_green">Register Here</Button>
                     </div>
                   </div>
                 </ImageTint>
