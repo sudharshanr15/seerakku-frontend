@@ -44,15 +44,24 @@ const Navbar = () => {
   ];
   return (
     <header 
-      className={` hidden lg:block absolute w-full py-6 bg-transparent z-50 font-big-noodle-titling`}
+      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden fixed w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
-        <nav className="flex justify-between  items-center gap-8   lg:text-white">
-          <Link className=" flex justify-between pr-10" href={"/"}>
+        <nav className=" flex flex-col justify-between pl-8 lg:items-center gap-8 ">
+         
+         <div className=" flex justify-between pr-6">
+           <Link className=" " href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
-          </Link>
+            </Link>
+            <Image
+              onClick={toggleMenu}
+              className=" object-contain"
+              src={isMenuOpen ? Close : Menu}
+              alt="Menu"
+              />
+              </div>
           <ul
-            className={`z-50 flex gap-6 lg:text-white`}
+            className={` ${isMenuOpen ? "flex" : "hidden"} z-50 flex  flex-col gap-6 `}
           >
             <div className=" relative">
               <li
@@ -122,7 +131,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div
-            className={` lg:opacity-100 z-50 `}
+            className={` ${isMenuOpen ? "block" : "hidden"} z-50 `}
           >
             <DonateNow type="primary_green" className="me-4 text-black" />
             <Button type="primary">Become A Volunteer</Button>

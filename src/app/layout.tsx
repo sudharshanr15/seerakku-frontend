@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import MNavbar from "@/components/MNavbar";
 import "@radix-ui/themes/styles.css";
 import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
@@ -23,6 +24,7 @@ export default function RootLayout({
       >
         {/* <Theme> */}
         <Navbar />
+        <MNavbar />
         {children}
         <Footer />
         {/* </Theme> */}
