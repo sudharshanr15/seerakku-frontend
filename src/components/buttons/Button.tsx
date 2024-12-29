@@ -5,6 +5,7 @@ const Button = ({
   children,
   className,
   outline,
+  ...props
 }: {
   type: ButtonType;
   children: React.ReactNode;
@@ -16,6 +17,7 @@ const Button = ({
   return (
     <button
       className={`py-3 px-5 ${class_name} uppercase ${className} text-lg font-big-noodle-titling`}
+      {...props}
     >
       {children}
     </button>

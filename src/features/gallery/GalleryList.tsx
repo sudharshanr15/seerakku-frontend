@@ -9,6 +9,8 @@ import { Navigation } from "swiper/modules";
 import Button from "@/components/buttons/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { image_1, image_2, image_3, image_4, image_5 } from "./assets";
+import Image, { StaticImageData } from "next/image";
 
 const gallery_list: {
   id: number;
@@ -44,8 +46,20 @@ const gallery_list: {
   },
 ];
 
+const gallery_images: {
+  [key: string]: StaticImageData[];
+} = {
+  Nova: [image_1, image_2, image_3, image_4, image_5],
+  "New Tree New Life": [image_1, image_2, image_3, image_4, image_5],
+  "One Student One Life": [image_1, image_2, image_3, image_4, image_5],
+  "Plant & Greet": [image_1, image_2, image_3, image_4, image_5],
+  "Tree for Farmers": [image_1, image_2, image_3, image_4, image_5],
+  "Tree for Elephants": [image_1, image_2, image_3, image_4, image_5],
+  "Tree for Sparrows": [image_1, image_2, image_3, image_4, image_5],
+};
+
 function GalleryList() {
-  const [currentGalleryItem] = useState(1);
+  const [currentGalleryItem, setCurrentGalleryItem] = useState("Nova");
 
   return (
     <section className="layout-section-xl">
@@ -67,8 +81,11 @@ function GalleryList() {
               {gallery_list.map((item, index) => (
                 <SwiperSlide key={index} className="!w-max">
                   <Button
-                    type={item.id == currentGalleryItem ? "primary" : "void"}
+                    type={item.name == currentGalleryItem ? "primary" : "void"}
                     className=""
+                    onClick={() => {
+                      setCurrentGalleryItem(item.name);
+                    }}
                   >
                     {item.name}
                   </Button>
@@ -87,6 +104,41 @@ function GalleryList() {
             </button>
           </div>
         </div>
+        {Object.keys(gallery_images).map((item, index) => (
+          <div
+            key={index}
+            data-gallery-item={item}
+            className={`my-5 ${currentGalleryItem == item ? "block" : "hidden"}`}
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+              {gallery_images[item].map((image, image_index) => {
+                const item_length = gallery_images[item].length;
+                let span_length: string = "";
+                if (item_length == image_index + 1) {
+                  switch (image_index % 3) {
+                    case 0:
+                      span_length = "last:col-span-full";
+                      break;
+                    case 1:
+                      span_length = "last:sm:col-span-2";
+                      break;
+                    case 2:
+                      break;
+                  }
+                }
+                return (
+                  <div className={`w-full ${span_length}`} key={image_index}>
+                    <Image
+                      src={image}
+                      className="w-full h-full object-cover"
+                      alt="Gallery Image"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
