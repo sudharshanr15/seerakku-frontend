@@ -46,7 +46,7 @@ const gallery_list: {
 ];
 
 function GalleryList() {
-  const [currentGalleryItem, setCurrentGalleryItem] = useState(1);
+  const [currentGalleryItem] = useState(1);
 
   return (
     <section className="layout-section-xl">

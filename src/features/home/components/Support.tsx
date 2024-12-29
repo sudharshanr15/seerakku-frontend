@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { support_image } from "../assets";
 import { useEffect, useState } from "react";
-import Button from "@/components/buttons/Button";
 import { ButtonType } from "@/components/buttons/type";
 import DonateNow from "@/components/buttons/DonateNow";
 import ShadowContainer from "@/components/ShadowContainer";

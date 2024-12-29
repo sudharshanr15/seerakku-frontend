@@ -1,12 +1,9 @@
-import ImageTint from "@/components/ImageTint";
-import Image, { StaticImageData } from "next/image";
 import {
   initiative_1,
   initiative_2,
   initiative_3,
   initiative_4,
   initiative_5,
-  support_image,
 } from "../assets";
 import { InitiativesListType } from "../types";
 import InitiativesItem from "./InitiativesItem";

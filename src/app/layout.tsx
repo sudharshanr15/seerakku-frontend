@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
 import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";

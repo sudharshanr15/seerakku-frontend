@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { ButtonFill, ButtonOutline, ButtonType } from "./type";
+import { ButtonType } from "./type";
 import HeartPlus from "@/components/icons/HeartPlus";
 import { IconColorsFill, IconColorsOutline } from "../icons/types";
 import Button from "./Button";

@@ -1,8 +1,6 @@
-import { SvgIconComponent } from "@mui/icons-material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { Icon } from "@mui/material";
 
 const team_list: {
   name: string;
