@@ -7,10 +7,7 @@ function Donor() {
         <div className="lg:w-2/3">
           <h2 className="heading-2">Become A Donor</h2>
           <p className="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            rhoncus fringilla egestas. Sed eget purus imperdiet, mollis metus
-            eu, varius metus. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Suspendisse sed scelerisque ex.
+          Support our organization financially by donating. Your contribution, no matter the size, directly funds our initiatives and helps us implement projects that promote sustainability, biodiversity, and environmental conservation. Your generosity enables us to continue our important work and create a positive impact on the planet.
           </p>
           <DonateNow type="secondary_forest" icon />
         </div>

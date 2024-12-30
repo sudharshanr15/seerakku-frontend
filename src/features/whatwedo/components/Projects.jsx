@@ -108,7 +108,7 @@ export default function Projects() {
 
         <div className="relative -mt-20 w-full max-w-4xl bg-white shadow-xl border-8 border-secondary-light-green px-8 py-10 z-10">
           <h2 className="text-4xl font-bold uppercase mb-6">
-            Tree Plantation Projects
+            Additional Projects
           </h2>
           <div className="space-y-4">
             <p>

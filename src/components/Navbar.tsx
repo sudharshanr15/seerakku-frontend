@@ -103,7 +103,7 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="/initiaitves">
+                  <Link href="/initiatives">
                     <li className=" text-lg">Our Initiatives</li>
                   </Link>
                   <Link href="/gallery">

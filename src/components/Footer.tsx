@@ -17,27 +17,27 @@ const footer_links: {
     links: [
       {
         name: "Home",
-        href: "",
+        href: "/",
       },
       {
         name: "About Us",
-        href: "",
+        href: "/about",
       },
       {
         name: "Projects",
-        href: "",
+        href: "/whatwedo",
       },
       {
         name: "Our Initiatives",
-        href: "",
+        href: "/initiatives",
       },
       {
         name: "Our Focus Area",
-        href: "",
+        href: "/our_focus",
       },
       {
         name: "Contact Us",
-        href: "",
+        href: "/contact",
       },
     ],
   },
@@ -54,7 +54,7 @@ const footer_links: {
       },
       {
         name: "See our works",
-        href: "",
+        href: "/gallery",
       },
       {
         name: "Case Studies",
@@ -75,7 +75,7 @@ const footer_links: {
       },
       {
         name: "See our works",
-        href: "",
+        href: "/gallery",
       },
       {
         name: "Case Studies",
