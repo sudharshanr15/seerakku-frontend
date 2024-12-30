@@ -4,11 +4,11 @@ const vission_mission: {
 }[] = [
   {
     name: "Our Vision",
-    desc: "Our vision is a carbon-neutral India where individuals and organizations prioritize sustainable practices",
+    desc: "Our vision is a carbon-neutral India where individuals and organizations prioritize sustainable practices.",
   },
   {
     name: "Our Mission",
-    desc: "Our mission is to create a sustainable future by enabling individuals to offset their carbon footprint and fund reforestation projects. We believe that every action counts and that by working together, we can create a positive impact on the planet.",
+    desc: "Our mission is to create a sustainable future for all.",
   },
 ];
 

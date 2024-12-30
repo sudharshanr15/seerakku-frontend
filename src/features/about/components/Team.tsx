@@ -12,7 +12,7 @@ const team_list: {
   }[];
 }[] = [
   {
-    name: "Dinesh Kshatriyan",
+    name: "SP Dinesh",
     position: "Co-Founder",
     social_handles: [
       {
