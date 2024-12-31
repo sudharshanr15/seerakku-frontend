@@ -3,6 +3,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import Dinesh from '../assets/dinesh.jpeg'
 import Harish from '../assets/harish.jpeg'
+import Profile from '../assets/profile.jpg'
 import Image, { StaticImageData } from 'next/image'
 const team_list: {
   name: string;
@@ -39,7 +40,7 @@ const team_list: {
   {
     name: "Janaganandhini Dinesh",
     position: "Co-Founder",
-    img: Dinesh,
+    img: Profile,
     social_handles: [
       {
         name: "LinkedIn",
@@ -61,7 +62,7 @@ const team_list: {
   {
     name: "Padmavathi S",
     position: "Managing Trustee",
-    img: Dinesh,
+    img: Profile,
     social_handles: [
       {
         name: "LinkedIn",
@@ -83,7 +84,7 @@ const team_list: {
   {
     name: "Sivakumar S",
     position: "Head of Projects",
-    img: Harish,
+    img: Profile,
     social_handles: [
       {
         name: "LinkedIn",
