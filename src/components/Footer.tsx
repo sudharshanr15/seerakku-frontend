@@ -35,7 +35,7 @@ const footer_links: {
       },
       {
         name: "Contact Us",
-        href: "/contact",
+        href: "/contact_us",
       },
     ],
   },
