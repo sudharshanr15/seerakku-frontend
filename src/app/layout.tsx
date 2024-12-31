@@ -6,6 +6,7 @@ import "@radix-ui/themes/styles.css";
 import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
+import SupportModal from "@/components/support/SupportModal";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,6 +29,7 @@ export default function RootLayout({
         {children}
         <Footer />
         {/* </Theme> */}
+        <SupportModal />
       </body>
     </html>
   );
