@@ -1,5 +1,5 @@
-"use client";
-
+"use client"
+import { useState, useEffect } from "react";
 import Button from "@/components/buttons/Button";
 import DonateNow from "@/components/buttons/DonateNow";
 import Image from "next/image";
@@ -35,6 +35,24 @@ const slides = [
 ];
 
 const HeroBanner = () => {
+  const data = [
+    'Planting Trees',
+    'Restoring Water',
+    'Enriching Feels',
+    'Nurturing Coasts',
+    'Empowering Agriculture'
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <section className="relative top-0 left-0 w-full h-screen overflow-hidden">
       <div className="w-full h-full">

@@ -70,7 +70,7 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="#">
+                  <Link href="/about">
                     <li className=" text-lg">Who we are</li>
                   </Link>
                   <Link href="/whatwedo">
@@ -99,7 +99,7 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="/initiaitves">
+                  <Link href="/initiatives">
                     <li className=" text-lg">Our Initiatives</li>
                   </Link>
                   <Link href="/gallery">

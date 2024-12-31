@@ -1,6 +1,6 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import XIcon from "@mui/icons-material/X";
 
 const team_list: {
   name: string;
@@ -12,13 +12,13 @@ const team_list: {
   }[];
 }[] = [
   {
-    name: "Dinesh Kshatriyan",
-    position: "Co-Founder",
+    name: "SP Dinesh",
+    position: "Founder",
     social_handles: [
       {
-        name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
-        href: "",
+        name: "LinkedIn",
+        icon: <LinkedInIcon fontSize="large" />,
+        href: "https://www.linkedin.com/in/dinesh-sp-366b33135/",
       },
       {
         name: "Instagram",
@@ -26,8 +26,8 @@ const team_list: {
         href: "",
       },
       {
-        name: "Youtube",
-        icon: <YouTubeIcon fontSize="large" />,
+        name: "X",
+        icon: <XIcon fontSize="large" />,
         href: "",
       },
     ],
@@ -37,8 +37,8 @@ const team_list: {
     position: "Co-Founder",
     social_handles: [
       {
-        name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
+        name: "LinkedIn",
+        icon: <LinkedInIcon fontSize="large" />,
         href: "",
       },
       {
@@ -47,8 +47,8 @@ const team_list: {
         href: "",
       },
       {
-        name: "Youtube",
-        icon: <YouTubeIcon fontSize="large" />,
+        name: "X",
+        icon: <XIcon fontSize="large" />,
         href: "",
       },
     ],
@@ -58,8 +58,8 @@ const team_list: {
     position: "Managing Trustee",
     social_handles: [
       {
-        name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
+        name: "LinkedIn",
+        icon: <LinkedInIcon fontSize="large" />,
         href: "",
       },
       {
@@ -68,8 +68,8 @@ const team_list: {
         href: "",
       },
       {
-        name: "Youtube",
-        icon: <YouTubeIcon fontSize="large" />,
+        name: "X",
+        icon: <XIcon fontSize="large" />,
         href: "",
       },
     ],
@@ -79,8 +79,8 @@ const team_list: {
     position: "Head of Projects",
     social_handles: [
       {
-        name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
+        name: "LinkedIn",
+        icon: <LinkedInIcon fontSize="large" />,
         href: "",
       },
       {
@@ -89,8 +89,8 @@ const team_list: {
         href: "",
       },
       {
-        name: "Youtube",
-        icon: <YouTubeIcon fontSize="large" />,
+        name: "X",
+        icon: <XIcon fontSize="large" />,
         href: "",
       },
     ],
@@ -100,9 +100,9 @@ const team_list: {
     position: "Heaf of Corporate Volunteering",
     social_handles: [
       {
-        name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
-        href: "",
+        name: "LinkedIn",
+        icon: <LinkedInIcon fontSize="large" />,
+        href: "https://www.linkedin.com/in/harish-s-p-364ab2318?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B95fxQVz%2FQQG9FdkwXDbAcw%3D%3D",
       },
       {
         name: "Instagram",
@@ -110,8 +110,8 @@ const team_list: {
         href: "",
       },
       {
-        name: "Youtube",
-        icon: <YouTubeIcon fontSize="large" />,
+        name: "X",
+        icon: <XIcon fontSize="large" />,
         href: "",
       },
     ],

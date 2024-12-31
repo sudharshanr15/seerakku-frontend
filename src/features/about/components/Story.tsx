@@ -32,7 +32,7 @@ function Story() {
           After getting massive satisfaction from doing good for nature and our
           child, we decided to do this for every newborn in India. So we founded
           an NGO called Seerakku ( Seerakku is a Tamil word that means{" "}
-          {'"Regulate"'} ).
+          {'" Regulate "'} ).
         </p>
       </div>
     </section>

@@ -25,7 +25,7 @@ const focus_list: FocusListType[] = [
   },
   {
     title: "Climate Action",
-    desc: "Seerakku is committed to promoting coastal plantation and marine conservation initiatives to protect and preserve marine ecosystems.",
+    desc: "Seerakku primarily focuses on climate action. We plant trees, promote sustainable practices, and engage in coastal plantations to reduce carbon footprint and offset emissions.",
     image: image_4,
   },
   {

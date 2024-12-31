@@ -1,27 +1,27 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import XIcon from '@mui/icons-material/X';
 
 const social_links: {
   name: string;
-  href: "";
+  href: string;
   icon: React.ReactNode;
 }[] = [
   {
-    name: "Facebook",
-    href: "",
-    icon: <FacebookIcon fontSize="large" />,
-  },
-  {
-    name: "Instagram",
-    href: "",
-    icon: <InstagramIcon fontSize="large" />,
-  },
-  {
-    name: "Youtube",
-    href: "",
-    icon: <YouTubeIcon fontSize="large" />,
-  },
+  name: "LinkedIn",
+  href: "https://in.linkedin.com/company/seerakku",
+  icon: <LinkedInIcon fontSize="large" />,
+},
+{
+  name: "Instagram",
+  href: "https://www.instagram.com/0xseerakku/",
+  icon: <InstagramIcon fontSize="large" />,
+},
+{
+  name: "X",
+  href: 'https://twitter.com/0xSeerakku',
+  icon: <XIcon fontSize="large" />,
+},
 ];
 
 function SocialLinks() {

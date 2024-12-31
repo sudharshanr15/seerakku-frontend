@@ -15,30 +15,31 @@ const footer_links: {
     links: [
       {
         name: "Home",
-        href: "",
+        href: "/",
       },
       {
         name: "About Us",
-        href: "",
+        href: "/about",
       },
       {
         name: "Projects",
-        href: "",
+        href: "/whatwedo",
       },
       {
         name: "Our Initiatives",
-        href: "",
+        href: "/initiatives",
       },
       {
         name: "Our Focus Area",
-        href: "",
+        href: "/our_focus",
       },
       {
         name: "Contact Us",
-        href: "",
+        href: "/contact",
       },
     ],
   },
+
   {
     name: "Useful Link",
     links: [
@@ -52,28 +53,7 @@ const footer_links: {
       },
       {
         name: "See our works",
-        href: "",
-      },
-      {
-        name: "Case Studies",
-        href: "",
-      },
-    ],
-  },
-  {
-    name: "Useful Link",
-    links: [
-      {
-        name: "Become a volunteer",
-        href: "",
-      },
-      {
-        name: "Become a donor",
-        href: "",
-      },
-      {
-        name: "See our works",
-        href: "",
+        href: "/gallery#ourworks",
       },
       {
         name: "Case Studies",
@@ -127,11 +107,13 @@ const Footer = () => {
       <div className="layout-section-xl">
         <div className="w-full flex flex-col xl:flex-row xl:justify-between xl:items-center mb-6">
           <div className="max-w-[234px] mb-6 xl:m-0">
+            <Link href={'/'}>
             <Image
               src={logo_text_footer}
               alt="Seerakku Logo"
               className="w-full"
-            />
+              />
+              </Link>
           </div>
           <QuickLinks />
         </div>

@@ -44,7 +44,7 @@ const Navbar = () => {
   ];
   return (
     <header 
-      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden fixed w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
+      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden absolute w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className=" flex flex-col justify-between pl-8 lg:items-center gap-8 ">
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="#">
+                  <Link href="/about">
                     <li className=" text-lg">Who we are</li>
                   </Link>
                   <Link href="/whatwedo">
@@ -112,7 +112,7 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="/initiaitves">
+                  <Link href="/initiatives">
                     <li className=" text-lg">Our Initiatives</li>
                   </Link>
                   <Link href="/gallery">
