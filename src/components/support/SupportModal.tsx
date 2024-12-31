@@ -1,4 +1,4 @@
-import ModalWrapper from "../ModalWrapper";
+import ModalWrapper from "@/components/modal/ModalWrapper";
 import SupportContainer from "./SupportContainer";
 
 function SupportModal() {

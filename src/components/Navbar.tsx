@@ -43,7 +43,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <header 
+    <header
       className={` hidden lg:block absolute w-full py-6 bg-transparent z-50 font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
@@ -51,9 +51,7 @@ const Navbar = () => {
           <Link className=" flex justify-between pr-10" href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>
-          <ul
-            className={`z-50 flex gap-6 lg:text-white`}
-          >
+          <ul className={`z-50 flex gap-6 lg:text-white`}>
             <div className=" relative">
               <li
                 onClick={toggleAbout}
@@ -61,9 +59,7 @@ const Navbar = () => {
               >
                 <Link className=" flex items-center gap-2 " href="#">
                   <p>About Us </p>{" "}
-                  <div
-                    className={` bg-white w-1 h-1  rounded-full`}
-                  ></div>
+                  <div className={` bg-white w-1 h-1  rounded-full`}></div>
                 </Link>
               </li>
 
@@ -121,9 +117,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div
-            className={` lg:opacity-100 z-50 `}
-          >
+          <div className={` lg:opacity-100 z-50 `}>
             <DonateNow type="primary_green" className="me-4 text-black" />
             <Button type="primary">Become A Volunteer</Button>
           </div>

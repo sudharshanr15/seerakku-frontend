@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 import SupportModal from "@/components/support/SupportModal";
+import ModalProvider from "@/components/modal/ModalProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,13 +24,15 @@ export default function RootLayout({
       <body
         className={`bg-foreground ${itcAvanteGarde.className} ${bigNoodleTitling.variable} antialiased`}
       >
-        {/* <Theme> */}
-        <Navbar />
-        <MNavbar />
-        {children}
-        <Footer />
-        {/* </Theme> */}
-        <SupportModal />
+        <ModalProvider>
+          {/* <Theme> */}
+          <Navbar />
+          <MNavbar />
+          {children}
+          <Footer />
+          {/* </Theme> */}
+          <SupportModal />
+        </ModalProvider>
       </body>
     </html>
   );

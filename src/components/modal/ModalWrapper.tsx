@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import { useModal } from "./ModalProvider";
 
 function ModalWrapper({ children }: { children: React.ReactNode }) {
-  const [isOpen, setisOpen] = useState<boolean>(true);
+  const { isOpen, close } = useModal();
 
   useEffect(() => {
     if (isOpen) {
@@ -24,12 +25,7 @@ function ModalWrapper({ children }: { children: React.ReactNode }) {
         <div>{children}</div>
       </div>
       <div className="absolute top-2 right-2 z-50">
-        <button
-          className="bg-white p-3 rounded-full"
-          onClick={() => {
-            setisOpen(false);
-          }}
-        >
+        <button className="bg-white p-3 rounded-full" onClick={close}>
           <CloseIcon />
         </button>
       </div>
