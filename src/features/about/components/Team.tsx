@@ -3,7 +3,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import Dinesh from '../assets/dinesh.jpeg'
 import Harish from '../assets/harish.jpeg'
-import Profile from '../assets/profile.jpg'
+import Profile from '../assets/profile.png'
 import Image, { StaticImageData } from 'next/image'
 const team_list: {
   name: string;
