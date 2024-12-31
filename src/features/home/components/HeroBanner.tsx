@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Button from "@/components/buttons/Button";
 import DonateNow from "@/components/buttons/DonateNow";
 import Image from "next/image";
-import { hero_image, get_involved_image_1 } from "../assets";
+import { get_involved_image_1 } from "../assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 

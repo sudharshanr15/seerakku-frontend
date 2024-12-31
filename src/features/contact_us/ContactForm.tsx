@@ -29,7 +29,7 @@ function ContactForm() {
     resolver: zodResolver(contact_schema),
   });
 
-  function onSubmit(data) {
+  function onSubmit(data: ContactType) {
     console.log(data);
   }
 
