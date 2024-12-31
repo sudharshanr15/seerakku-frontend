@@ -134,7 +134,7 @@ function Team() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-5 gap-7">
         {team_list.map((ele, index) => (
           <div key={index} className=" flex flex-col justify-center items-center">
-           <Image className=" rounded-full" src={ele.img} alt="Image" />
+           <Image className=" rounded-full w-fit h-52 object-contain" src={ele.img} alt="Image" />
             <div className="text-center mt-5">
               <h4 className="font-bold text-xl mb-2">{ele.name}</h4>
               <p className="text-lg mb-2">{ele.position}</p>
