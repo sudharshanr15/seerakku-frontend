@@ -19,9 +19,9 @@ function ShadowContainer({
         className={`bg-white border ${ColorTypeBorder[theme]} h-full relative`}
       >
         <div
-          className={`w-full h-full ${ColorTypeBackground[theme]} absolute top-6 ${shadowTo == "right" ? "-right-6" : "-left-6"} z-0`}
+          className={`w-full h-full ${ColorTypeBackground[theme]} absolute max-md:scale-105 md:top-6 ${shadowTo == "right" ? "md:-right-6" : "md:-left-6"} -z-20`}
         ></div>
-        <div className="relative z-10 h-full">{children}</div>
+        <div className="relative h-full">{children}</div>
       </div>
     </div>
   );
