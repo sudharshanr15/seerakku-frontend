@@ -1,5 +1,12 @@
 import Button from "@/components/buttons/Button";
 
+import carbon from "../assets/carbon.png";
+import tree from "../assets/tree.png";
+import plastic from "../assets/plastic.png";
+import water from "../assets/water.png";
+import hours from "../assets/hours.png";
+import Image from "next/image";
+
 const ValuableCount = () => {
   return (
     <section className="layout-section-xl">
@@ -17,17 +24,41 @@ const ValuableCount = () => {
           <Button type="primary">View More</Button>
         </div>
         <div className="w-full xl:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-shrink-0">
-          {Array(6)
-            .fill(0)
-            .map((el, index) => (
-              <div
-                className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center xl:aspect-square"
-                key={index}
-              >
-                <h4 className="text-white heading-1 !text-80">400</h4>
-                <p className="text-white">Trees Planted</p>
-              </div>
-            ))}
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={tree} alt="Trees Planted"></Image>
+            <h4 className="text-white heading-1 mt-2 !text-80">400</h4>
+            <p className="text-white">Trees Planted</p>
+          </div>
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={carbon} alt="Carbon Offseted"></Image>
+
+            <h4 className="text-white heading-1 mt-2 !text-80">8M+</h4>
+            <p className="text-white">Carbon Offseted</p>
+          </div>
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={tree} alt="Communities Empowered"></Image>
+
+            <h4 className="text-white heading-1 mt-2 !text-80">400</h4>
+            <p className="text-white">Communitites Empowered</p>
+          </div>
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={hours} alt="Volunteering Hours"></Image>
+
+            <h4 className="text-white heading-1 mt-2 !text-80">2190</h4>
+            <p className="text-white">Total Volunteering Hours</p>
+          </div>
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={water} alt="Water Conserved"></Image>
+
+            <h4 className="text-white heading-1 mt-2 !text-80">1M</h4>
+            <p className="text-white">Water Conserved</p>
+          </div>
+          <div className="odd:bg-primary-green even:bg-secondary-forest p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
+            <Image src={plastic} alt="Plastics Collected"></Image>
+
+            <h4 className="text-white heading-1 mt-2 !text-80">2T</h4>
+            <p className="text-white">Plastics Collected</p>
+          </div>
         </div>
       </div>
     </section>

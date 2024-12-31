@@ -1,6 +1,6 @@
 import Button from "@/components/buttons/Button";
 import Image from "next/image";
-import { get_involved_image_1 } from "../assets";
+import { get_involved_image_1, partner, volunteer  } from "../assets";
 import ImageTint from "@/components/ImageTint";
 
 const GetInvolved = () => {
@@ -40,10 +40,10 @@ const GetInvolved = () => {
               </div>
          
               <div
-                className="w-full bg-primary text-white relative overflow-hidden aspect-square"
+                className="w-full bg-primary-green text-white relative overflow-hidden aspect-square"
               >
                 <Image
-                  src={get_involved_image_1}
+                  src={volunteer}
                   alt="Image 1"
                   className="object-cover bg-center h-full w-full"
                 />
@@ -61,10 +61,10 @@ const GetInvolved = () => {
               </div>
          
               <div
-                className="w-full bg-primary text-white relative overflow-hidden aspect-square"
+                className="w-full bg-secondary-forest text-white relative overflow-hidden aspect-square"
               >
                 <Image
-                  src={get_involved_image_1}
+                  src={partner}
                   alt="Image 1"
                   className="object-cover bg-center h-full w-full"
                 />

@@ -39,7 +39,7 @@ const works_list: WorksItemType[] = [
 
 function Works() {
   return (
-    <section className="">
+    <section className="" id="ourworks">
       <div className="layout-section-lg pb-0 mb-10">
         <div className="text-center">
           <h2 className="heading-2">Our Works</h2>

@@ -44,7 +44,7 @@ const Navbar = () => {
   ];
   return (
     <header 
-      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden fixed w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
+      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden absolute w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className=" flex flex-col justify-between pl-8 lg:items-center gap-8 ">

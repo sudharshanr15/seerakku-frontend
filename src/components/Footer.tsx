@@ -1,9 +1,9 @@
 import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import XIcon from '@mui/icons-material/X';
 
 const footer_links: {
   name: string;
@@ -41,6 +41,7 @@ const footer_links: {
       },
     ],
   },
+  
   {
     name: "Useful Link",
     links: [
@@ -54,28 +55,7 @@ const footer_links: {
       },
       {
         name: "See our works",
-        href: "/gallery",
-      },
-      {
-        name: "Case Studies",
-        href: "",
-      },
-    ],
-  },
-  {
-    name: "Useful Link",
-    links: [
-      {
-        name: "Become a volunteer",
-        href: "",
-      },
-      {
-        name: "Become a donor",
-        href: "",
-      },
-      {
-        name: "See our works",
-        href: "/gallery",
+        href: "/gallery#ourworks",
       },
       {
         name: "Case Studies",
@@ -109,23 +89,23 @@ const quick_links: {
 
 const social_links: {
   name: string;
-  href: "";
+  href: string;
   icon: React.ReactNode;
 }[] = [
   {
-    name: "Facebook",
-    href: "",
-    icon: <FacebookIcon fontSize="large" />,
+    name: "LinkedIn",
+    href: "https://in.linkedin.com/company/seerakku",
+    icon: <LinkedInIcon fontSize="large" />,
   },
   {
     name: "Instagram",
-    href: "",
+    href: "https://www.instagram.com/0xseerakku/",
     icon: <InstagramIcon fontSize="large" />,
   },
   {
-    name: "Youtube",
-    href: "",
-    icon: <YouTubeIcon fontSize="large" />,
+    name: "X",
+    href: 'https://twitter.com/0xSeerakku',
+    icon: <XIcon fontSize="large" />,
   },
 ];
 
@@ -163,11 +143,13 @@ const Footer = () => {
       <div className="layout-section-xl">
         <div className="w-full flex flex-col xl:flex-row xl:justify-between xl:items-center mb-6">
           <div className="max-w-[234px] mb-6 xl:m-0">
+            <Link href={'/'}>
             <Image
               src={logo_text_footer}
               alt="Seerakku Logo"
               className="w-full"
-            />
+              />
+              </Link>
           </div>
           <QuickLinks />
         </div>
