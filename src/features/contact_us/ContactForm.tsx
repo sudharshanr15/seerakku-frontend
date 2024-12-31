@@ -1,8 +1,38 @@
+"use client";
+
 import SocialLinks from "@/components/SocialLinks";
-import FormInput from "./FormInput";
+import FormInput from "@/components/FormInput";
 import Button from "@/components/buttons/Button";
+import { useForm } from "react-hook-form";
+import { coerce, z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 function ContactForm() {
+  const contact_schema = z.object({
+    full_name: z
+      .string()
+      .min(3, { message: "Full Name must contain at least 3 character(s)" }),
+    email: z.string().email(),
+    mobile_no: z
+      .string()
+      .refine((value) => /^[+]{1}(?:[0-9-()/.]\s?){6,15}[0-9]{1}$/.test(value)),
+    bio: z.string().optional(),
+  });
+
+  type ContactType = z.infer<typeof contact_schema>;
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactType>({
+    resolver: zodResolver(contact_schema),
+  });
+
+  function onSubmit(data) {
+    console.log(data);
+  }
+
   return (
     <section className="layout-section-xl pt-0">
       <div className="flex">
@@ -20,23 +50,43 @@ function ContactForm() {
           </div>
         </div>
         <div className="w-full xl:w-1/2 bg-primary bg-opacity-20 p-10">
-          <form className="">
+          <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-6">
-              <FormInput placeholder="Full Name" />
+              <FormInput
+                type="text"
+                placeholder="Full Name"
+                name="full_name"
+                error={errors.full_name}
+                register={register}
+              />
             </div>
             <div className="mb-6">
-              <FormInput type="email" placeholder="Email Address" />
+              <FormInput
+                type="email"
+                placeholder="Email Address"
+                register={register}
+                name="email"
+                error={errors.email}
+              />
             </div>
             <div className="mb-6">
-              <FormInput type="text" placeholder="Mobile Number" />
+              <FormInput
+                placeholder="Mobile Number"
+                register={register}
+                name="mobile_no"
+                error={errors.mobile_no}
+              />
             </div>
             <div className="mb-6">
               <textarea
                 className="border border-black border-opacity-20 w-full placeholder:text-black px-5 py-2 bg-transparent"
                 placeholder="Tell us about yourself"
+                {...register("bio")}
               ></textarea>
             </div>
-            <Button type="primary_green">Send Now</Button>
+            <Button button_type="submit" type="primary_green">
+              Send Now
+            </Button>
           </form>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { MouseEventHandler } from "react";
 import { ButtonFill, ButtonOutline, ButtonType } from "./type";
 
 const Button = ({
+  button_type = "button",
   type,
   children,
   className,
@@ -9,6 +10,7 @@ const Button = ({
   onClick,
   ...props
 }: {
+  button_type?: "button" | "submit" | "reset" | undefined;
   type: ButtonType;
   children: React.ReactNode;
   className?: string;
@@ -19,6 +21,7 @@ const Button = ({
 
   return (
     <button
+      type={button_type}
       className={`py-3 px-5 ${class_name} uppercase ${className} text-lg font-big-noodle-titling`}
       onClick={onClick}
       {...props}
