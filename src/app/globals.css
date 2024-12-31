@@ -52,3 +52,12 @@ html {
     background-position: center;
     background-size: cover;
 }
+
+.hero-slide-pagination.swiper-pagination-bullet {
+    background: none;
+    @apply w-auto h-auto border-0 text-white font-big-noodle-titling opacity-100;
+}
+
+.hero-slide-pagination.swiper-pagination-bullet-active {
+    @apply text-30 text-primary;
+}

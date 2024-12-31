@@ -16,6 +16,7 @@
     "@mui/material": "^6.2.1",
     "@next/font": "^14.2.15",
     "@radix-ui/themes": "^3.1.6",
+    "animejs": "^3.2.2",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
