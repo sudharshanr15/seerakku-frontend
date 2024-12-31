@@ -1,9 +1,7 @@
 import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import SocialLinks from "./SocialLinks";
 
 const footer_links: {
   name: string;
@@ -107,28 +105,6 @@ const quick_links: {
   },
 ];
 
-const social_links: {
-  name: string;
-  href: "";
-  icon: React.ReactNode;
-}[] = [
-  {
-    name: "Facebook",
-    href: "",
-    icon: <FacebookIcon fontSize="large" />,
-  },
-  {
-    name: "Instagram",
-    href: "",
-    icon: <InstagramIcon fontSize="large" />,
-  },
-  {
-    name: "Youtube",
-    href: "",
-    icon: <YouTubeIcon fontSize="large" />,
-  },
-];
-
 const Footer = () => {
   function QuickLinks({ className }: { className?: string }) {
     return (
@@ -141,18 +117,6 @@ const Footer = () => {
           >
             {link.name}
           </Link>
-        ))}
-      </div>
-    );
-  }
-
-  function SocialLinks() {
-    return (
-      <div className="flex gap-7">
-        {social_links.map((link, index) => (
-          <a href={link.href} className="text-white" key={index}>
-            {link.icon}
-          </a>
         ))}
       </div>
     );

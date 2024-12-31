@@ -46,3 +46,9 @@ html {
         @apply opacity-50;
     }
 }
+
+.contact-form-desc {
+    background: url("/assets/images/MGM-Environmental-Day-2023.jpeg");
+    background-position: center;
+    background-size: cover;
+}
