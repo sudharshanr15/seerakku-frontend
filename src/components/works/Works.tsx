@@ -56,8 +56,7 @@ function Works() {
         <div className="text-center">
           <h2 className="heading-2">Our Works</h2>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti
+          Working towards the United Nations' Sustainable Development Goals, Seerakku focuses on the following areas
           </p>
         </div>
       </div>

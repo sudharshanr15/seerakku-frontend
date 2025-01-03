@@ -15,7 +15,7 @@ const Partners = () => {
       <h2 className="text-center heading-2">Our Partner</h2>
       <Swiper
         spaceBetween={30}
-        slidesPerView={1.5}
+        slidesPerView={1}
         breakpoints={{
           440: {
             slidesPerView: 2,
@@ -24,10 +24,10 @@ const Partners = () => {
             slidesPerView: 3,
           },
           768: {
-            slidesPerView: 3.5,
+            slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 3,
           },
         }}
         modules={[Pagination]}
@@ -37,9 +37,7 @@ const Partners = () => {
           type: "bullets",
         }}
       >
-        <SwiperSlide>
-          <div className="w-full bg-transparent h-20"></div>
-        </SwiperSlide>
+        {/*  */}
         <SwiperSlide>
 
         <Link href={'https://beyondsustainability.in/'}>
@@ -47,26 +45,20 @@ const Partners = () => {
         </Link>
 
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full bg-transparent h-20"></div>
-        </SwiperSlide>
+        
         <SwiperSlide>
           <Link href={'https://www.kauveryhospital.com/'}>
         <Image className=' w-full h-36 object-contain' src={kauvery} alt='Kauvery'></Image>
           </Link>
 
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full bg-transparent h-20"></div>
-        </SwiperSlide>
+        
         <SwiperSlide>
           <Link href={'https://gro-withus.com/'}>
         <Image className=' w-full h-36 object-contain' src={Gro} alt='GroWithUs'></Image>
           </Link>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full bg-transparent h-20"></div>
-        </SwiperSlide>
+        
         
         <div className="mt-3">
           <div className="partner-pagination"></div>
