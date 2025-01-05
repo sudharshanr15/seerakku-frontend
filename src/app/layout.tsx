@@ -8,6 +8,7 @@ import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 import SupportModal from "@/components/support/SupportModal";
 import ModalProvider from "@/components/modal/ModalProvider";
+import CustomCursor from '@/components/CustomCurson'
 
 export const metadata: Metadata = {
   title: {
@@ -36,6 +37,7 @@ export default function RootLayout({
           {/* </Theme> */}
           <SupportModal />
         </ModalProvider>
+        <CustomCursor />
       </body>
     </html>
   );
