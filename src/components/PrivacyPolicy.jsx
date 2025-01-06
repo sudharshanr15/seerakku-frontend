@@ -1,158 +1,93 @@
-import React from "react";
+"use client";
 
-const page = () => {
-    return (
-        <div className="w-full md:max-w-1440 mx-auto">
-            <div className="flex flex-col gap-6  font-Montserrat text-base px-20 bg-black bg-opacity-90 text-white  md:text-lg">
-                <h1 className="my-5 text-4xl sm:text-5xl font-bold mt-36">
-                    Privacy Policy
-                </h1>
-                <p>
-                    At Seerakku, we respect your privacy and are committed to
-                    protecting it through this Privacy Policy. This document
-                    outlines how we collect, use, and safeguard your personal
-                    information when you interact with our platform and
-                    services. By accessing our services, you agree to the
-                    practices described in this Privacy Policy.
-                </p>
-                <p>
-                    Please read this Privacy Policy carefully to understand our
-                    views and practices regarding your personal data and how we
-                    will handle it. If you do not agree with the terms outlined
-                    in this policy, please do not use our platform.
-                </p>
-
-                <h2 className="text-2xl font-semibold my-4">Information We Collect</h2>
-                <p>
-                    Seerakku collects personal and non-personal information to
-                    improve your experience and provide better services. The
-                    types of information we may collect include:
-                </p>
-
-                <h3 className="text-xl font-semibold mt-4">1. Personal Information</h3>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>Name, including first and last name.</li>
-                    <li>Email address and alternate contact details.</li>
-                    <li>Phone number and communication preferences.</li>
-                    <li>Physical address, ZIP/postal code, and other location details.</li>
-                    <li>Payment information, such as credit card or banking details, for transaction processing.</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold mt-4">2. Non-Personal Information</h3>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>Browser type, operating system, and device information.</li>
-                    <li>IP address and general location data.</li>
-                    <li>Usage data, such as pages visited, links clicked, and time spent on the platform.</li>
-                    <li>Referring website URLs and search queries.</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold my-4">How We Use Your Information</h2>
-                <p>
-                    Seerakku uses your information for the following purposes:
-                </p>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>
-                        To personalize and enhance your experience on our
-                        platform.
-                    </li>
-                    <li>To process transactions and deliver requested services.</li>
-                    <li>To communicate with you regarding updates, promotions, and support.</li>
-                    <li>To improve our platform, services, and user interface.</li>
-                    <li>
-                        To detect and prevent fraud, unauthorized access, or
-                        other illegal activities.
-                    </li>
-                    <li>To comply with legal obligations and enforce our policies.</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold my-4">Sharing Your Information</h2>
-                <p>
-                    We do not sell or rent your personal information to third
-                    parties. However, we may share your information in the
-                    following scenarios:
-                </p>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>
-                        With service providers and partners who assist us in
-                        delivering our services, such as payment processors,
-                        hosting providers, and analytics platforms.
-                    </li>
-                    <li>
-                        With law enforcement or regulatory authorities, as
-                        required by law or to protect the rights, safety, and
-                        property of Seerakku and its users.
-                    </li>
-                    <li>
-                        With your consent, for purposes not covered by this
-                        Privacy Policy.
-                    </li>
-                    <li>
-                        In the event of a business transfer, merger, or
-                        acquisition, your information may be transferred to the
-                        new entity.
-                    </li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold my-4">Cookies and Tracking Technologies</h2>
-                <p>
-                    Seerakku uses cookies and similar tracking technologies to
-                    collect and analyze information about your usage of our
-                    platform. Cookies help us:
-                </p>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>Understand user preferences and improve performance.</li>
-                    <li>Remember login details and provide a seamless experience.</li>
-                    <li>Deliver personalized content and advertisements.</li>
-                </ul>
-                <p>
-                    You can manage your cookie preferences through your browser
-                    settings. However, disabling cookies may impact your
-                    experience on our platform.
-                </p>
-
-                <h2 className="text-2xl font-semibold my-4">Data Security</h2>
-                <p>
-                    Seerakku implements robust security measures to protect your
-                    data from unauthorized access, alteration, or disclosure.
-                    These measures include encryption, secure servers, and
-                    regular security audits. However, no method of transmission
-                    over the internet or electronic storage is completely
-                    secure, and we cannot guarantee absolute security.
-                </p>
-
-                <h2 className="text-2xl font-semibold my-4">Your Rights and Choices</h2>
-                <p>
-                    You have the following rights regarding your personal
-                    information:
-                </p>
-                <ul className="list-disc flex flex-col gap-4 ml-6">
-                    <li>Access, update, or delete your personal data.</li>
-                    <li>Opt-out of receiving promotional communications.</li>
-                    <li>Request data portability or restriction of processing.</li>
-                    <li>Withdraw consent for data collection and processing.</li>
-                </ul>
-                <p>
-                    To exercise your rights, please contact us at
-                    privacy@seerakku.com. We will respond to your requests in
-                    accordance with applicable laws.
-                </p>
-
-                <h2 className="text-2xl font-semibold my-4">Policy Updates</h2>
-                <p>
-                    Seerakku reserves the right to update this Privacy Policy
-                    periodically to reflect changes in our practices or legal
-                    requirements. We will notify you of significant changes
-                    through our platform or other appropriate channels.
-                </p>
-
-                <p>
-                    If you have any questions or concerns about this Privacy
-                    Policy or our data practices, please contact us at
-                    support@seerakku.com.
-                </p>
-            </div>
-        </div>
-    );
+const PrivacyPolicy = () => {
+  return (
+    <section className="py-16 px-20 mx-auto bg-black bg-opacity-90 text-white">
+      <h1 className="my-5 text-4xl sm:text-5xl pt-20 font-bold">
+        Privacy Policy
+      </h1>
+      <p className="text-lg leading-relaxed mb-6">
+        At Seerakku, we respect your privacy and are committed to safeguarding
+        it through this Privacy Policy. This document outlines how we collect,
+        use, and protect your personal information when you engage with our
+        platform and services. By accessing and using our services, you agree to
+        the practices described in this Privacy Policy. We encourage you to
+        carefully read through this policy to understand our views and practices
+        regarding your personal data and how we will handle it. If you do not
+        agree with the terms outlined here, we kindly ask that you refrain from
+        using our platform.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        Seerakku collects both personal and non-personal information to enhance
+        your experience and offer better services. Personal information we may
+        collect includes your name (both first and last), email address, phone
+        number, physical address, payment details, and other communication
+        preferences. Additionally, we may collect non-personal information such
+        as browser type, operating system, device information, IP address,
+        general location data, usage data (such as pages visited and time spent
+        on the platform), referring website URLs, and search queries. This data
+        helps us understand how you interact with our services and improve your
+        experience.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        We use the information we collect for several purposes. This includes
+        personalizing and enhancing your experience on our platform, processing
+        transactions, delivering requested services, and communicating with you
+        about updates, promotions, and support. We also use this information to
+        improve our platform, services, and user interface, and to detect and
+        prevent fraud or unauthorized activities. Additionally, we may use your
+        data to comply with legal obligations and enforce our policies.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        Seerakku does not sell or rent your personal information to third
+        parties. However, there are some instances where we may share your data.
+        This includes sharing with service providers and partners who help us
+        deliver our services, such as payment processors, hosting providers, and
+        analytics platforms. We may also share your information with law
+        enforcement or regulatory authorities if required by law or to protect
+        the rights, safety, and property of Seerakku and its users. If we obtain
+        your consent, we may share your information for purposes not covered by
+        this Privacy Policy. Furthermore, in the event of a business transfer,
+        merger, or acquisition, your information may be transferred to the new
+        entity.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        To enhance your user experience, Seerakku uses cookies and similar
+        tracking technologies to collect and analyze information regarding your
+        use of our platform. Cookies help us understand user preferences,
+        improve performance, remember login details, and deliver personalized
+        content and advertisements. You can manage your cookie preferences
+        through your browser settings, but please note that disabling cookies
+        may affect your experience on our platform.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        Seerakku takes data security seriously and has implemented strong
+        measures to protect your information from unauthorized access,
+        alteration, or disclosure. These security measures include encryption,
+        secure servers, and regular security audits. However, it is important to
+        note that no method of transmission over the internet or electronic
+        storage is completely secure, and we cannot guarantee absolute security.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        You have several rights regarding your personal information, including
+        the right to access, update, or delete your personal data. You can also
+        opt-out of receiving promotional communications, request data
+        portability, or restrict the processing of your information.
+        Additionally, you can withdraw consent for data collection and
+        processing at any time. To exercise any of these rights, please contact
+        us, and we will respond to your request in accordance with applicable
+        laws.
+      </p>
+      <p className="text-lg leading-relaxed mb-6">
+        Seerakku reserves the right to update this Privacy Policy periodically
+        to reflect changes in our practices or legal requirements. We will
+        notify you of significant updates through our platform or other
+        appropriate channels. If you have any questions or concerns about this
+        Privacy Policy or our data practices, please do not hesitate to contact
+        us.
+      </p>
+    </section>
+  );
 };
 
-export default page;
+export default PrivacyPolicy;
