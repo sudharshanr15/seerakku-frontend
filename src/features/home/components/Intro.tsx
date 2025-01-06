@@ -1,4 +1,5 @@
 import Button from "@/components/buttons/Button";
+import Link from 'next/link'
 
 const Intro = () => {
   return (
@@ -17,7 +18,9 @@ const Intro = () => {
           shrubs, and plants that provide food and habitat for local wildlife
           and absorb and store carbon from the atmosphere. 
         </p>
+        <Link href={'/about#ourstory'}>
         <Button type="primary_green">Learn More</Button>
+        </Link>
       </div>
     </section>
   );

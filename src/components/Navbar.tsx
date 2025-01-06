@@ -67,7 +67,7 @@ const Navbar = () => {
                 onClick={toggleAbout}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 hover:text-primary " href="#">
+                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
                   <p>About Us </p>{" "}
                   <div className={` bg-white w-1 h-1  rounded-full`}></div>
                 </Link>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 onClick={toggleInitiatives}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 hover:text-primary " href="#">
+                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
                   <p>Our Initiatives </p>{" "}
                   <div
                     className={`bg-white w-1 h-1  rounded-full`}
@@ -120,7 +120,7 @@ const Navbar = () => {
             </div>
             {nav_links.map((link, count) => (
               <li
-                className="uppercase text-lg font-normal font-big-noodle-titling hover:text-primary"
+                className="uppercase text-xl font-normal font-big-noodle-titling hover:text-primary"
                 key={count}
               >
                 <Link href={link.href}>{link.name}</Link>
@@ -128,8 +128,8 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={` lg:opacity-100 z-50 `}>
-            <DonateNow type="primary_green" className="me-4 text-black" />
-            <Button type="primary">Become A Volunteer</Button>
+            <DonateNow type="primary_green" className="me-4 text-xl text-black" />
+            <Button className=" text-xl" type="primary">Become A Volunteer</Button>
           </div>
         </nav>
       </div>

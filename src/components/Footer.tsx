@@ -69,11 +69,11 @@ const quick_links: {
 }[] = [
   {
     name: "Terms & Conditions",
-    href: "",
+    href: "/terms",
   },
   {
     name: "Privacy Policy",
-    href: "",
+    href: "/privacy",
   },
   {
     name: "Conflict of Interest Policy",
@@ -128,9 +128,9 @@ const Footer = () => {
               makes a difference. Join us in our mission and make a donation
               today. Together, we can build a greener and more equitable world.
             </p>
-            <button className="border border-white py-2 px-4">
+            {/* <button className="border border-white py-2 px-4">
               Subscribe for newsletter
-            </button>
+            </button> */}
             <SocialLinks />
           </div>
           <div className="flex-grow flex-shrink-0">

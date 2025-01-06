@@ -10,32 +10,32 @@ import InitiativesItem from "./InitiativesItem";
 
 const initiatives_list_1: InitiativesListType[] = [
   {
-    title: "Tree For Sparrows",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    title: "NOVA",
+    desc: "NOVA, is our prime iniative that ensures that every newborn starts life with a carbon-neareasutral footprint. ",
     image: initiative_1,
   },
   {
-    title: "Tree For Sparrows",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    title: "NEW TREE FOR NEW LIFE",
+    desc: "In partnership with hospitals, we plant a tree to honor each newborn, symbolizing growth and vitality.",
     image: initiative_2,
   },
 ];
 
 const initiatives_list_2: InitiativesListType[] = [
   {
-    title: "Tree For Elephants",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
+    title: "RENTAL FREE AGRO MACHINE",
+    desc: "Our Rental Free Agro Machine program empowers farmers by providing access to agricultural machinery at no cost.",
     image: initiative_3,
   },
   {
-    title: "Tree For Sparrows",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
-    image: initiative_4,
+    title: "WALK FOR PLASTIC",
+    desc: "We organize community walks to collect plastic waste and promote recycling. ",
+    image: initiative_5,
   },
   {
-    title: "Tree For Sparrows",
-    desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.",
-    image: initiative_5,
+    title: "TREE FOR FARMERS",
+    desc: "Our Trees for Farmers initiative collaborates with local farmers to integrate trees into their agricultural practices.",
+    image: initiative_4,
   },
 ];
 

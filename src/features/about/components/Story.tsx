@@ -1,6 +1,6 @@
 function Story() {
   return (
-    <section className="bg-primary bg-opacity-20">
+    <section id="ourstory" className="bg-primary bg-opacity-20">
       <div className="layout-section-lg">
         <h2 className="heading-2 text-center">Our Story</h2>
         <p>
@@ -31,8 +31,8 @@ function Story() {
           <br />
           After getting massive satisfaction from doing good for nature and our
           child, we decided to do this for every newborn in India. So we founded
-          an NGO called Seerakku ( Seerakku is a Tamil word that means{" "}
-          {'" Regulate "'} ).
+          an NGO called Seerakku is a Tamil word that means{" "}
+          {'" Regulate "'} 
         </p>
       </div>
     </section>

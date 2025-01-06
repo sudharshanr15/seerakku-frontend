@@ -14,12 +14,7 @@ const ValuableCount = () => {
         <div className="w-full xl:w-1/3 text-center xl:text-left">
           <h2 className="heading-2">Valuable Count</h2>
           <p className="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+          At Seerakku, we’re committed to creating a positive, lasting change for our planet. Our ongoing efforts in sustainability, conservation, and community empowerment are making a significant difference. Here’s a snapshot of what we’ve achieved so far
           </p>
           {/* <Button type="primary">View More</Button> */}
         </div>
