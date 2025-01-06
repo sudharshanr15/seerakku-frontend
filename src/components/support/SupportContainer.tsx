@@ -12,19 +12,19 @@ const amount_options: {
   amount: number;
 }[] = [
   {
-    name: "$50",
+    name: "50",
     amount: 50,
   },
   {
-    name: "$100",
+    name: "100",
     amount: 100,
   },
   {
-    name: "$200",
+    name: "200",
     amount: 200,
   },
   {
-    name: "$500",
+    name: "500",
     amount: 500,
   },
 ];
@@ -67,7 +67,7 @@ const SupportContainer = () => {
                   key={index}
                   onClick={() => setAmount(option.amount)}
                 >
-                  {option.name}
+                  &#8377;{option.name}
                 </button>
               ))}
             </div>
