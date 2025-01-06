@@ -10,7 +10,7 @@ function InitiativesItem({
   className?: string;
 }) {
   return (
-    <div className={`relative group ${className}`}>
+    <div className={`relative group h-80 ${className}`}>
       <div className="w-full h-full overflow-hidden">
         <Image
           src={item.image}
