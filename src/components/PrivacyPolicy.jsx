@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
     return (
         <div className="w-full md:max-w-1440 mx-auto">
-            <div className="flex flex-col gap-6 m-4 font-Montserrat text-base px-20 md:text-lg">
+            <div className="flex flex-col gap-6  font-Montserrat text-base px-20 bg-black bg-opacity-90 text-white  md:text-lg">
                 <h1 className="my-5 text-4xl sm:text-5xl font-bold mt-36">
                     Privacy Policy
                 </h1>

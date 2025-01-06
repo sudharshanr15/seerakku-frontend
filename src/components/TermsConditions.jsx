@@ -1,6 +1,6 @@
 export default function TermsOfService() {
     return (
-        <section className="p-5 sm:p-20 text-base md:text-lg flex flex-col gap-5  font-Montserrat">
+        <section className="p-5 sm:p-20 text-base md:text-lg flex flex-col gap-5 bg-black bg-opacity-90 text-white  font-Montserrat">
             <p className="my-5 text-4xl sm:text-5xl pt-20 font-bold">
                 Terms & Conditions
             </p>

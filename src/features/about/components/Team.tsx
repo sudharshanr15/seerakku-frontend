@@ -105,7 +105,7 @@ const team_list: {
   },
   {
     name: "SP Harish",
-    position: "Heaf of Corporate Volunteering",
+    position: "Head of Corporate Volunteering",
     img: Harish,
     social_handles: [
       {
