@@ -2,7 +2,7 @@
 
 const TermsAndConditions = () => {
   return (
-    <section className="py-16 px-20 mx-auto bg-black bg-opacity-90 text-white">
+    <section className="py-16 px-5 sm:px-20 mx-auto bg-black bg-opacity-90 text-white">
       <h1 className="my-5 text-4xl sm:text-5xl pt-20 font-bold">
         Terms & Conditions
       </h1>
