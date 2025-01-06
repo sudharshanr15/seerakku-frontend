@@ -39,7 +39,7 @@ const Navbar = () => {
     },
     {
       name: "Contact Us",
-      href: "contact",
+      href: "contact_us",
     },
   ];
   return (
