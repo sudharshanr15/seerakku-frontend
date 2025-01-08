@@ -1,5 +1,3 @@
-"use client";
-
 const TermsAndConditions = () => {
   return (
     <section className="py-16 px-5 sm:px-20 mx-auto bg-black bg-opacity-90 text-white">
@@ -42,7 +40,10 @@ const TermsAndConditions = () => {
       </p>
       <p className="text-lg leading-relaxed mb-6">
         Our platform is designed to simplify and enhance your experience with
-        us. For any questions, you can contact us.
+        us. For any questions, you can contact us via email at{" "}
+        <a href="mailto:climateaction@seerakku.in" className="text-blue-400">
+          climateaction@seerakku.in
+        </a>.
       </p>
       <p className="text-lg leading-relaxed mb-6">
         By agreeing to these Terms of Service, you represent that you are at
