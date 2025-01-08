@@ -2,6 +2,7 @@ import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
+import { logo_text } from "@/assets";
 
 const footer_links: {
   name: string;
@@ -56,7 +57,7 @@ const footer_links: {
         href: "/gallery#ourworks",
       },
       {
-        name: "Case Studies",
+        name: "Become a Partner",
         href: "",
       },
     ],
@@ -109,7 +110,7 @@ const Footer = () => {
           <div className="max-w-[234px] mb-6 xl:m-0">
             <Link href={'/'}>
             <Image
-              src={logo_text_footer}
+              src={logo_text}
               alt="Seerakku Logo"
               className="w-full"
               />
