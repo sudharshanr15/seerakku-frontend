@@ -1,9 +1,12 @@
+"use client"
 import Button from "@/components/buttons/Button";
 import Image from "next/image";
 import { get_involved_image_1, partner, volunteer } from "../assets";
 import ImageTint from "@/components/ImageTint";
+import { useModal } from '@/components/modal/ModalProvider'
 
 const GetInvolved = () => {
+  const { open } = useModal();
   return (
     <section className="bg-primary bg-opacity-30">
       <div className="layout-section-lg pb-0 text-center">
@@ -49,7 +52,7 @@ const GetInvolved = () => {
                   <p className="text-white font-normal mb-3">
                     Support our organization financially by making a donation.
                   </p>
-                  <Button className=" hover:scale-105 transition" type="primary">Donate Now</Button>
+                  <Button onClick={open} className=" hover:scale-105 transition" type="primary">Donate Now</Button>
                 </div>
               </div>
             </ImageTint>
