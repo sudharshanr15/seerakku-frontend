@@ -8,32 +8,7 @@ import ShadowContainer from "@/components/ShadowContainer";
 import { ColorType } from "@/types/ColorType";
 import DonatePageLink from "../buttons/DonatePageLink";
 
-const amount_options: {
-  name: string;
-  amount: number;
-}[] = [
-  {
-    name: "50",
-    amount: 50,
-  },
-  {
-    name: "100",
-    amount: 100,
-  },
-  {
-    name: "200",
-    amount: 200,
-  },
-  {
-    name: "500",
-    amount: 500,
-  },
-];
-
 const SupportContainer = () => {
-  const [amount, setAmount] = useState(50);
-
-  useEffect(() => {}, [amount]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 bg-white">
@@ -52,37 +27,7 @@ const SupportContainer = () => {
           difference. Join us in our mission and make a donation today.
           Together, we can build a greener and more equitable world.
         </p>
-        <form className="">
-          <div className="mb-2">
-            <label
-              className="font-bold text-xl block mb-4"
-              htmlFor="donate_amt"
-            >
-              I would like to give
-            </label>
-            <div className="flex gap-2 mb-4 ">
-              {amount_options.map((option, index) => (
-                <button
-                  type="button"
-                  className={`${option.amount == amount ? "bg-primary" : "outline outline-black outline-1"} py-2 px-4 text-black`}
-                  key={index}
-                  onClick={() => setAmount(option.amount)}
-                >
-                  &#8377;{option.name}
-                </button>
-              ))}
-            </div>
-            <input
-              type="text"
-              className="text-center bg-neutral-100 p-2 mb-4"
-              placeholder="Enter your amount"
-              id="donate_amt"
-              value={amount}
-              onChange={(e) => setAmount(Number(e.target.value))}
-            />
-          </div>
-          <DonatePageLink />
-        </form>
+        <DonatePageLink />
       </div>
     </div>
   );
