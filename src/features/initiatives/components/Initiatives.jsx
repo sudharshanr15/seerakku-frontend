@@ -85,7 +85,7 @@ const Initiative = () => {
           </div>
 
           <div className=" h-full lg:w-1/2">
-            <p className=" heading-2">WALK FOR PLASTIC</p>
+            <p className=" heading-2">Plastic Pollution Mitigation</p>
             <div className="pb-10 flex flex-col gap-5 text-lg">
               <p>
               Join us in our "Walk for Plastic" initiative, where we organize community walks to collect plastic waste and promote recycling. This aims to  raise awareness about the impact of plastic pollution. By coming together to reduce plastic waste, we contribute to a cleaner, healthier planet and also a sense of community responsibility.
@@ -104,7 +104,7 @@ const Initiative = () => {
         </div>
 
         <div className=" h-full lg:w-1/2 ">
-          <p className=" heading-2">TREE FOR FARMERS</p>
+          <p className=" heading-2">Agroforestry for Sustainable Livelihoods</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
             Our "Trees for Farmers" initiative collaborates with local farmers to integrate trees into their agricultural practices. By establishing agroforestry systems, we help improve soil health, increase biodiversity, and enhance crop yields. This program supports farmers' livelihoods and contributes to environmental conservation. Together, we work towards a future of ecological balance.
@@ -142,7 +142,7 @@ const Initiative = () => {
         </div>
 
         <div className=" h-full lg:w-1/2 ">
-          <p className=" heading-2">REVIVE BLUE</p>
+          <p className=" heading-2">Waterbody Restoration and Conservation</p>
           <div className="pb-10 flex flex-col gap-5 text-lg">
             <p>
             Our "Revive Blue" program is dedicated to restoring and protecting our water bodies. Through clean-up drives and conservation efforts, we aim to rejuvenate water bodies. This initiative enhances water quality, supports aquatic life, and ensures that future generations can enjoy clean and healthy water. Join us in our mission to revive and preserve our precious blue resources.

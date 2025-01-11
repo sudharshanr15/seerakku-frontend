@@ -7,8 +7,7 @@ function Hero() {
     <PageHero>
       <HeroHeading>About Us</HeroHeading>
       <HeroDescription>
-        Through our efforts, we strive to create a sustainable future for all
-        and mitigate the effects of climate change.
+      Seerakku is a passionate environmental organization dedicated to conserving nature, mitigating climate change, and fostering sustainable development.
       </HeroDescription>
     </PageHero>
   );
