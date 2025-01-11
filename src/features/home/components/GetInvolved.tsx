@@ -1,9 +1,12 @@
+"use client";
 import Button from "@/components/buttons/Button";
 import Image from "next/image";
 import { get_involved_image_1, partner, volunteer  } from "../assets";
 import ImageTint from "@/components/ImageTint";
+import { useDonateModal } from "@/components/modal/DonateModalProvider";
 
 const GetInvolved = () => {
+  const { open } = useDonateModal();
   return (
     <section className="bg-primary bg-opacity-30">
       <div className="layout-section-lg pb-0 text-center">
@@ -16,7 +19,7 @@ const GetInvolved = () => {
       </div>
       <div className="layout-section-xl pt-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-         
+
               <div
                 className="w-full bg-primary text-white relative overflow-hidden aspect-square"
               >
@@ -38,7 +41,7 @@ const GetInvolved = () => {
                   </div>
                 </ImageTint>
               </div>
-         
+
               <div
                 className="w-full bg-primary-green text-white relative overflow-hidden aspect-square"
               >
@@ -59,7 +62,7 @@ const GetInvolved = () => {
                   </div>
                 </ImageTint>
               </div>
-         
+
               <div
                 className="w-full bg-secondary-forest text-white relative overflow-hidden aspect-square"
               >

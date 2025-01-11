@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 import SupportModal from "@/components/support/SupportModal";
-import ModalProvider from "@/components/modal/ModalProvider";
+import DonateModalProvider from "@/components/modal/DonateModalProvider";
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`bg-foreground ${itcAvanteGarde.className} ${bigNoodleTitling.variable} antialiased`}
       >
-        <ModalProvider>
+        <DonateModalProvider>
           {/* <Theme> */}
           <Navbar />
           <MNavbar />
@@ -35,7 +35,7 @@ export default function RootLayout({
           <Footer />
           {/* </Theme> */}
           <SupportModal />
-        </ModalProvider>
+          </DonateModalProvider>
       </body>
     </html>
   );

@@ -10,15 +10,15 @@ interface ModalContextType {
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
-export const useModal = () => {
+export const useDonateModal = () => {
   const context = useContext(ModalContext);
   if (!context) {
-    throw new Error("useModal must be used within a ModalProvider");
+    throw new Error("useDonateModal must be used within a DonateModalProvider");
   }
   return context;
 };
 
-function ModalProvider({ children }: { children: React.ReactNode }) {
+function DonateModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const open = () => setIsOpen(true);
@@ -31,4 +31,4 @@ function ModalProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default ModalProvider;
+export default DonateModalProvider;

@@ -1,13 +1,13 @@
-import ModalWrapper from "@/components/modal/ModalWrapper";
-import SupportContainer from "./SupportContainer";
+import DonateModalWrapper from "../modal/DonateModalWrapper";
+import DonateModal from "./DonateModal";
 
 function SupportModal() {
   return (
-    <ModalWrapper>
-      <div className="layout-section-xl p-10 bg-white">
-        <SupportContainer />
+    <DonateModalWrapper>
+      <div className="min-h-screen layout-section-xl p-10 bg-white">
+        <DonateModal />
       </div>
-    </ModalWrapper>
+    </DonateModalWrapper>
   );
 }
 
