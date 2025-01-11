@@ -1,4 +1,8 @@
+"use client"
+import {useEffect} from 'react'
 import Image, { StaticImageData } from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   afforestation,
   agroforestry,
@@ -40,6 +44,9 @@ const what_we_do: {
 ];
 
 function WhatWeDo() {
+  useEffect(() => {
+		AOS.init({ duration: 2000 });
+	}, []);
   return (
     <section className="layout-section-xl">
       <div className="max-w-screen-md mx-auto text-center mb-10">
@@ -53,7 +60,7 @@ function WhatWeDo() {
           climate change.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {what_we_do.map((ele, index) => (
           <div className="bg-primary-green bg-opacity-20" key={index}>
             <div className="w-full">

@@ -54,7 +54,7 @@ const Navbar = () => {
   ];
   return (
     <header onClick={closeToggle}
-      className={` hidden lg:block absolute w-full py-6 bg-transparent z-50 font-big-noodle-titling`}
+      className={` hidden lg:block absolute w-full py-6 bg-black z-50 font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className="flex justify-between  items-center gap-8   lg:text-white">
