@@ -7,34 +7,36 @@ import {
 } from "../assets";
 import { InitiativesListType } from "../types";
 import InitiativesItem from "./InitiativesItem";
+import Button from "@/components/buttons/Button";
+import Link from "next/link";
 
 const initiatives_list_1: InitiativesListType[] = [
   {
-    title: "NOVA",
-    desc: "NOVA, is our prime iniative that ensures that every newborn starts life with a carbon-neareasutral footprint. ",
+    title: "Community Engagement and Corporate Volunteering",
+    desc: "Foster community participation in conservation efforts.",
     image: initiative_1,
   },
   {
-    title: "NEW TREE FOR NEW LIFE",
-    desc: "In partnership with hospitals, we plant a tree to honor each newborn, symbolizing growth and vitality.",
+    title: "Reforestation and Afforestation Programs",
+    desc: "Increase green cover in urban and rural areas while enhancing biodiversity.",
     image: initiative_2,
   },
 ];
 
 const initiatives_list_2: InitiativesListType[] = [
   {
-    title: "RENTAL FREE AGRO MACHINE",
-    desc: "Our Rental Free Agro Machine program empowers farmers by providing access to agricultural machinery at no cost.",
+    title: "Eco-Education and Awareness",
+    desc: "Inspire a culture of environmental responsibility.",
     image: initiative_3,
   },
   {
-    title: "WALK FOR PLASTIC",
-    desc: "We organize community walks to collect plastic waste and promote recycling. ",
+    title: "Wildlife Conservation",
+    desc: "Protect and restore wildlife habitats. ",
     image: initiative_5,
   },
   {
-    title: "TREE FOR FARMERS",
-    desc: "Our Trees for Farmers initiative collaborates with local farmers to integrate trees into their agricultural practices.",
+    title: "Sustainable Waste Management",
+    desc: "Turn waste into a resource through eco-friendly solutions.",
     image: initiative_4,
   },
 ];
@@ -94,6 +96,11 @@ const Initiatives = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className=" flex justify-center mt-10">
+        <Link href={"/initiatives"}>
+          <Button type="primary">See Our Gallery</Button>
+        </Link>
       </div>
       {/* <div className="grid grid-cols-3 gap-6">
         {initiatives_list.map((ele, index) => {
