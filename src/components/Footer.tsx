@@ -53,12 +53,12 @@ const footer_links: {
         href: "",
       },
       {
-        name: "See our works",
-        href: "/gallery#ourworks",
-      },
-      {
         name: "Become a Partner",
         href: "",
+      },
+      {
+        name: "See our works",
+        href: "/gallery#ourworks",
       },
     ],
   },

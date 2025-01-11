@@ -119,7 +119,7 @@ function GalleryList() {
                   }
                 }
                 return (
-                  <div className={`w-full ${span_length}`} key={image_index}>
+                  <div className={`w-full h-96 ${span_length}`} key={image_index}>
                     <Image
                       src={image === gallery_5 ? dynamicImage : image}
                       className="w-full h-full object-cover"
