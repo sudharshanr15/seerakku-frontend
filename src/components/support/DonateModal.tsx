@@ -4,22 +4,10 @@ import Image from "next/image";
 import { support_image } from "@/assets";
 import DonateNow from "@/components/buttons/DonateNow";
 import { useEffect } from "react";
+import Button from "../buttons/Button";
+import DonatePageLink from "../buttons/DonatePageLink";
 
 const DonateModal = () => {
-  useEffect(() => {
-    const rzpPaymentForm = document.getElementById("rzp_payment_form");
-
-    if (!rzpPaymentForm?.hasChildNodes()) {
-
-      const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-      script.async = true;
-      script.dataset.payment_button_id = "pl_Pi2BCjz6jR5b16";
-      rzpPaymentForm!.appendChild(script);
-
-    }
-
-  });
 
   return (
     <div className="flex flex-col gap-5 bg-white h-full">
@@ -38,8 +26,7 @@ const DonateModal = () => {
           difference. Join us in our mission and make a donation today.
           Together, we can build a greener and more equitable world.
         </p>
-        <form id="rzp_payment_form">
-        </form>
+        <DonatePageLink />
       </div>
     </div>
   );

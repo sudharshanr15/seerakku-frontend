@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import DonateNow from "@/components/buttons/DonateNow";
 import ShadowContainer from "@/components/ShadowContainer";
 import { ColorType } from "@/types/ColorType";
+import DonatePageLink from "../buttons/DonatePageLink";
 
 const amount_options: {
   name: string;
@@ -80,7 +81,7 @@ const SupportContainer = () => {
               onChange={(e) => setAmount(Number(e.target.value))}
             />
           </div>
-          <DonateNow type="primary" icon />
+          <DonatePageLink />
         </form>
       </div>
     </div>
