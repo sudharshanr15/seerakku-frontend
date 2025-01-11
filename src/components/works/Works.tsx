@@ -79,6 +79,7 @@ function Works() {
               prevEl: ".works-prev-item",
               enabled: true,
             }}
+            loop={true}
             watchOverflow={true}
             modules={[Navigation]}
             initialSlide={1}
