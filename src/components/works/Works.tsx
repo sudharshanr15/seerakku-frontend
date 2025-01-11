@@ -13,26 +13,38 @@ import "swiper/css/navigation";
 const works_list: WorksItemType[] = [
   {
     title:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et...",
+      "NO POVERTY",
+    desc: "We provide agroforestry opportunities for farmers to improve their livelihoods and promote sustainable land-use practices.",
     image: works_1,
   },
   {
     title:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et...",
+      "CLEARN WATER & SANITATION",
+    desc: "We work towards restoring water sources through reforestation and watershed management initiatives.",
     image: works_1,
   },
   {
     title:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et...",
+      "ZERO HUNGER",
+    desc: "Our afforestation initiatives provide food and habitat for wildlife, while our agroforestry programs promote sustainable farming practices and help increase crop yields.",
     image: works_1,
   },
   {
     title:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et...",
+      "CLIMATE ACTION",
+    desc: "Seerakku is committed to promoting coastal plantations and marine conservation initiatives to protect and preserve marine ecosystems.",
+    image: works_1,
+  },
+  {
+    title:
+      "LIFE BELOW WATER",
+    desc: "Seerakku is committed to promoting coastal plantations and marine conservation initiatives to protect and preserve marine ecosystems.",
+    image: works_1,
+  },
+  {
+    title:
+      "Partnership for the Goals",
+    desc: "We work with local communities, government bodies, and other organizations to achieve our sustainability goals and positively impact the environment and local communities in India.",
     image: works_1,
   },
 ];
@@ -44,8 +56,7 @@ function Works() {
         <div className="text-center">
           <h2 className="heading-2">Our Works</h2>
           <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti
+          Working towards the United Nations' Sustainable Development Goals, Seerakku focuses on the following areas
           </p>
         </div>
       </div>
@@ -68,6 +79,7 @@ function Works() {
               prevEl: ".works-prev-item",
               enabled: true,
             }}
+            loop={true}
             watchOverflow={true}
             modules={[Navigation]}
             initialSlide={1}

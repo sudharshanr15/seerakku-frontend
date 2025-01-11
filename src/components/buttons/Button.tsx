@@ -22,7 +22,7 @@ const Button = ({
   return (
     <button
       type={button_type}
-      className={`py-3 px-5 ${class_name} uppercase ${className} text-lg font-big-noodle-titling hover:border-2 duration-500 transition box-border`}
+      className={`py-3 px-5 ${class_name} uppercase ${className} text-lg font-big-noodle-titling hover:border-4 hover:px-4 hover:py-2  `}
       onClick={onClick}
       {...props}
     >

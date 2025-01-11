@@ -1,3 +1,8 @@
+"use client"
+import {useEffect} from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Image, { StaticImageData } from "next/image";
 import { image_1, image_2, image_3, image_4, image_5 } from "../assets";
 
@@ -41,6 +46,10 @@ const focus_list: FocusListType[] = [
 ];
 
 function FocusItem({ item }: { item: FocusListType }) {
+  useEffect(() => {
+		AOS.init({ duration: 2000 });
+	}, []);
+
   return (
     <div className="">
       <div className="w-full mb-5">
@@ -58,7 +67,7 @@ function FocusItem({ item }: { item: FocusListType }) {
 
 function FocusList() {
   return (
-    <section className="layout-section-xl">
+    <section data-aos="fade-right" className="layout-section-xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-7">
         {focus_list.map((item, index) => (
           <FocusItem item={item} key={index} />

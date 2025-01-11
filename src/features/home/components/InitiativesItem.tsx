@@ -10,12 +10,12 @@ function InitiativesItem({
   className?: string;
 }) {
   return (
-    <div className={`relative ${className}`}>
-      <div className="w-full h-full">
+    <div className={`relative group h-80 ${className}`}>
+      <div className="w-full h-full overflow-hidden">
         <Image
           src={item.image}
           alt="Get Involved"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
         />
       </div>
       <ImageTint>

@@ -10,17 +10,17 @@ const social_links: {
   {
   name: "LinkedIn",
   href: "https://in.linkedin.com/company/seerakku",
-  icon: <LinkedInIcon fontSize="large" />,
+  icon: <LinkedInIcon className=' hover:text-blue-500' fontSize="large" />,
 },
 {
   name: "Instagram",
   href: "https://www.instagram.com/0xseerakku/",
-  icon: <InstagramIcon fontSize="large" />,
+  icon: <InstagramIcon className=' hover:text-red-400' fontSize="large" />,
 },
 {
   name: "X",
   href: 'https://twitter.com/0xSeerakku',
-  icon: <XIcon fontSize="large" />,
+  icon: <XIcon className=' hover:text-blue-500' fontSize="large" />,
 },
 ];
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -9,57 +9,49 @@ import { Navigation } from "swiper/modules";
 import Button from "@/components/buttons/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { image_1, image_2, image_3, image_4, image_5 } from "./assets";
+import { gallery_1, gallery_2, gallery_3, gallery_4, gallery_5, gallery_6, gallery_7 } from "./assets";
 import Image, { StaticImageData } from "next/image";
 
 const gallery_list: {
   id: number;
   name: string;
 }[] = [
-  {
-    id: 1,
-    name: "Nova",
-  },
-  {
-    id: 2,
-    name: "New Tree New Life",
-  },
-  {
-    id: 3,
-    name: "One Student One Life",
-  },
-  {
-    id: 4,
-    name: "Plant & Greet",
-  },
-  {
-    id: 5,
-    name: "Tree for Farmers",
-  },
-  {
-    id: 6,
-    name: "Tree for Elephants",
-  },
-  {
-    id: 7,
-    name: "Tree for Sparrows",
-  },
+  { id: 1, name: "Nova" },
+  { id: 2, name: "New Tree New Life" },
+  { id: 3, name: "One Student One Life" },
+  { id: 4, name: "Plant & Greet" },
+  { id: 5, name: "Tree for Farmers" },
+  { id: 6, name: "Tree for Elephants" },
+  { id: 7, name: "Tree for Sparrows" },
 ];
 
 const gallery_images: {
   [key: string]: StaticImageData[];
 } = {
-  Nova: [image_1, image_2, image_3, image_4, image_5],
-  "New Tree New Life": [image_1, image_2, image_3, image_4, image_5],
-  "One Student One Life": [image_1, image_2, image_3, image_4, image_5],
-  "Plant & Greet": [image_1, image_2, image_3, image_4, image_5],
-  "Tree for Farmers": [image_1, image_2, image_3, image_4, image_5],
-  "Tree for Elephants": [image_1, image_2, image_3, image_4, image_5],
-  "Tree for Sparrows": [image_1, image_2, image_3, image_4, image_5],
+  Nova: [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "New Tree New Life": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "One Student One Life": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "Plant & Greet": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "Tree for Farmers": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "Tree for Elephants": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
+  "Tree for Sparrows": [gallery_1, gallery_2, gallery_3, gallery_4, gallery_5],
 };
 
 function GalleryList() {
   const [currentGalleryItem, setCurrentGalleryItem] = useState("Nova");
+  const [dynamicImage, setDynamicImage] = useState<StaticImageData>(gallery_5);
+
+  useEffect(() => {
+    const images = [gallery_5, gallery_6, gallery_7]; 
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % images.length; 
+      setDynamicImage(images[index]);
+    }, 3000); 
+
+    return () => clearInterval(interval); 
+  }, []);
 
   return (
     <section className="layout-section-xl">
@@ -127,9 +119,9 @@ function GalleryList() {
                   }
                 }
                 return (
-                  <div className={`w-full ${span_length}`} key={image_index}>
+                  <div className={`w-full h-96 ${span_length}`} key={image_index}>
                     <Image
-                      src={image}
+                      src={image === gallery_5 ? dynamicImage : image}
                       className="w-full h-full object-cover"
                       alt="Gallery Image"
                     />

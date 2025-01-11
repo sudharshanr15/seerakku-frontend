@@ -25,6 +25,11 @@ const Navbar = () => {
     setIsInitiativesOpen((prevState) => !prevState);
   }
 
+  function closeMenu() {
+    setIsMenuOpen(false);
+    setIsAboutOpen(false);
+    setIsInitiativesOpen(false);
+  }
   const nav_links: {
     name: string;
     href: string;
@@ -39,18 +44,18 @@ const Navbar = () => {
     },
     {
       name: "Contact Us",
-      href: "contact",
+      href: "contact_us",
     },
   ];
   return (
     <header 
-      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-transparent"} block lg:hidden absolute w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
+      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-black"} block lg:hidden absolute w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className=" flex flex-col justify-between pl-8 lg:items-center gap-8 ">
          
          <div className=" flex justify-between pr-6">
-           <Link className=" " href={"/"}>
+           <Link onClick={closeMenu} className=" " href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
             </Link>
             <Image
@@ -68,25 +73,25 @@ const Navbar = () => {
                 onClick={toggleAbout}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 " href="#">
+                <div className=" flex items-center gap-2 ">
                   <p>About Us </p>{" "}
                   <div
-                    className={` bg-white w-1 h-1  rounded-full`}
+                    className={` bg-primary w-1 h-1  rounded-full`}
                   ></div>
-                </Link>
+                </div>
               </li>
 
               {isAboutOpen && (
-                <ul className="absolute bg-white z-50 text-black rounded-md shadow-lg mt-2 w-36 flex flex-col gap-2 p-3">
+                <ul className=" bg-white z-50 text-black  mt-2 w-36 flex flex-col gap-2 p-3">
                   <div className=" flex gap-2">
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="/about">
+                  <Link onClick={closeMenu} href="/about">
                     <li className=" text-lg">Who we are</li>
                   </Link>
-                  <Link href="/whatwedo">
+                  <Link onClick={closeMenu} href="/whatwedo">
                     <li className=" text-lg">What we do</li>
                   </Link>
                 </ul>
@@ -97,25 +102,25 @@ const Navbar = () => {
                 onClick={toggleInitiatives}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 " href="#">
+                <div className=" flex items-center gap-2 ">
                   <p>Our Initiatives </p>{" "}
                   <div
-                    className={` ${isMenuOpen ? "bg-white" : "bg-primary"} w-1 h-1  rounded-full`}
+                    className={` bg-primary w-1 h-1  rounded-full`}
                   ></div>
-                </Link>
+                </div>
               </li>
 
               {isInitiativesOpen && (
-                <ul className="absolute bg-white z-50 text-black rounded-md shadow-lg mt-2 w-36 flex flex-col gap-2 p-3">
+                <ul className=" bg-white z-50 text-black  mt-2 w-36 flex flex-col gap-2 p-3">
                   <div className=" flex gap-2">
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
-                  <Link href="/initiatives">
+                  <Link onClick={closeMenu} href="/initiatives">
                     <li className=" text-lg">Our Initiatives</li>
                   </Link>
-                  <Link href="/gallery">
+                  <Link onClick={closeMenu} href="/gallery">
                     <li className=" text-lg">Our Gallery</li>
                   </Link>
                 </ul>
@@ -126,7 +131,7 @@ const Navbar = () => {
                 className="uppercase text-lg font-normal font-big-noodle-titling"
                 key={count}
               >
-                <Link href={link.href}>{link.name}</Link>
+                <Link onClick={closeMenu} href={link.href}>{link.name}</Link>
               </li>
             ))}
           </ul>

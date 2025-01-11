@@ -17,12 +17,22 @@ const Navbar = () => {
     setIsMenuOpen((prevState) => !prevState);
   }
 
+  function closeToggle() {
+    
+    if(isAboutOpen)
+      setIsAboutOpen(false);
+    if(isInitiativesOpen)
+      setIsInitiativesOpen(false);
+  }
+
   function toggleAbout() {
     setIsAboutOpen((prevState) => !prevState);
+    setIsInitiativesOpen(false);
   }
 
   function toggleInitiatives() {
     setIsInitiativesOpen((prevState) => !prevState);
+    setIsAboutOpen(false)
   }
 
   const nav_links: {
@@ -43,8 +53,8 @@ const Navbar = () => {
     },
   ];
   return (
-    <header
-      className={` hidden lg:block absolute w-full py-6 bg-transparent z-50 font-big-noodle-titling`}
+    <header onClick={closeToggle}
+      className={` hidden lg:block absolute w-full py-6 bg-black z-50 font-big-noodle-titling`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className="flex justify-between  items-center gap-8   lg:text-white">
@@ -57,7 +67,7 @@ const Navbar = () => {
                 onClick={toggleAbout}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 " href="#">
+                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
                   <p>About Us </p>{" "}
                   <div className={` bg-white w-1 h-1  rounded-full`}></div>
                 </Link>
@@ -71,10 +81,10 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
                   <Link href="/about">
-                    <li className=" text-lg">Who we are</li>
+                    <li className=" text-lg ">Who we are</li>
                   </Link>
                   <Link href="/whatwedo">
-                    <li className=" text-lg">What we do</li>
+                    <li className=" text-lg ">What we do</li>
                   </Link>
                 </ul>
               )}
@@ -84,10 +94,10 @@ const Navbar = () => {
                 onClick={toggleInitiatives}
                 className="uppercase text-lg font-normal font-big-noodle-titling"
               >
-                <Link className=" flex items-center gap-2 " href="#">
+                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
                   <p>Our Initiatives </p>{" "}
                   <div
-                    className={` ${isMenuOpen ? "bg-white" : "bg-primary"} w-1 h-1  rounded-full`}
+                    className={`bg-white w-1 h-1  rounded-full`}
                   ></div>
                 </Link>
               </li>
@@ -100,17 +110,17 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
                   <Link href="/initiatives">
-                    <li className=" text-lg">Our Initiatives</li>
+                    <li className=" text-lg ">Our Initiatives</li>
                   </Link>
                   <Link href="/gallery">
-                    <li className=" text-lg">Our Gallery</li>
+                    <li className=" text-lg ">Our Gallery</li>
                   </Link>
                 </ul>
               )}
             </div>
             {nav_links.map((link, count) => (
               <li
-                className="uppercase text-lg font-normal font-big-noodle-titling"
+                className="uppercase text-xl font-normal font-big-noodle-titling hover:text-primary"
                 key={count}
               >
                 <Link href={link.href}>{link.name}</Link>
@@ -118,8 +128,8 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={` lg:opacity-100 z-50 `}>
-            <DonateNow type="primary_green" className="me-4 text-black" />
-            <Button type="primary">Become A Volunteer</Button>
+            <DonateNow type="primary_green" className="me-4 text-xl text-black" />
+            <Button className=" text-xl" type="primary">Become A Volunteer</Button>
           </div>
         </nav>
       </div>

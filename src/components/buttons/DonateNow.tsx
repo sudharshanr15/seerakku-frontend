@@ -22,12 +22,7 @@ const DonateNow = ({
   const icon_colors = outline ? IconColorsOutline[type] : IconColorsFill[type];
   const { open } = useDonateModal();
   return (
-    <Button
-      type={type}
-      className={` ${className} hover:border-2 duration-500`}
-      outline={outline}
-      onClick={open}
-    >
+    <Button type={type} className={` ${className}`} outline={outline} onClick={open}>
       Donate Now
       {icon && (
         <span className="ms-3">

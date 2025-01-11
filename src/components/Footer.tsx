@@ -2,6 +2,7 @@ import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
+import { logo_text } from "@/assets";
 
 const footer_links: {
   name: string;
@@ -52,12 +53,12 @@ const footer_links: {
         href: "",
       },
       {
-        name: "See our works",
-        href: "/gallery#ourworks",
+        name: "Become a Partner",
+        href: "",
       },
       {
-        name: "Case Studies",
-        href: "",
+        name: "See our works",
+        href: "/gallery#ourworks",
       },
     ],
   },
@@ -69,11 +70,11 @@ const quick_links: {
 }[] = [
   {
     name: "Terms & Conditions",
-    href: "",
+    href: "/terms",
   },
   {
     name: "Privacy Policy",
-    href: "",
+    href: "/privacy",
   },
   {
     name: "Conflict of Interest Policy",
@@ -109,7 +110,7 @@ const Footer = () => {
           <div className="max-w-[234px] mb-6 xl:m-0">
             <Link href={'/'}>
             <Image
-              src={logo_text_footer}
+              src={logo_text}
               alt="Seerakku Logo"
               className="w-full"
               />
@@ -128,9 +129,9 @@ const Footer = () => {
               makes a difference. Join us in our mission and make a donation
               today. Together, we can build a greener and more equitable world.
             </p>
-            <button className="border border-white py-2 px-4">
+            {/* <button className="border border-white py-2 px-4">
               Subscribe for newsletter
-            </button>
+            </button> */}
             <SocialLinks />
           </div>
           <div className="flex-grow flex-shrink-0">

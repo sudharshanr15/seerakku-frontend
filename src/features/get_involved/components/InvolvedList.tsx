@@ -36,7 +36,7 @@ function InvolvedList() {
                     nature, learn new skills, and contribute directly to the
                     well-being of our planet.
                   </p>
-                  <DonateNow type="primary_green" />
+                  <Button type="primary_green">Become A Volunteer</Button>
                 </div>
               </ShadowContainer>
             </div>
