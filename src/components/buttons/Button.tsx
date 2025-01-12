@@ -8,6 +8,7 @@ const Button = ({
   className,
   outline,
   onClick,
+  disabled,
   ...props
 }: {
   button_type?: "button" | "submit" | "reset" | undefined;
@@ -16,6 +17,7 @@ const Button = ({
   className?: string;
   outline?: boolean;
   onClick?: MouseEventHandler;
+  disabled?: boolean
 }) => {
   const class_name = outline ? ButtonOutline[type] : ButtonFill[type];
 
