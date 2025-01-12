@@ -99,7 +99,7 @@ const Initiatives = () => {
       </div>
       <div className=" flex justify-center mt-10">
         <Link href={"/initiatives"}>
-          <Button type="primary">See Our Gallery</Button>
+          <Button type="primary">See More</Button>
         </Link>
       </div>
       {/* <div className="grid grid-cols-3 gap-6">
