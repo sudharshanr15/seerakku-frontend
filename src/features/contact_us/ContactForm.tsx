@@ -78,7 +78,7 @@ function ContactForm() {
             </div>
             <div className="mb-6">
               <FormInput
-                placeholder="Mobile Number"
+                placeholder="Mobile Number e.g (+91 9876554321)"
                 register={register}
                 name="mobile_no"
                 error={errors.mobile_no}
