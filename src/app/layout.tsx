@@ -9,6 +9,7 @@ import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 import SupportModal from "@/components/support/SupportModal";
 import DonateModalProvider from "@/components/modal/DonateModalProvider";
 import CustomCursor from '@/components/CustomCurson'
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: {
@@ -36,8 +37,9 @@ export default function RootLayout({
           <Footer />
           {/* </Theme> */}
           <SupportModal />
-          </DonateModalProvider>
+        </DonateModalProvider>
         <CustomCursor />
+        <ToastContainer position="top-right" hideProgressBar pauseOnHover />
       </body>
     </html>
   );

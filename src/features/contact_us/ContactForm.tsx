@@ -7,8 +7,11 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { addRecord } from "@/features/contact_us/actions/Contact";
 import { contact_schema, ContactType } from "./types";
+import { toast } from "react-toastify";
+import { useState } from "react";
 
 function ContactForm() {
+  const [isSubmitting, setisSubmitting] = useState(false);
 
   const {
     register,
@@ -20,13 +23,21 @@ function ContactForm() {
   });
 
   function onSubmit(data: ContactType) {
+    setisSubmitting(true)
+
     addRecord(data).then(res => {
       setValue("full_name", "")
       setValue("email", "")
       setValue("mobile_no", "")
       setValue("about", "")
-      console.log(res)
-    }).catch(err => console.log(err))
+
+      toast.success("Your message has been sent successfully.")
+
+    }).catch(err => {
+      toast.error("Oops! Something went wrong. Please try submitting your message again.")
+    }).finally(() => {
+      setisSubmitting(false)
+    })
   }
 
   return (
@@ -80,7 +91,7 @@ function ContactForm() {
                 {...register("about")}
               ></textarea>
             </div>
-            <Button button_type="submit" type="primary_green">
+            <Button button_type="submit" type="primary_green" disabled={isSubmitting}>
               Send Now
             </Button>
           </form>
