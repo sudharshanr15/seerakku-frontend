@@ -4,33 +4,29 @@ import SocialLinks from "@/components/SocialLinks";
 import FormInput from "@/components/FormInput";
 import Button from "@/components/buttons/Button";
 import { useForm } from "react-hook-form";
-import { coerce, z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { addRecord } from "@/features/contact_us/actions/Contact";
+import { contact_schema, ContactType } from "./types";
 
 function ContactForm() {
-  const contact_schema = z.object({
-    full_name: z
-      .string()
-      .min(3, { message: "Full Name must contain at least 3 character(s)" }),
-    email: z.string().email(),
-    mobile_no: z
-      .string()
-      .refine((value) => /^[+]{1}(?:[0-9-()/.]\s?){6,15}[0-9]{1}$/.test(value)),
-    bio: z.string().optional(),
-  });
-
-  type ContactType = z.infer<typeof contact_schema>;
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue
   } = useForm<ContactType>({
     resolver: zodResolver(contact_schema),
   });
 
   function onSubmit(data: ContactType) {
-    console.log(data);
+    addRecord(data).then(res => {
+      setValue("full_name", "")
+      setValue("email", "")
+      setValue("mobile_no", "")
+      setValue("about", "")
+      console.log(res)
+    }).catch(err => console.log(err))
   }
 
   return (
@@ -81,7 +77,7 @@ function ContactForm() {
               <textarea
                 className="border border-black border-opacity-20 w-full placeholder:text-black px-5 py-2 bg-transparent"
                 placeholder="Tell us about yourself"
-                {...register("bio")}
+                {...register("about")}
               ></textarea>
             </div>
             <Button button_type="submit" type="primary_green">
