@@ -4,7 +4,7 @@ import DonateNow from "@/components/buttons/DonateNow";
 
 export default function Join(){
     return(
-        <section className=" xl:layout-section-xl  my-20">
+        <section className=" xl:layout-section-xl  mb-10">
             <div className=" text-center mx-auto max-w-lg  p-10 bg-secondary-yellow lg:max-w-4xl">
 
             <p className=" heading-2">Join with us</p>

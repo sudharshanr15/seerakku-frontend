@@ -6,7 +6,7 @@ import Image from "next/image";
 import { get_involved_image_1 } from "../assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
-
+import Link from 'next/link'
 import "swiper/css/bundle";
 import { slide_1, slide_2, slide_3, slide_4, slide_5 } from "../assets/slides";
 import anime from "animejs/lib/anime.es";
@@ -116,7 +116,9 @@ const HeroBanner = () => {
                   </h1>
                   <div className="flex gap-8 xl:mt-8">
                     <DonateNow type="primary" icon />
+                    <Link href={'#ourworks'}>
                     <Button type="primary_green">See Our Works</Button>
+                    </Link>
                   </div>
                 </div>
               </div>
