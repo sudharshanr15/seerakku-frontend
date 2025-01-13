@@ -1,62 +1,53 @@
+"use client";
+
 import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import { logo_text } from "@/assets";
+import { useDonateModal } from "./modal/DonateModalProvider";
 
-const footer_links: {
-  name: string;
-  links: {
+const quick_links_desc: {
     name: string;
     href: string;
-  }[];
 }[] = [
   {
-    name: "Quick Links",
-    links: [
-      {
-        name: "Home",
-        href: "/",
-      },
-      {
-        name: "About Us",
-        href: "/about",
-      },
-      {
-        name: "Our Initiatives",
-        href: "/initiatives",
-      },
-      {
-        name: "Our Focus Area",
-        href: "/our_focus",
-      },
-      {
-        name: "Contact Us",
-        href: "/contact_us",
-      },
-    ],
+    name: "Home",
+    href: "/",
   },
-
   {
-    name: "Useful Link",
-    links: [
-      {
-        name: "Become a volunteer",
-        href: "",
-      },
-      {
-        name: "Become a donor",
-        href: "",
-      },
-      {
-        name: "Become a Partner",
-        href: "",
-      },
-      {
-        name: "See our works",
-        href: "/gallery#ourworks",
-      },
-    ],
+    name: "About Us",
+    href: "/about",
+  },
+  {
+    name: "Our Initiatives",
+    href: "/initiatives",
+  },
+  {
+    name: "Our Focus Area",
+    href: "/our_focus",
+  },
+  {
+    name: "Contact Us",
+    href: "/contact_us",
+  },
+];
+
+const useful_links_desc: {
+  name: string;
+  href: string;
+}[] =   [
+  {
+    name: "Become a volunteer",
+    href: "",
+  },
+  {
+    name: "Become a Partner",
+    href: "",
+  },
+  {
+    name: "See our works",
+    href: "/gallery#ourworks",
   },
 ];
 
@@ -75,6 +66,8 @@ const quick_links: {
 ];
 
 const Footer = () => {
+  const { open } = useDonateModal();
+
   function QuickLinks({ className }: { className?: string }) {
     return (
       <div className={`flex flex-wrap gap-7 ${className} xl:justify-start`}>
@@ -130,11 +123,10 @@ const Footer = () => {
                 <QuickLinks />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 xl:gap-20">
-                {footer_links.map((link_block, index) => (
-                  <div className="" key={index}>
-                    <h4 className="heading-3">{link_block.name}</h4>
+                  <div className="">
+                    <h4 className="heading-3">Quick Links</h4>
                     <ul>
-                      {link_block.links.map((link, index) => (
+                      {quick_links_desc.map((link, index) => (
                         <li className="mb-3" key={index}>
                           <Link href={link.href} className="text-white">
                             {link.name}
@@ -143,7 +135,24 @@ const Footer = () => {
                       ))}
                     </ul>
                   </div>
-                ))}
+                  <div className="">
+                    <h4 className="heading-3">Useful Links</h4>
+                    <ul>
+                      <li className="mb-3">
+                        <button className="text-white" onClick={open}>
+                          Become a Donor
+                        </button>
+                      </li>
+
+                      {useful_links_desc.map((link, index) => (
+                        <li className="mb-3" key={index}>
+                          <Link href={link.href} className="text-white">
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
               </div>
           </div>
         </div>
