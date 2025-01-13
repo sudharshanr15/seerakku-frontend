@@ -34,7 +34,7 @@ const what_we_do: {
   {
     image: coastal_plantation,
     title: "Coastal Plantation",
-    desc: "Protecting our coastlines and marine ecosystems is crucial for a sustainable future. Seerakku actively engages in coastal zplantation initiatives, where we plant mangroves, dune vegetation, and other coastal plants. These plantations help prevent coastal erosion, support marine biodiversity, and act as natural buffers against natural disasters.",
+    desc: "Protecting our coastlines and marine ecosystems is crucial for a sustainable future. Seerakku actively engages in coastal plantation initiatives, where we plant mangroves, dune vegetation, and other coastal plants. These plantations help prevent coastal erosion, support marine biodiversity, and act as natural buffers against natural disasters.",
   },
   {
     image: agroforestry,
@@ -143,7 +143,7 @@ export default WhatWeDo;
 //      p4 : 'Seerakku is actively engaged in projects to mitigate human-elephant conflict in areas where human habitation overlaps with elephant migration routes. We work closely with local communities to implement solutions like creating safe passageways for elephants and promoting sustainable agricultural practices to reduce conflict.'
 
 //   },
-  
+
 // ];
 
 // function WhatWeDo() {
@@ -173,7 +173,7 @@ export default WhatWeDo;
 //               <li className=" my-2"><span className=" font-semibold">{ele.p3h}</span>{" "}{ele.p3}</li>
 //               <li className=" my-2"><span className=" font-semibold">{ele.p4h}</span>{" "}{ele.p4}</li>
 //               </ul>
-              
+
 //             </div>
 //           </div>
 //         ))}
