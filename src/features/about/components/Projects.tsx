@@ -1,9 +1,7 @@
 // pages/projects.js
 import Image, { StaticImageData } from "next/image";
-import Plantation from "../assets/plantation.png";
-import Corporate from "../assets/corporate.png";
-import Additional from "../assets/additional.png";
 import ShadowContainer from "@/components/ShadowContainer";
+import { additional, corporate, plantation } from "../assets";
 
 const projects: {
   title: string,
@@ -15,7 +13,7 @@ const projects: {
 }[] = [
   {
     title: "Tree Plantation Projects",
-    image: Plantation,
+    image: plantation,
     desc: [
       {
         title: "Urban Afforestation Initiatives",
@@ -37,7 +35,7 @@ const projects: {
   },
   {
     title: "Corporate Volunteering Activities",
-    image: Corporate,
+    image: corporate,
     desc: [
       {
         title: "Tree Plantation Volunteering",
@@ -59,7 +57,7 @@ const projects: {
   },
   {
     title: "Additional Projects",
-    image: Additional,
+    image: additional,
     desc: [
       {
         title: "Carbon-Neutrality Projects",
