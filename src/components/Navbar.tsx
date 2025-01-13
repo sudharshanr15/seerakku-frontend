@@ -18,7 +18,7 @@ const Navbar = () => {
   }
 
   function closeToggle() {
-    
+
     if(isAboutOpen)
       setIsAboutOpen(false);
     if(isInitiativesOpen)
@@ -39,6 +39,10 @@ const Navbar = () => {
     name: string;
     href: string;
   }[] = [
+    {
+      name: "About Us",
+      href: "/about"
+    },
     {
       name: "Our Focus Area",
       href: "our_focus",
@@ -62,33 +66,6 @@ const Navbar = () => {
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>
           <ul className={`z-50 flex gap-6 lg:text-white`}>
-            <div className=" relative">
-              <li
-                onClick={toggleAbout}
-                className="uppercase text-lg font-normal font-big-noodle-titling"
-              >
-                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
-                  <p>About Us </p>{" "}
-                  <div className={` bg-white w-1 h-1  rounded-full`}></div>
-                </Link>
-              </li>
-
-              {isAboutOpen && (
-                <ul className="absolute bg-white z-50 text-black rounded-md shadow-lg mt-2 w-36 flex flex-col gap-2 p-3">
-                  <div className=" flex gap-2">
-                    <div className="w-1 h-1 bg-primary rounded-full"></div>
-                    <div className="w-1 h-1 bg-primary rounded-full"></div>
-                    <div className="w-1 h-1 bg-primary rounded-full"></div>
-                  </div>
-                  <Link href="/about">
-                    <li className=" text-lg ">Who we are</li>
-                  </Link>
-                  <Link href="/whatwedo">
-                    <li className=" text-lg ">What we do</li>
-                  </Link>
-                </ul>
-              )}
-            </div>
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}

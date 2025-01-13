@@ -86,7 +86,7 @@ export default function Projects() {
 
   return (
     <section className="layout-section-xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col border h-full">
             <div className="w-full">
