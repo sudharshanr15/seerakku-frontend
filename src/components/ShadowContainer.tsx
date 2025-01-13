@@ -14,7 +14,7 @@ function ShadowContainer({
   shadowTo?: "left" | "right";
 }) {
   return (
-    <div className="relative">
+    <div className="relative h-full">
       <div
         className={`bg-white border ${ColorTypeBorder[theme]} h-full relative`}
       >
