@@ -83,10 +83,10 @@ export default function Projects() {
   const theme_colors = ["primary_green", "primary", "secondary_light_green"]
 
   return (
-    <section className="layout-section-xl">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <section className="layout-section-xl pt-0">
+      <div className="flex flex-wrap justify-center">
         {projects.map((project, index) => (
-          <div key={index} className="flex flex-col border h-full">
+          <div key={index} className="w-full py-7 lg:p-7 lg:w-1/2 flex flex-col">
             <div className="w-full">
               <Image src={project.image} alt={project.title} className="w-full aspect-video object-cover" />
             </div>
