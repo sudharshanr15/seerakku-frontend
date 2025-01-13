@@ -5,7 +5,7 @@ function DonatePageLink() {
   const payment_url = "https://rzp.io/rzp/UEN4Gb0"
 
     return (
-        <a href={payment_url} target='_blank'
+        <a href={payment_url}
         className={`py-3 px-5 uppercase text-lg font-big-noodle-titling hover:border-4 hover:px-4 hover:py-2 bg-primary text-black`}
         >
             Donate Now
