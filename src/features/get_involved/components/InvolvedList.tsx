@@ -4,6 +4,8 @@ import { ColorType } from "@/types/ColorType";
 import Button from '@/components/buttons/Button'
 import Image from "next/image";
 import { involved_1, involved_2, involved_3 } from "../assets";
+import ButtonLink from "@/components/buttons/ButtonLink";
+import { BECOME_PARTNER_LINK, BECOME_VOLUNTEER_LINK } from "@/global";
 
 function InvolvedList() {
   return (
@@ -36,7 +38,7 @@ function InvolvedList() {
                     nature, learn new skills, and contribute directly to the
                     well-being of our planet.
                   </p>
-                  <Button type="primary_green">Become A Volunteer</Button>
+                  <ButtonLink type="primary_green" href={BECOME_VOLUNTEER_LINK}>Become A Volunteer</ButtonLink>
                 </div>
               </ShadowContainer>
             </div>
@@ -104,8 +106,7 @@ function InvolvedList() {
                     resources, knowledge, and networks to implement impactful
                     projects and create a greener and healthier future.
                   </p>
-                  <Button type="primary_green">Become A Partner</Button>
-
+                  <ButtonLink type="primary_green" href={BECOME_PARTNER_LINK}>Become A Partner</ButtonLink>
                 </div>
               </ShadowContainer>
             </div>

@@ -6,6 +6,7 @@ import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import { logo_text } from "@/assets";
 import { useDonateModal } from "./modal/DonateModalProvider";
+import { BECOME_PARTNER_LINK, BECOME_VOLUNTEER_LINK } from "@/global";
 
 const quick_links_desc: {
     name: string;
@@ -28,6 +29,10 @@ const quick_links_desc: {
     href: "/our_focus",
   },
   {
+    name: "Get Involved",
+    href: "/get_involved"
+  },
+  {
     name: "Contact Us",
     href: "/contact_us",
   },
@@ -39,11 +44,11 @@ const useful_links_desc: {
 }[] =   [
   {
     name: "Become a volunteer",
-    href: "https://forms.gle/m3mB23Fs8ixExF7p7",
+    href: BECOME_VOLUNTEER_LINK,
   },
   {
     name: "Become a Partner",
-    href: "https://forms.gle/76BQK3w8go2NiqjR7",
+    href: BECOME_PARTNER_LINK,
   },
   {
     name: "See our works",

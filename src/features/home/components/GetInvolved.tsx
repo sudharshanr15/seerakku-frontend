@@ -4,6 +4,8 @@ import Image from "next/image";
 import { get_involved_image_1, partner, volunteer } from "../assets";
 import ImageTint from "@/components/ImageTint";
 import { useDonateModal } from "@/components/modal/DonateModalProvider";
+import ButtonLink from "@/components/buttons/ButtonLink";
+import { BECOME_PARTNER_LINK, BECOME_VOLUNTEER_LINK } from "@/global";
 
 const GetInvolved = () => {
   const { open } = useDonateModal();
@@ -33,7 +35,7 @@ const GetInvolved = () => {
                     Join our dedicated team of volunteers and actively
                     participate in our initiatives.
                   </p>
-                  <Button className=" hover:scale-105 transition" type="primary_green">Register Here</Button>
+                  <ButtonLink className="hover:scale-105 transition" type={"primary_green"} href={BECOME_VOLUNTEER_LINK}>Register Here</ButtonLink>
                 </div>
               </div>
             </ImageTint>
@@ -52,7 +54,7 @@ const GetInvolved = () => {
                   <p className="text-white font-normal mb-3">
                     Support our organization financially by making a donation.
                   </p>
-                  <Button onClick={open} className=" hover:scale-105 transition" type="primary">Donate Now</Button>
+                  <Button onClick={open} className="hover:scale-105 transition" type="primary">Donate Now</Button>
                 </div>
               </div>
             </ImageTint>
@@ -71,7 +73,7 @@ const GetInvolved = () => {
                   <p className="text-white font-normal mb-3">
                     Collaboration is essential in driving sustainable change.
                   </p>
-                  <Button className=" hover:scale-105 transition" type="primary_green">Partnering with us</Button>
+                  <ButtonLink className="hover:scale-105 transition" type="primary_green" href={BECOME_PARTNER_LINK}>Partnering with us</ButtonLink>
                 </div>
               </div>
             </ImageTint>

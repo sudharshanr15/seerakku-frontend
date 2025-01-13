@@ -40,10 +40,6 @@ const Navbar = () => {
     href: string;
   }[] = [
     {
-      name: "About Us",
-      href: "/about"
-    },
-    {
       name: "Our Focus Area",
       href: "our_focus",
     },
@@ -66,6 +62,11 @@ const Navbar = () => {
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>
           <ul className={`z-50 flex gap-6 lg:text-white`}>
+            <li
+              className="uppercase text-xl font-normal font-big-noodle-titling hover:text-primary"
+            >
+              <Link href="/about">About Us</Link>
+            </li>
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}
