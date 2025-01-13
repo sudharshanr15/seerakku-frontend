@@ -23,10 +23,6 @@ const footer_links: {
         href: "/about",
       },
       {
-        name: "Projects",
-        href: "/whatwedo",
-      },
-      {
         name: "Our Initiatives",
         href: "/initiatives",
       },
