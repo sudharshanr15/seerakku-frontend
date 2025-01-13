@@ -39,11 +39,11 @@ const useful_links_desc: {
 }[] =   [
   {
     name: "Become a volunteer",
-    href: "",
+    href: "https://forms.gle/m3mB23Fs8ixExF7p7",
   },
   {
     name: "Become a Partner",
-    href: "",
+    href: "https://forms.gle/76BQK3w8go2NiqjR7",
   },
   {
     name: "See our works",
