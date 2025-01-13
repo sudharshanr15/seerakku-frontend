@@ -1,7 +1,7 @@
 "use client"
 import Button from "@/components/buttons/Button";
 import Image from "next/image";
-import { get_involved_image_1, partner, volunteer } from "../assets";
+import { get_involved_image_1, partner, volunteer, donate } from "../assets";
 import ImageTint from "@/components/ImageTint";
 import { useDonateModal } from "@/components/modal/DonateModalProvider";
 import ButtonLink from "@/components/buttons/ButtonLink";
@@ -43,7 +43,7 @@ const GetInvolved = () => {
 
           <div className="w-full bg-primary-green text-white relative overflow-hidden aspect-square group">
             <Image
-              src={volunteer}
+              src={donate}
               alt="Image 1"
               className="object-cover bg-center h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
             />
