@@ -49,6 +49,11 @@ const initiatives_list = [
     desc: "Our 'Revive Blue' program is dedicated to restoring and protecting our water bodies. Through clean-up drives and conservation efforts, we aim to rejuvenate water bodies. This initiative enhances water quality, supports aquatic life, and ensures that future generations can enjoy clean and healthy water. Join us in our mission to revive and preserve our precious blue resources.",
     image: elephant,
   },
+  {
+    title: "Urban Green Spaces Creation",
+    desc: "Our 'Urban Green Spaces Creation' program is to develop small green patches in urban areas to improve air quality and aesthetics. Our Activities are Establishing mini-forests and community gardens. Promoting rooftop gardening and vertical greening solutions.",
+    image: plant,
+  },
 ];
 
 function Initiative_items({ item }) {
