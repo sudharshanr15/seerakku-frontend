@@ -88,7 +88,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col border h-full">
             <div className="w-full">
-              <Image src={project.image} alt={project.title} className="w-full" />
+              <Image src={project.image} alt={project.title} className="w-full aspect-video object-cover" />
             </div>
             <div className="flex-grow">
               <ShadowContainer shadowTo="left" theme={theme_colors[index % theme_colors.length]}>

@@ -67,7 +67,7 @@ function WhatWeDo() {
               <Image
                 alt={`${ele.title} Image`}
                 src={ele.image}
-                className="w-full h-auto object-contain"
+                className="w-full aspect-video object-cover"
               />
             </div>
             <div className="p-7">
