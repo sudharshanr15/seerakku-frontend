@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { support_image } from "@/assets";
+import  support_image  from "./modal.jpg";
 import DonateNow from "@/components/buttons/DonateNow";
 import { useEffect } from "react";
 import Button from "../buttons/Button";

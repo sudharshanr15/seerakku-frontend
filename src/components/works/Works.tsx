@@ -1,6 +1,6 @@
 "use client";
 
-import { works_1 } from "./assets";
+import { clean, climate, lifebelowwater, works_1 } from "./assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { WorksItemType } from "./types/index";
 import WorksItem from "./WorksItem";
@@ -21,7 +21,7 @@ const works_list: WorksItemType[] = [
     title:
       "CLEARN WATER & SANITATION",
     desc: "We work towards restoring water sources through reforestation and watershed management initiatives.",
-    image: works_1,
+    image: clean,
   },
   {
     title:
@@ -33,13 +33,13 @@ const works_list: WorksItemType[] = [
     title:
       "CLIMATE ACTION",
     desc: "Seerakku is committed to promoting coastal plantations and marine conservation initiatives to protect and preserve marine ecosystems.",
-    image: works_1,
+    image: climate,
   },
   {
     title:
       "LIFE BELOW WATER",
     desc: "Seerakku is committed to promoting coastal plantations and marine conservation initiatives to protect and preserve marine ecosystems.",
-    image: works_1,
+    image: lifebelowwater,
   },
   {
     title:

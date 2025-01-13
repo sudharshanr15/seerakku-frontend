@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
 import Image from "next/image";
-import nova from "@/features/initiatives/assets/nova.png";
-import elephant from "@/features/initiatives/assets/elephant.png";
-import farmers from "@/features/initiatives/assets/farmers.png";
+import nova from "@/features/initiatives/assets/nova.jpg";
+import plastic from "@/features/initiatives/assets/plastic.jpg";
+import agro from "@/features/initiatives/assets/agro.jpg";
 import newImage from "@/features/initiatives/assets/new.png";
 import one from "@/features/initiatives/assets/one.png";
 import plant from "@/features/initiatives/assets/plant.png";
@@ -32,12 +32,12 @@ const initiatives_list = [
   {
     title: "Plastic Pollution Mitigation",
     desc: "Join us in our 'Walk for Plastic' initiative, where we organize community walks to collect plastic waste and promote recycling. This aims to raise awareness about the impact of plastic pollution. By coming together to reduce plastic waste, we contribute to a cleaner, healthier planet and also a sense of community responsibility.",
-    image: plant,
+    image: plastic,
   },
   {
     title: "Agroforestry for Sustainable Livelihoods",
     desc: "Our 'Trees for Farmers' initiative collaborates with local farmers to integrate trees into their agricultural practices. By establishing agroforestry systems, we help improve soil health, increase biodiversity, and enhance crop yields. This program supports farmers' livelihoods and contributes to environmental conservation. Together, we work towards a future of ecological balance.",
-    image: farmers,
+    image: agro,
   },
   {
     title: "FOREST BATHING",
@@ -47,11 +47,6 @@ const initiatives_list = [
   {
     title: "Waterbody Restoration and Conservation",
     desc: "Our 'Revive Blue' program is dedicated to restoring and protecting our water bodies. Through clean-up drives and conservation efforts, we aim to rejuvenate water bodies. This initiative enhances water quality, supports aquatic life, and ensures that future generations can enjoy clean and healthy water. Join us in our mission to revive and preserve our precious blue resources.",
-    image: elephant,
-  },
-  {
-    title: "Urban Green Spaces Creation",
-    desc: "Our 'Urban Green Spaces Creation' program is to develop small green patches in urban areas to improve air quality and aesthetics. Our Activities are Establishing mini-forests and community gardens. Promoting rooftop gardening and vertical greening solutions.",
     image: plant,
   },
 ];
