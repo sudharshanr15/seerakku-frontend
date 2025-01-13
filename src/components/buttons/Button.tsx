@@ -5,7 +5,7 @@ const Button = ({
   button_type = "button",
   type,
   children,
-  className,
+  className="",
   outline,
   onClick,
   disabled,
