@@ -2,6 +2,7 @@
 import Image, { StaticImageData } from "next/image";
 import ShadowContainer from "@/components/ShadowContainer";
 import { additional, corporate, plantation } from "../assets";
+import { ColorType } from "@/types/ColorType";
 
 const projects: {
   title: string,
@@ -80,7 +81,7 @@ const projects: {
 ]
 
 export default function Projects() {
-  const theme_colors = ["primary_green", "primary", "secondary_light_green"]
+  const theme_colors: ColorType[] = [ColorType.primary_green, ColorType.primary, ColorType.secondary_light_green]
 
   return (
     <section className="layout-section-xl pt-0">
