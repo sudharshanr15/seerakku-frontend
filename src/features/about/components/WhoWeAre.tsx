@@ -20,7 +20,7 @@ function WhoWeAre() {
               </p>
               <DonateNow type="primary" icon />
             </div>
-            <div className="w-full h-full bg-primary-green absolute top-6 left-6 -z-10"></div>
+            <div className="sm:w-full w-[270px] sm:h-full h-[445px] bg-primary-green absolute top-6 left-6 -z-10"></div>
           </div>
         </div>
       </div>
