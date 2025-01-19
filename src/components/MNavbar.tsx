@@ -35,10 +35,6 @@ const Navbar = () => {
     href: string;
   }[] = [
     {
-      name: "About Us",
-      href: "/about"
-    },
-    {
       name: "Our Focus Area",
       href: "our_focus",
     },
@@ -72,6 +68,9 @@ const Navbar = () => {
           <ul
             className={` ${isMenuOpen ? "flex" : "hidden"} z-50 flex  flex-col gap-6 `}
           >
+            <li className="uppercase text-base font-medium ">
+              <Link onClick={closeMenu} href="/about" className="relative">About</Link>
+            </li>
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}
