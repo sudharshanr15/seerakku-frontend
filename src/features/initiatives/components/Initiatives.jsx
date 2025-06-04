@@ -3,51 +3,50 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from 'react';
 import Image from "next/image";
-import nova from "@/features/initiatives/assets/nova.jpg";
-import plastic from "@/features/initiatives/assets/plastic.jpg";
-import agro from "@/features/initiatives/assets/agro.jpg";
-import newImage from "@/features/initiatives/assets/new.png";
-import one from "@/features/initiatives/assets/one.png";
-import plant from "@/features/initiatives/assets/plant.png";
-import sparrow from "@/features/initiatives/assets/sparrow.png";
+import { initiative_1, initiative_2, initiative_3, initiative_4, initiative_5, initiative_6, initiative_7, initiative_8 } from "../assets/initiatives";
 import Button from "@/components/buttons/Button";
 import Link from "next/link";
 
 const initiatives_list = [
   {
-    title: "NOVA",
-    desc: "NOVA, is our prime iniative that ensures that every newborn starts life with a carbon-neutral footprint. For each child born, we plant trees and establish food forests, offsetting the carbon emissions of their lifetime. This program not only celebrates new life but also contributes to a greener planet, ensuring a sustainable and healthy future for the next generation.",
-    image: nova,
+    title: "Tree Plantation & Forest Creation",
+    desc: "We create micro-forests and green corridors using native species to fight climate change, cool cities, and restore lost ecosystems.",
+    image: initiative_1,
   },
   {
-    title: "NEW TREE FOR NEW LIFE",
-    desc: "Celebrate the miracle of life with our 'New Tree, For New Life' initiative. In partnership with hospitals, we plant a tree to honor each newborn, symbolizing growth and vitality. This act of planting creates a legacy of sustainability and contributes to global reforestation efforts. Join us in welcoming new lives while also fostering a healthier environment",
-    image: newImage,
+    title: "Pollinator Protection (Bring Back Bees)",
+    desc: "Through insect hotels and pollinator gardens, we create safe spaces for bees and butterflies — the silent heroes of biodiversity.",
+    image: initiative_2,
   },
   {
-    title: "RENTAL FREE AGRO MACHINE",
-    desc: "Our 'Rental Free Agro Machine' program empowers farmers by providing access to agricultural machinery at no cost. By supporting local farmers with the tools they need we promote sustainable farming practices, and improve livelihoods. This initiative helps build a stronger agricultural community and economic prosperity.",
-    image: one,
+    title: "Beach Cleanups & Plastic-Free Drives",
+    desc: "We organize community cleanups to remove plastic from coastlines, canals, and streets, turning awareness into real impact.",
+    image: initiative_3,
   },
   {
-    title: "Plastic Pollution Mitigation",
-    desc: "Join us in our 'Walk for Plastic' initiative, where we organize community walks to collect plastic waste and promote recycling. This aims to raise awareness about the impact of plastic pollution. By coming together to reduce plastic waste, we contribute to a cleaner, healthier planet and also a sense of community responsibility.",
-    image: plastic,
+    title: "Sustainable Construction & Green Nursery",
+    desc: "Using upcycled and eco-friendly materials, we build green nurseries and nature learning spaces that support long-term regeneration.",
+    image: initiative_4,
   },
   {
-    title: "Agroforestry for Sustainable Livelihoods",
-    desc: "Our 'Trees for Farmers' initiative collaborates with local farmers to integrate trees into their agricultural practices. By establishing agroforestry systems, we help improve soil health, increase biodiversity, and enhance crop yields. This program supports farmers' livelihoods and contributes to environmental conservation. Together, we work towards a future of ecological balance.",
-    image: agro,
+    title: "Agroforestry & Farmer Support",
+    desc: "We help farmers plant trees alongside crops, ensuring food, fodder, fuel, and climate resilience for future generations.",
+    image: initiative_5,
   },
   {
-    title: "FOREST BATHING",
-    desc: "Experience the rejuvenating power of nature with our 'Forest Bathing' initiative. We encourage people to immerse themselves in the tranquility of forests, promoting mental and physical well-being. This practice not only enhances individual health but also fosters a deeper connection with the nature. By embracing forest bathing, we nurture our minds and bodies while appreciating the beauty of our forests.",
-    image: sparrow,
+    title: "Eco Education & Corporate Volunteering",
+    desc: "From seed ball making to DIY insect hotels, we turn education into action through workshops, school programs, and CSR engagement.",
+    image: initiative_6,
   },
   {
-    title: "Waterbody Restoration and Conservation",
-    desc: "Our 'Revive Blue' program is dedicated to restoring and protecting our water bodies. Through clean-up drives and conservation efforts, we aim to rejuvenate water bodies. This initiative enhances water quality, supports aquatic life, and ensures that future generations can enjoy clean and healthy water. Join us in our mission to revive and preserve our precious blue resources.",
-    image: plant,
+    title: "Waterbody Restoration",
+    desc: "We revive ponds, lakes, and canal bunds — recharging groundwater, boosting biodiversity, and building water-secure communities.",
+    image: initiative_7,
+  },
+  {
+    title: "Carbon-Neutral Life Journeys (Like Aadavi)",
+    desc: "We help individuals and families offset their carbon footprint through tree planting, inspired by DJ Aadavi, the world’s first carbon-neutral baby.",
+    image: initiative_8,
   },
 ];
 
@@ -62,7 +61,7 @@ function Initiative_items({ item }) {
         <Image
           src={item.image}
           alt={item.title}
-          className="w-full h-96 object-cover"
+          className="w-full h-96 object-cover aspect-video"
         />
       </div>
       <h2 className="heading-2 mb-2">{item.title}</h2>
