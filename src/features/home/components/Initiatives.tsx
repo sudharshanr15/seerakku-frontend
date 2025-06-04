@@ -53,22 +53,22 @@ const initiatives_list: InitiativesListType[] = [
   {
     title: "Pollinator Protection (Bring Back Bees)",
     desc: undefined,
-    image: initiative_3,
+    image: initiative_2,
   },
   {
     title: "Beach Cleanups & Plastic-Free Drives",
     desc: undefined,
-    image: initiative_5,
+    image: initiative_3,
   },
   {
     title: "Sustainable Construction & Green Nursery",
     desc: undefined,
-    image: initiative_2,
+    image: initiative_4,
   },
   {
     title: "Agroforestry & Farmer Support",
     desc: undefined,
-    image: initiative_4,
+    image: initiative_5,
   },
   {
     title: "Eco Education & Corporate Volunteering",
