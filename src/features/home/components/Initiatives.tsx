@@ -5,6 +5,8 @@ import {
   initiative_4,
   initiative_5,
   initiative_6,
+  initiative_7,
+  initiative_8
 } from "../assets";
 import { InitiativesListType } from "../types";
 import InitiativesItem from "./InitiativesItem";
@@ -44,35 +46,45 @@ import Link from "next/link";
 
 const initiatives_list: InitiativesListType[] = [
   {
-    title: "Community Engagement and Corporate Volunteering",
-    desc: "Foster community participation in conservation efforts.",
+    title: "Tree Plantation & Forest Creation",
+    desc: undefined,
     image: initiative_1,
   },
   {
-    title: "Eco-Education and Awareness",
-    desc: "Inspire a culture of environmental responsibility.",
+    title: "Pollinator Protection (Bring Back Bees)",
+    desc: undefined,
     image: initiative_3,
   },
   {
-    title: "Wildlife Conservation",
-    desc: "Protect and restore wildlife habitats. ",
+    title: "Beach Cleanups & Plastic-Free Drives",
+    desc: undefined,
     image: initiative_5,
   },
   {
-    title: "Reforestation and Afforestation Programs",
-    desc: "Increase green cover in urban and rural areas while enhancing biodiversity.",
+    title: "Sustainable Construction & Green Nursery",
+    desc: undefined,
     image: initiative_2,
   },
   {
-    title: "Sustainable Waste Management",
-    desc: "Turn waste into a resource through eco-friendly solutions.",
+    title: "Agroforestry & Farmer Support",
+    desc: undefined,
     image: initiative_4,
   },
   {
-    title: "Urban Green Spaces Creation",
-    desc: "Develop small green patches in urban areas to improve air quality and aesthetics.",
+    title: "Eco Education & Corporate Volunteering",
+    desc: undefined,
     image: initiative_6
-  }
+  },
+  {
+    title: "Carbon-Neutral Life Journeys (Like Aadavi)",
+    desc: undefined,
+    image: initiative_8
+  },
+  {
+    title: "Waterbody Restoration",
+    desc: undefined,
+    image: initiative_7
+  },
 ];
 
 const Initiatives = () => {

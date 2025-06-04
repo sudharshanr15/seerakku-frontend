@@ -20,12 +20,9 @@ const SupportContainer = () => {
         />
       </ShadowContainer>
       <div className="md:p-4 max-md:mt-4">
-        <h2 className="heading-1">Support For Sustainability</h2>
+        <h2 className="heading-1">Your Contribution Fuels Change</h2>
         <p className="font-normal mb-5">
-          Your donation can help us continue our important work in creating a
-          sustainable future. Every contribution, no matter the size, makes a
-          difference. Join us in our mission and make a donation today.
-          Together, we can build a greener and more equitable world.
+          Every rupee you donate helps us restore ecosystems, empower communities, and combat climate change. From planting trees to supporting underprivileged farmers, your generosity drives our mission forward.
         </p>
         <DonatePageLink />
       </div>

@@ -11,6 +11,13 @@ import "swiper/css/bundle";
 import { slide_1, slide_2, slide_3, slide_4, slide_5 } from "../assets/slides";
 import anime from "animejs/lib/anime.es";
 
+import { Montserrat } from "next/font/google";
+
+const montserrat_font = Montserrat({
+  weight: ["400", "600", "700"],
+})
+
+
 const slides = [
   {
     name: "Planting Trees",
@@ -106,18 +113,21 @@ const HeroBanner = () => {
               <div className="absolute top-0 left-0 w-full h-full">
                 <div className="bg-gradient-to-t absolute z-10 top-0 left-0 w-full h-full from-transparent from-5% to-black"></div>
                 <div className="layout-section-xl flex relative z-10 flex-col items-center justify-center h-full">
-                  <h1 className="heading-1 text-white text-center">
-                    JOIN THE CHANGE, ACT FOR THE PLANET
+                  <h1 className={`heading-2 font-bold ${montserrat_font.className} text-white text-center`}>
+                    PEOPLE. PLANET. PURPOSE.
                   </h1>
-                  <h1
-                    className={`heading-1 text-center text-primary hero-slide-${index} ${index != 0 ? "-translate-y-1/2" : ""} block`}
+                  {/* <h1
+                    className={`heading-2 font-semibold ${montserrat_font.className} text-center text-primary hero-slide-${index} ${index != 0 ? "-translate-y-1/2" : ""} block`}
                   >
                     {image.name}
+                  </h1> */}
+                  <h1 className={`heading-3 ${montserrat_font.className} text-center font-semibold text-primary`}>
+                    Not just a slogan. A movement rooted in action.
                   </h1>
-                  <div className="flex gap-8 xl:mt-8">
+                  <div className="flex gap-8 xl:mt-8 mt-4">
                     <DonateNow type="primary" icon />
-                    <Link href={'#ourworks'}>
-                    <Button type="primary_green">See Our Works</Button>
+                    <Link href="/initiatives">
+                    <Button type="primary_green">Our Initiatives</Button>
                     </Link>
                   </div>
                 </div>

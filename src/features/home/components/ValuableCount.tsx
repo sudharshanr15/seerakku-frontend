@@ -12,7 +12,7 @@ const ValuableCount = () => {
     <section className="layout-section-xl">
       <div className="flex flex-col xl:flex-row gap-6 items-center">
         <div className="w-full xl:w-1/3 text-center xl:text-left">
-          <h2 className="heading-2">Valuable Count</h2>
+          <h2 className="heading-2">Our Impact</h2>
           <p className="mb-5">
           At Seerakku, we’re committed to creating a positive, lasting change for our planet. Our ongoing efforts in sustainability, conservation, and community empowerment are making a significant difference. Here’s a snapshot of what we’ve achieved so far
           </p>
@@ -21,38 +21,38 @@ const ValuableCount = () => {
         <div className="w-full xl:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-shrink-0">
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={tree} alt="Trees Planted"></Image>
-            <h4 className="text-white heading-1 mt-2 !text-80">400</h4>
+            <h4 className="text-white heading-1 mt-2 !text-80">4,00,000</h4>
             <p className="text-white">Trees Planted</p>
           </div>
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={carbon} alt="Carbon Offseted"></Image>
 
-            <h4 className="text-white heading-1 mt-2 !text-80">8M+</h4>
-            <p className="text-white">Carbon Offseted</p>
+            <h4 className="text-white heading-1 mt-2 !text-80">20</h4>
+            <p className="text-white">Urban Dense Forests Created</p>
           </div>
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={tree} alt="Communities Empowered"></Image>
 
             <h4 className="text-white heading-1 mt-2 !text-80">400</h4>
-            <p className="text-white">Communitites Empowered</p>
+            <p className="text-white">Farmer Communities Empowered</p>
           </div>
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={hours} alt="Volunteering Hours"></Image>
 
-            <h4 className="text-white heading-1 mt-2 !text-80">2190</h4>
-            <p className="text-white">Total Volunteering Hours</p>
+            <h4 className="text-white heading-1 mt-2 !text-80">2500+</h4>
+            <p className="text-white">Volunteering Hours</p>
           </div>
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={water} alt="Water Conserved"></Image>
 
             <h4 className="text-white heading-1 mt-2 !text-80">1M</h4>
-            <p className="text-white">Water Conserved</p>
+            <p className="text-white">Litres Water Stored</p>
           </div>
           <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
             <Image src={plastic} alt="Plastics Collected"></Image>
 
-            <h4 className="text-white heading-1 mt-2 !text-80">2T</h4>
-            <p className="text-white">Plastics Collected</p>
+            <h4 className="text-white heading-1 mt-2 !text-80">5,000 kg</h4>
+            <p className="text-white">Plastics Recycled</p>
           </div>
         </div>
       </div>

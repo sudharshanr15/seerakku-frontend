@@ -32,8 +32,7 @@ const GetInvolved = () => {
                 <div>
                   <h3 className="heading-3">Become A Volunteer</h3>
                   <p className="text-white font-normal mb-3">
-                    Join our dedicated team of volunteers and actively
-                    participate in our initiatives.
+                    Join our dedicated team of volunteers and actively participate in our initiatives.
                   </p>
                   <ButtonLink className="hover:scale-105 transition" type={"primary_green"} href={BECOME_VOLUNTEER_LINK}>Register Here</ButtonLink>
                 </div>
@@ -52,7 +51,7 @@ const GetInvolved = () => {
                 <div>
                   <h3 className="heading-3">Donate</h3>
                   <p className="text-white font-normal mb-3">
-                    Support our organization financially by making a donation.
+                    Support our organization financially by donating.
                   </p>
                   <Button onClick={open} className="hover:scale-105 transition" type="primary">Donate Now</Button>
                 </div>

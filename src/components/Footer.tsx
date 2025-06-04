@@ -108,13 +108,10 @@ const Footer = () => {
                 <QuickLinks />
               </div>
               <h2 className="heading-2 m-0">
-                Committed to overcoming the stigma of AIDS
+                Powered by people, Built for the planet, Driven by purpose.
               </h2>
               <p className="text-white">
-                Your donation can help us continue our important work in creating
-                a sustainable future. Every contribution, no matter the size,
-                makes a difference. Join us in our mission and make a donation
-                today. Together, we can build a greener and more equitable world.
+                At Seerakku, every individual and organization has the power to make a difference. Let’s create a legacy of sustainability and environmental harmony for future generations.
               </p>
               {/* <button className="border border-white py-2 px-4">
                 Subscribe for newsletter
