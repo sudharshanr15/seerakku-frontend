@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Image, { StaticImageData } from "next/image";
-import { climate, clean, lifebelowwater, image_4, image_5 } from "../assets";
+import { image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11 } from "../assets";
 
 type FocusListType = {
   title: string;
@@ -14,34 +14,59 @@ type FocusListType = {
 
 const focus_list: FocusListType[] = [
   {
-    title: "No Poverty",
-    desc: "We provide agroforestry opportunities for farmers to improve their livelihoods and promote sustainable land use practices.",
+    title: "SDG 2 – Zero Hunger",
+    desc: "We support farmers through agroforestry, creating food-secure, climate-resilient livelihoods.",
+    image: image_1,
+  },
+  {
+    title: "SDG 4 – Quality Education",
+    desc: "We run eco-education programs in schools and workplaces, turning awareness into action.",
+    image: image_2,
+  },
+  {
+    title: "SDG 6 – Clean Water and Sanitation",
+    desc: "We restore ponds and canal bunds to recharge groundwater and ensure water access for all.",
+    image: image_3,
+  },
+  {
+    title: "SDG 8 – Decent Work and Economic Growth",
+    desc: "We create green jobs through nurseries, tree planting, waste upcycling, and community forestry.",
     image: image_4,
   },
   {
-    title: "Clean Water & Sanitation",
-    desc: "We work towards restoring water sources through reforestation and watershed management initiatives.",
-    image: clean,
-  },
-  {
-    title: "Zero Hunger",
-    desc: "Our afforestation initiatives provide food and habitat for wildlife, while our agroforestry programs promote sustainable farming practices and help increase crop yields.",
+    title: "SDG 9 – Industry, Innovation, and Infrastructure",
+    desc: "We use recycled materials to build sustainable infrastructure like green nurseries and nature classrooms.",
     image: image_5,
   },
   {
-    title: "Climate Action",
-    desc: "Seerakku primarily focuses on climate action. We plant trees, promote sustainable practices, and engage in coastal plantations to reduce carbon footprint and offset emissions.",
-    image: climate,
+    title: "SDG 11 – Sustainable Cities and Communities",
+    desc: "We green urban zones with native trees, improve air quality, and restore public spaces.",
+    image: image_6,
   },
   {
-    title: "Life Below Water",
-    desc: "Seerakku is committed to promoting coastal plantation and marine conservation initiatives to protect and preserve marine ecosystems.",
-    image: lifebelowwater,
+    title: "SDG 12 – Responsible Consumption and Production",
+    desc: "We turn waste into a resource — from plastic-free drives to upcycled seedling bags and DIY kits.",
+    image: image_7,
   },
   {
-    title: "Partnership for the Goals",
-    desc: "We work with local communities, government bodies, and other organizations to achieve our sustainability goals and positively impact the environment and local communities in India.",
-    image: image_5,
+    title: "SDG 13 – Climate Action",
+    desc: "We plant trees, offset carbon, and inspire climate-conscious citizens from birth (like Aadavi)",
+    image: image_8,
+  },
+  {
+    title: "SDG 14 – Life Below Water",
+    desc: "Our beach and canal cleanups prevent plastic from entering the oceans, protecting marine life.",
+    image: image_9,
+  },
+  {
+    title: "SDG 15 – Life on Land",
+    desc: "We revive biodiversity through native plantations, pollinator habitats, and forest creation.",
+    image: image_10,
+  },
+  {
+    title: "SDG 17 – Partnerships for the Goals",
+    desc: "We collaborate with corporations, schools, NGOs, and the government to scale environmental impact.",
+    image: image_11,
   },
 ];
 
@@ -56,7 +81,7 @@ function FocusItem({ item }: { item: FocusListType }) {
         <Image
           src={item.image}
           alt={item.title}
-          className="w-full object-contain"
+          className="w-full object-cover aspect-video"
         />
       </div>
       <h2 className="heading-2 mb-2">{item.title}</h2>

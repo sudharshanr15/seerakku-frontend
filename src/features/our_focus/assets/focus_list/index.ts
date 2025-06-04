@@ -1,6 +1,11 @@
-export { default as clean } from "./clean.jpg";
-export { default as climate } from "./climate.jpg";
-export { default as lifebelowwater } from "./lifebelowwater.jpg";
-export { default as image_4 } from "./4.png";
-export { default as image_5 } from "./5.png";
-export { default as image_6 } from "./6.png";
+export { default as image_1 } from "./1.jpg";
+export { default as image_2 } from "./2.jpg";
+export { default as image_3 } from "./3.jpg";
+export { default as image_4 } from "./4.jpg";
+export { default as image_5 } from "./5.jpg";
+export { default as image_6 } from "./6.jpg";
+export { default as image_7 } from "./7.jpg";
+export { default as image_8 } from "./8.jpg";
+export { default as image_9 } from "./9.jpg";
+export { default as image_10 } from "./10.jpg";
+export { default as image_11 } from "./11.jpg";
