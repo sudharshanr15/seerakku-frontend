@@ -7,8 +7,10 @@ function Hero() {
     <PageHero>
       <HeroHeading>Contact Us</HeroHeading>
       <HeroDescription>
-        Interested in our work at Seeraku? For any questions or thoughts, we‘d
-        love to hear from you.
+        Want to volunteer, collaborate, or bring Seerakku to your school, community, or company?
+        <br/>
+        <br/>
+        We’d love to hear from you.
       </HeroDescription>
     </PageHero>
   );

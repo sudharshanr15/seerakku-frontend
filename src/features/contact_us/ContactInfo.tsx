@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const contactInfo = [
   {
-    title: "Mail Us",
-    info: "climateaction@seerakku.in",
+    title: "EMail Us",
+    info: "admin@seerakku.org",
     icon: mail_arrow_right,
   },
   {
     title: "Call Us",
-    info: "+91 6379248007",
+    info: "+91 93446 21740",
     icon: phone_call,
   },
   {
-    title: "Address",
-    info: "Chennai, Tamilnadu, India",
+    title: "Location",
+    info: "Based in Chennai, working across India",
     icon: location,
   },
 ];
