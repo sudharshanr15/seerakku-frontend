@@ -4,7 +4,7 @@ import { clean, climate, lifebelowwater, works_1 } from "./assets";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { WorksItemType } from "./types/index";
 import WorksItem from "./WorksItem";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "swiper/css";
@@ -81,9 +81,12 @@ function Works() {
             }}
             loop={true}
             watchOverflow={true}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             initialSlide={1}
             allowTouchMove={true}
+            autoplay={{
+              delay: 1500
+            }}
           >
             {works_list.map((ele, index) => (
               <SwiperSlide key={index}>
