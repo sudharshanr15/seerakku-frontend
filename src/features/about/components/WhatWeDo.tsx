@@ -58,19 +58,21 @@ function WhatWeDo() {
           Action. Impact. Regeneration.
         </p>
       </div>
-      <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div data-aos="fade-right" className="flex flex-row flex-wrap justify-center">
         {what_we_do.map((ele, index) => (
-          <div className="bg-primary-green bg-opacity-20" key={index}>
-            <div className="w-full">
-              <Image
-                alt={`${ele.title} Image`}
-                src={ele.image}
-                className="w-full aspect-video object-cover"
-              />
-            </div>
-            <div className="p-7">
-              <h3 className="heading-3">{ele.title}</h3>
-              <p>{ele.desc}</p>
+          <div className='p-3 w-full md:w-1/2'>
+            <div className="bg-primary-green bg-opacity-20 h-full" key={index}>
+              <div className="w-full">
+                <Image
+                  alt={`${ele.title} Image`}
+                  src={ele.image}
+                  className="w-full aspect-video object-cover"
+                />
+              </div>
+              <div className="p-7">
+                <h3 className="heading-3">{ele.title}</h3>
+                <p>{ele.desc}</p>
+              </div>
             </div>
           </div>
         ))}
