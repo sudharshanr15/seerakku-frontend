@@ -4,7 +4,7 @@ import { logo_text_footer } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
-import { logo_text } from "@/assets";
+import { logo_text, neulancers_logo } from "@/assets";
 import { useDonateModal } from "./modal/DonateModalProvider";
 import { BECOME_PARTNER_LINK, BECOME_VOLUNTEER_LINK } from "@/global";
 
@@ -92,7 +92,7 @@ const Footer = () => {
   return (
     <footer className="bg-footer text-white">
       <div className="layout-section-xl">
-        <div className="flex flex-col xl:flex-row gap-7 xl:gap-20">
+        <div className="flex flex-col xl:flex-row gap-7 xl:gap-20 mb-10">
           <div>
             <div className="max-w-[234px] mb-6">
               <Link href={'/'}>
@@ -156,6 +156,12 @@ const Footer = () => {
                     </ul>
                   </div>
               </div>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between text-xs">
+          <p className="mb-4">Copyright &copy; 2025, All Rights Reserved</p>
+          <div>
+            Designed & Developed by <Image src={neulancers_logo} alt="Neulancers" className="ms-2 w-[100px] inline-block" />
           </div>
         </div>
       </div>
