@@ -14,9 +14,16 @@ function WhoWeAre() {
             <div className="p-10">
               <h2 className="heading-2">Who We Are</h2>
               <p className="text-xl mb-5">
-                We are a non-profit organization committed to mitigating the
-                effects of climate change through a range of initiatives in
-                India.
+                Seerakku is a registered environmental trust driving grassroots climate action across India.
+                <br />
+                <br />
+                We plant trees, revive waterbodies, protect pollinators, and inspire people to act, not just care.
+                <br />
+                <br />
+                Trust Reg. No: BK 4/322/2023
+                <br />
+                <br />
+                Since: 27 April 2023
               </p>
               <DonateNow type="primary" icon />
             </div>

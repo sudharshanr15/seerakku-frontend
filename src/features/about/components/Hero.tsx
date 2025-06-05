@@ -7,7 +7,8 @@ function Hero() {
     <PageHero>
       <HeroHeading>About Us</HeroHeading>
       <HeroDescription>
-      Seerakku is a passionate environmental organization dedicated to conserving nature, mitigating climate change, and fostering sustainable development.
+        Seerakku is an Environmental Movement Rooted in Action: <br />
+        We lead community-powered initiatives to restore ecosystems, fight climate change, and build a greener India.
       </HeroDescription>
     </PageHero>
   );

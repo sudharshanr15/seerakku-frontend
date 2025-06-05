@@ -52,12 +52,10 @@ function WhatWeDo() {
       <div className="max-w-screen-md mx-auto text-center mb-10">
         <h2 className="heading-2 text-center">What We Do</h2>
         <p>
-          {"Seerakku's"} initiatives focus on tree planting, water restoration,
-          afforestation, coastal plantation, and agroforestry,working towards
-          the
-          {"UN's"} Sustainable Development Goals. Through our efforts, we strive
-          to create a sustainable future for all and mitigate the effects of
-          climate change.
+          We plant trees, revive waterbodies, protect pollinators, and empower people to lead climate action — from schools to cities, farms to forests.
+          <br />
+          <br />
+          Action. Impact. Regeneration.
         </p>
       </div>
       <div data-aos="fade-right" className="grid grid-cols-1 md:grid-cols-2 gap-5">
