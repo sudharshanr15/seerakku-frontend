@@ -122,7 +122,7 @@ const HeroBanner = () => {
                   >
                     {image.name}
                   </h1> */}
-                  <h1 className={`heading-3 ${montserrat_font.className} text-center font-semibold text-primary`}>
+                  <h1 className={`text-xl xl:text-3xl mb-4 ${montserrat_font.className} text-center font-semibold text-primary`}>
                     Not just a slogan. A movement rooted in action.
                   </h1>
                   <div className="flex gap-8 xl:mt-8 mt-4">
