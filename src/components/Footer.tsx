@@ -161,7 +161,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between text-xs">
           <p className="mb-4">Copyright &copy; 2025, All Rights Reserved</p>
           <div>
-            Designed & Developed by <Image src={neulancers_logo} alt="Neulancers" className="ms-2 w-[100px] inline-block" />
+            Techical Partner <Image src={neulancers_logo} alt="Neulancers" className="ms-2 w-[100px] inline-block" />
           </div>
         </div>
       </div>
