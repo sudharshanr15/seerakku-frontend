@@ -38,7 +38,7 @@ export default function RootLayout({
           {/* </Theme> */}
           <SupportModal />
         </DonateModalProvider>
-        <CustomCursor />
+        {/* <CustomCursor /> */}
         <ToastContainer position="top-right" hideProgressBar pauseOnHover />
       </body>
     </html>
