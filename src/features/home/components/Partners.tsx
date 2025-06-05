@@ -9,6 +9,9 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Link from 'next/link'
+import { useState } from 'react';
+import Button from '@/components/buttons/Button';
+import { ButtonType } from '@/components/buttons/type';
 
 const partners_list: {
   name: string,
@@ -129,18 +132,35 @@ const partners_list: {
 ]
 
 const Partners = () => {
+  const view_size = 8;
+  const [end, setEnd] = useState(view_size);
+  const [viewExist, setViewExist] = useState(true);
+
+  const viewMore = () => {
+    setEnd(prev => {
+      const new_end = prev + view_size;
+
+      if(partners_list.length <= new_end ){
+        setViewExist(false)
+      }
+
+      return new_end;
+    });
+  }
+
   return (
     <section className="layout-section-lg text-center">
       <h2 className="text-center heading-2">Our Partner</h2>
       <div className="mt-4 grid grid-cols-4 gap-4 items-center">
         {
-          partners_list.map((e, index) => (
+          partners_list.slice(0, end).map((e, index) => (
             <div className='text-center' key={index}>
               <Image className="w-[128px] h-auto mx-auto" src={e.image} alt={e.name} />
             </div>
           ))
         }
       </div>
+      { viewExist && <Button type="primary" className='mt-12' onClick={viewMore}>View More</Button>}
     </section>
   );
 };
