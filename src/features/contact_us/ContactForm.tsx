@@ -44,7 +44,7 @@ function ContactForm() {
     <section className="layout-section-xl pt-0">
       <div className="lg:flex">
         <div className="w-full lg:w-1/2 p-10 contact-form-desc relative">
-          <div className="absolute top-0 left-0 w-full h-full z-0 bg-primary bg-opacity-80"></div>
+          <div className="absolute top-0 left-0 w-full h-full z-0 bg-primary bg-opacity-70"></div>
           <div className="h-full flex items-end text-white relative z-10">
             <div>
               <p className="text-30 mb-2">Get in touch with us</p>
@@ -56,7 +56,7 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 bg-primary bg-opacity-20 p-10">
+        <div className="w-full lg:w-1/2 p-10">
           <form className="" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-6">
               <FormInput
@@ -91,7 +91,7 @@ function ContactForm() {
                 {...register("about")}
               ></textarea>
             </div>
-            <Button button_type="submit" type="primary_green" disabled={isSubmitting}>
+            <Button button_type="submit" type="primary" disabled={isSubmitting}>
               Send Now
             </Button>
           </form>

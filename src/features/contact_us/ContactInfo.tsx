@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const contactInfo = [
   {
-    title: "EMail Us",
+    title: "Email Us",
     info: "admin@seerakku.org",
     icon: mail_arrow_right,
   },
@@ -24,7 +24,7 @@ function ContactInfo() {
     <section className="layout-section-xl">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {contactInfo.map((contact, index) => (
-          <div className="bg-secondary-light-green p-9 md:p-10" key={index}>
+          <div className="bg-slate-50 p-9 md:p-10" key={index}>
             <div className="max-w-14 mb-16">
               <Image
                 src={contact.icon}
@@ -33,7 +33,7 @@ function ContactInfo() {
               />
             </div>
             <h2 className="heading-2 mb-3">{contact.title}</h2>
-            <p className="text-xl">{contact.info}</p>
+            <p className="text-lg">{contact.info}</p>
           </div>
         ))}
       </div>

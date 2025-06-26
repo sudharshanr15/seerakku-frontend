@@ -5,7 +5,6 @@ import HeroHeading from "@/components/PageHero/Heading";
 function Hero() {
   return (
     <PageHero>
-      <HeroHeading>Contact Us</HeroHeading>
       <HeroDescription>
         Want to volunteer, collaborate, or bring Seerakku to your school, community, or company?
         <br/>
