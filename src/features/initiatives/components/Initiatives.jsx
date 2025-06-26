@@ -6,6 +6,8 @@ import Image from "next/image";
 import { initiative_1, initiative_2, initiative_3, initiative_4, initiative_5, initiative_6, initiative_7, initiative_8 } from "../assets/initiatives";
 import Button from "@/components/buttons/Button";
 import Link from "next/link";
+import ShadowContainer from "@/components/ShadowContainer";
+import ButtonLink from "@/components/buttons/ButtonLink";
 
 const initiatives_list = [
   {
@@ -50,34 +52,52 @@ const initiatives_list = [
   },
 ];
 
-function Initiative_items({ item }) {
+function Initiative_items({ item, order }) {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <div className="">
-      <div className="w-full mb-5">
-        <Image
-          src={item.image}
-          alt={item.title}
-          className="w-full h-96 object-cover aspect-video"
-        />
+    <div className="even:bg-primary group even:bg-opacity-30">
+      <div className="layout-section-xl">
+        <div className="flex flex-col md:flex-row md:items-center group-even:md:flex-row-reverse gap-7">
+          <div className="md:max-w-[50%]">
+            <ShadowContainer theme="primary" shadowTo={order % 2 == 0 ? "left" : "right"}>
+              <Image
+                src={item.image}
+                alt={item.title}
+                className="w-full object-cover aspect-[59/48]"
+              />
+            </ShadowContainer>
+          </div>
+          <div className="even:order-0">
+            <h2 className="heading-2 mb-5">{item.title}</h2>
+            <p className="mb-5">{item.desc}</p>       
+            <ButtonLink href="/gallery" type="primary">
+              See our gallery
+            </ButtonLink> 
+          </div>
+          {/* <div className="w-full mb-5">
+            <Image
+              src={item.image}
+              alt={item.title}
+              className="w-full h-96 object-cover aspect-video"
+            />
+          </div>
+          <h2 className="heading-2 mb-2">{item.title}</h2>
+          <p>{item.desc}</p> */}
+        </div>
       </div>
-      <h2 className="heading-2 mb-2">{item.title}</h2>
-      <p>{item.desc}</p>
     </div>
   );
 }
 
 function Initiative() {
   return (
-    <section data-aos="fade-right" className="layout-section-xl">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-7">
-        {initiatives_list.map((item, index) => (
-          <Initiative_items item={item} key={index} />
-        ))}
-      </div>
+    <section data-aos="fade-right" className="w-full">
+      {initiatives_list.map((item, index) => (
+        <Initiative_items item={item} key={index} order={index} />
+      ))}
     </section>
   );
 }
