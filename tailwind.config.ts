@@ -24,7 +24,6 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-itc-avant-garde)"],
-        "big-noodle-titling": ["var(--font-big-noodle-titling)"],
       },
       fontSize: {
         "30": ["30px", "38px"],

@@ -22,7 +22,7 @@ const ButtonLink = ({
   return (
     <button
         type="button"
-        className={`${class_name} uppercase ${className} text-lg font-big-noodle-titling`}
+        className={`${class_name} ${className} font-medium`}
     >
       <Link className="py-3 px-5 hover:px-4 hover:py-2 block hover:border-4" href={href} target={target}>
         {children}

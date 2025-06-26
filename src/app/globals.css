@@ -8,15 +8,15 @@ html {
 
 @layer components {
     .heading-1 {
-        @apply uppercase font-normal text-40 xl:text-80 mb-4 font-big-noodle-titling;
+        @apply font-bold text-40 xl:text-50 mb-4;
     }
 
     .heading-2 {
-        @apply font-normal text-40 xl:text-50 uppercase mb-7 font-big-noodle-titling;
+        @apply font-bold text-30 xl:text-40 mb-7;
     }
 
     .heading-3 {
-        @apply font-normal text-30 xl:text-40 uppercase mb-3 font-big-noodle-titling;
+        @apply font-bold text-xl xl:text-30 mb-3;
     }
 
     .layout-section-xl {
@@ -55,7 +55,7 @@ html {
 
 .hero-slide-pagination.swiper-pagination-bullet {
     background: none;
-    @apply w-auto h-auto border-0 text-white font-big-noodle-titling opacity-100;
+    @apply w-auto h-auto border-0 text-white opacity-100;
 }
 
 .hero-slide-pagination.swiper-pagination-bullet-active {

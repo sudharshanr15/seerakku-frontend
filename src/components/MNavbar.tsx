@@ -49,7 +49,7 @@ const Navbar = () => {
   ];
   return (
     <header
-      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-black"} block lg:hidden absolute w-full py-6 bg-transparent z-50  font-big-noodle-titling`}
+      className={` ${isMenuOpen ? "bg-white overflow-y-hidden" : "bg-black"} block lg:hidden absolute w-full py-6 bg-transparent z-50`}
     >
       <div className="max-w-screen-xl mx-auto">
         <nav className=" flex flex-col justify-between pl-8 lg:items-center gap-8 ">
@@ -74,7 +74,7 @@ const Navbar = () => {
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}
-                className="uppercase text-lg font-normal font-big-noodle-titling"
+                className="uppercase text-lg font-normal"
               >
                 <div className=" flex items-center gap-2 ">
                   <p>Our Initiatives </p>{" "}
@@ -102,7 +102,7 @@ const Navbar = () => {
             </div>
             {nav_links.map((link, count) => (
               <li
-                className="uppercase text-lg font-normal font-big-noodle-titling"
+                className="uppercase text-lg font-normal"
                 key={count}
               >
                 <Link onClick={closeMenu} href={link.href}>{link.name}</Link>

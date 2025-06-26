@@ -39,7 +39,7 @@ const valuable_count: {
   },
   {
     icon: plastic,
-    count: "5,000 kg",
+    count: "5,000kg",
     title: "Plastics Recycled"
   }
 ]
@@ -61,7 +61,7 @@ const ValuableCount = () => {
               <div key={index} className="odd:bg-opacity-50 bg-primary transition duration-150 p-5 text-center flex flex-col justify-center items-center xl:aspect-square">
                 <Image src={item.icon} alt="Plastics Collected"></Image>
 
-                <h4 className="heading-1 mt-2 !text-80">{item.count}</h4>
+                <h4 className="heading-1 mt-2">{item.count}</h4>
                 <p className="">{item.title}</p>
               </div>
             ))

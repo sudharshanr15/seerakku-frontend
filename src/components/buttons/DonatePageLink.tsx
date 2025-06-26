@@ -6,7 +6,7 @@ function DonatePageLink() {
 
     return (
         <a href={payment_url}
-        className={`py-3 px-5 uppercase text-lg font-big-noodle-titling hover:border-4 hover:px-4 hover:py-2 bg-primary text-black`}
+        className={`py-3 px-5 text-lg font-medium hover:border-4 hover:px-4 hover:py-2 bg-primary text-black`}
         >
             Donate Now
             <span className="ms-3">

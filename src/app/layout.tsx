@@ -8,8 +8,14 @@ import { itcAvanteGarde } from "@/fonts/ItcAvantGarde";
 import { bigNoodleTitling } from "@/fonts/BigNoodleTitling";
 import SupportModal from "@/components/support/SupportModal";
 import DonateModalProvider from "@/components/modal/DonateModalProvider";
+import { Montserrat } from "next/font/google";
 import CustomCursor from '@/components/CustomCurson'
 import { ToastContainer } from "react-toastify";
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+})
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-foreground ${itcAvanteGarde.className} ${bigNoodleTitling.variable} antialiased`}
+        className={`bg-foreground ${montserrat.className} antialiased`}
       >
         <DonateModalProvider>
           {/* <Theme> */}

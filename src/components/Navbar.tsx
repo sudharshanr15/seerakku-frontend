@@ -54,25 +54,25 @@ const Navbar = () => {
   ];
   return (
     <header onClick={closeToggle}
-      className={` hidden lg:block absolute w-full py-6 bg-black z-50 font-big-noodle-titling`}
+      className={` hidden lg:block absolute w-full py-6 bg-black z-50`}
     >
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto">
         <nav className="flex justify-between  items-center gap-8   lg:text-white">
           <Link className=" flex justify-between pr-10" href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>
           <ul className={`z-50 flex gap-6 lg:text-white`}>
             <li
-              className="uppercase text-xl font-normal font-big-noodle-titling hover:text-primary"
+              className="font-normal hover:text-primary text-nowrap"
             >
               <Link href="/about">About Us</Link>
             </li>
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}
-                className="uppercase text-lg font-normal font-big-noodle-titling"
+                className="font-normal text-nowrap"
               >
-                <Link className=" flex items-center gap-2 text-xl hover:text-primary " href="#">
+                <Link className=" flex items-center gap-2 hover:text-primary " href="#">
                   <p>Our Initiatives </p>{" "}
                   <div
                     className={`bg-white w-1 h-1  rounded-full`}
@@ -88,17 +88,17 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
                   <Link href="/initiatives">
-                    <li className=" text-lg ">Our Initiatives</li>
+                    <li className=" ">Our Initiatives</li>
                   </Link>
                   <Link href="/gallery">
-                    <li className=" text-lg ">Our Gallery</li>
+                    <li className=" ">Our Gallery</li>
                   </Link>
                 </ul>
               )}
             </div>
             {nav_links.map((link, count) => (
               <li
-                className="uppercase text-xl font-normal font-big-noodle-titling hover:text-primary"
+                className="font-normal hover:text-primary text-nowrap"
                 key={count}
               >
                 <Link href={link.href}>{link.name}</Link>
@@ -106,8 +106,8 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={` lg:opacity-100 z-50 `}>
-            <DonateNow type="primary_green" className="me-4 text-xl text-black" />
-            <Button className=" text-xl" type="primary">Become A Volunteer</Button>
+            <DonateNow type="primary_green" className="me-4 text-black" />
+            <Button className="" type="primary">Become A Volunteer</Button>
           </div>
         </nav>
       </div>
