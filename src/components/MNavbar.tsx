@@ -68,15 +68,15 @@ const Navbar = () => {
           <ul
             className={` ${isMenuOpen ? "flex" : "hidden"} z-50 flex  flex-col gap-6 `}
           >
-            <li className="uppercase text-base font-medium ">
+            <li className="text-base">
               <Link onClick={closeMenu} href="/about" className="relative">About</Link>
             </li>
             <div className=" relative">
               <li
                 onClick={toggleInitiatives}
-                className="uppercase text-lg font-normal"
+                className=""
               >
-                <div className=" flex items-center gap-2 ">
+                <div className="flex items-center gap-2 ">
                   <p>Our Initiatives </p>{" "}
                   <div
                     className={` bg-primary w-1 h-1  rounded-full`}
@@ -92,17 +92,17 @@ const Navbar = () => {
                     <div className="w-1 h-1 bg-primary rounded-full"></div>
                   </div>
                   <Link onClick={closeMenu} href="/initiatives">
-                    <li className=" text-lg">Our Initiatives</li>
+                    <li className="">Our Initiatives</li>
                   </Link>
                   <Link onClick={closeMenu} href="/gallery">
-                    <li className=" text-lg">Our Gallery</li>
+                    <li className="">Our Gallery</li>
                   </Link>
                 </ul>
               )}
             </div>
             {nav_links.map((link, count) => (
               <li
-                className="uppercase text-lg font-normal"
+                className=""
                 key={count}
               >
                 <Link onClick={closeMenu} href={link.href}>{link.name}</Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
           <div
             className={` ${isMenuOpen ? "block" : "hidden"} z-50 `}
           >
-            <DonateNow type="primary_green" className="me-4 text-black" />
+            <DonateNow type="primary_green" className="me-4 mb-4 text-black" />
             <Button type="primary">Become A Volunteer</Button>
           </div>
         </nav>
