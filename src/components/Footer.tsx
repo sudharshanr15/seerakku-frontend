@@ -92,41 +92,36 @@ const Footer = () => {
   return (
     <footer className="bg-footer text-white">
       <div className="layout-section-xl">
+        <div className="max-w-[234px] mb-6">
+          <Link href={'/'}>
+          <Image
+            src={logo_text}
+            alt="Seerakku Logo"
+            className="w-auto"
+            />
+            </Link>
+        </div>
         <div className="flex flex-col xl:flex-row gap-7 xl:gap-20 mb-10">
-          <div>
-            <div className="max-w-[234px] mb-6">
-              <Link href={'/'}>
-              <Image
-                src={logo_text}
-                alt="Seerakku Logo"
-                className="w-auto"
-                />
-                </Link>
-            </div>
-            <div className="flex flex-col gap-6 items-start">
-              <div className="xl:hidden">
-                <QuickLinks />
-              </div>
-              <h2 className="heading-2 m-0">
-                Powered by people, Built for the planet, Driven by purpose.
-              </h2>
-              <p className="text-white">
-                At Seerakku, every individual and organization has the power to make a difference. Let’s create a legacy of sustainability and environmental harmony for future generations.
-              </p>
-              {/* <button className="border border-white py-2 px-4">
-                Subscribe for newsletter
-              </button> */}
-              <SocialLinks />
-            </div>
+          <div className="flex flex-col xl:min-w-[470px] gap-6 items-start">
+            <h2 className="text-30 font-bold">
+              Powered by people, Built for the planet, Driven by purpose.
+            </h2>
+            <p className="text-white">
+              At Seerakku, every individual and organization has the power to make a difference. Let’s create a legacy of sustainability and environmental harmony for future generations.
+            </p>
+            {/* <button className="border border-white py-2 px-4">
+              Subscribe for newsletter
+            </button> */}
+            <SocialLinks />
           </div>
           <div className="flex-grow flex-shrink-0">
               {/* <QuickLinks className="mb-10 hidden xl:flex" /> */}
-              <div className="hidden xl:block mb-6">
+              {/* <div className="hidden xl:block mb-6">
                 <QuickLinks />
-              </div>
+              </div> */}
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 xl:gap-20">
                   <div className="">
-                    <h4 className="heading-3">Quick Links</h4>
+                    <h4 className="text-xl font-bold mb-5">Quick Links</h4>
                     <ul>
                       {quick_links_desc.map((link, index) => (
                         <li className="mb-3" key={index}>
@@ -138,7 +133,25 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className="">
-                    <h4 className="heading-3">Useful Links</h4>
+                    <h4 className="text-xl font-bold mb-5">Useful Links</h4>
+                    <ul>
+                      <li className="mb-3">
+                        <button className="text-white" onClick={open}>
+                          Become a Donor
+                        </button>
+                      </li>
+
+                      {useful_links_desc.map((link, index) => (
+                        <li className="mb-3" key={index}>
+                          <Link href={link.href} className="text-white">
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="">
+                    <h4 className="text-xl font-bold mb-5">Useful Links</h4>
                     <ul>
                       <li className="mb-3">
                         <button className="text-white" onClick={open}>
@@ -158,7 +171,7 @@ const Footer = () => {
               </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between text-xs">
+        <div className="flex flex-col md:flex-row justify-between text-sm">
           <p className="mb-4">Copyright &copy; 2025, All Rights Reserved</p>
           <div>
             Techical Partner <Image src={neulancers_logo} alt="Neulancers" className="ms-2 w-[100px] inline-block" />
