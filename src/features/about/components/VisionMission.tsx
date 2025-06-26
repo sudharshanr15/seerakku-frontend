@@ -3,7 +3,7 @@ function VissionMission() {
     <section className="layout-section-xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div
-          className="odd:bg-secondary-light-green even:bg-primary p-10 lg:p-20"
+          className="odd:bg-zinc-50 even:bg-primary p-10 lg:p-20"
         >
           <h2 className="heading-2">Our Vision</h2>
           <div className="text-xl">
@@ -24,7 +24,7 @@ function VissionMission() {
           </div>
         </div>
         <div
-          className="odd:bg-secondary-light-green even:bg-primary p-10 lg:p-20"
+          className="odd:bg-zinc-50 even:bg-primary p-10 lg:p-20"
         >
           <h2 className="heading-2">Our Mission</h2>
           <div className="text-xl">

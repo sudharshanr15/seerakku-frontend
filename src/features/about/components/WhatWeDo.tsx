@@ -58,10 +58,10 @@ function WhatWeDo() {
           Action. Impact. Regeneration.
         </p>
       </div>
-      <div data-aos="fade-right" className="flex flex-row flex-wrap justify-center">
+      <div data-aos="fade-right" className="flex flex-row flex-wrap">
         {what_we_do.map((ele, index) => (
           <div className='p-3 w-full md:w-1/2'>
-            <div className="bg-primary-green bg-opacity-20 h-full" key={index}>
+            <div className="bg-primary bg-opacity-20 h-full" key={index}>
               <div className="w-full">
                 <Image
                   alt={`${ele.title} Image`}

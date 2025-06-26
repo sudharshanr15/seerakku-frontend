@@ -10,7 +10,7 @@ function WhoWeAre() {
           <Image src={who_we_are} className="w-full" alt="Who We Are" />
         </div>
         <div className="w-full md:w-[60%] md:-ms-14 relative z-20">
-          <div className="bg-white border border-primary-green relative">
+          <div className="bg-white border border-primary relative">
             <div className="p-10">
               <h2 className="heading-2">Who We Are</h2>
               <p className="text-xl mb-5">
@@ -27,7 +27,7 @@ function WhoWeAre() {
               </p>
               <DonateNow type="primary" icon />
             </div>
-            <div className="sm:w-full w-[270px] sm:h-full h-[445px] bg-primary-green absolute top-6 left-6 -z-10"></div>
+            <div className="sm:w-full w-[270px] sm:h-full h-[445px] bg-primary absolute top-6 left-6 -z-10"></div>
           </div>
         </div>
       </div>

@@ -20,7 +20,6 @@ function about() {
       <WhatWeDo />
       <Projects />
       <Story />
-      <Team />
     </main>
   );
 }
