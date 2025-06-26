@@ -5,7 +5,6 @@ import HeroHeading from "@/components/PageHero/Heading";
 function Hero() {
   return (
     <PageHero>
-      <HeroHeading>Get Involved</HeroHeading>
       <HeroDescription>
       At Seerakku, we believe that collective action is the key to creating a sustainable future. There are several ways you can get involved and contribute to our mission. Choose the option that resonates with you and join us in making a positive impact on the environment.
       </HeroDescription>

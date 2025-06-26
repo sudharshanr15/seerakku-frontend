@@ -21,7 +21,7 @@ function InvolvedList() {
           </div>
           <div className="w-full md:w-2/3 z-10">
             <div className="relative md:right-14 top-0 w-full">
-              <ShadowContainer shadowTo="right" theme={ColorType.primary_green}>
+              <ShadowContainer shadowTo="right" theme={ColorType.primary}>
                 <div className="p-10">
                   <h2 className="heading-2">Be the Change You Want to See in the World</h2>
                   <p className="mb-4">
@@ -41,7 +41,7 @@ function InvolvedList() {
                       </li>
                     </ul>
                   </div>
-                  <ButtonLink type="primary_green" href={BECOME_VOLUNTEER_LINK}>Become A Volunteer</ButtonLink>
+                  <ButtonLink type="primary" href={BECOME_VOLUNTEER_LINK}>Become A Volunteer</ButtonLink>
                 </div>
               </ShadowContainer>
             </div>
@@ -102,7 +102,7 @@ function InvolvedList() {
           </div>
           <div className="w-full md:w-2/3 z-10">
             <div className="relative md:right-14 top-0 w-full">
-              <ShadowContainer shadowTo="right" theme={ColorType.primary_green}>
+              <ShadowContainer shadowTo="right" theme={ColorType.primary}>
                 <div className="p-10">
                   <h2 className="heading-2">Let’s Build a Sustainable Future Together</h2>
                   <p className="pb-4">
@@ -122,7 +122,7 @@ function InvolvedList() {
                       </li>
                     </ul>
                   </div>
-                  <ButtonLink type="primary_green" href={BECOME_PARTNER_LINK}>Become A Partner</ButtonLink>
+                  <ButtonLink type="primary" href={BECOME_PARTNER_LINK}>Become A Partner</ButtonLink>
                 </div>
               </ShadowContainer>
             </div>
