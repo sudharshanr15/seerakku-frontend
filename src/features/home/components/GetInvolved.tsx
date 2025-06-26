@@ -34,7 +34,7 @@ const GetInvolved = () => {
                   <p className="text-white font-normal mb-3">
                     Join our dedicated team of volunteers and actively participate in our initiatives.
                   </p>
-                  <ButtonLink className="hover:scale-105 transition" type={"primary_green"} href={BECOME_VOLUNTEER_LINK}>Register Here</ButtonLink>
+                  <ButtonLink className="hover:scale-105 transition" type={"primary"} href={BECOME_VOLUNTEER_LINK}>Register Here</ButtonLink>
                 </div>
               </div>
             </ImageTint>
@@ -72,7 +72,7 @@ const GetInvolved = () => {
                   <p className="text-white font-normal mb-3">
                     Collaboration is essential in driving sustainable change.
                   </p>
-                  <ButtonLink className="hover:scale-105 transition" type="primary_green" href={BECOME_PARTNER_LINK}>Partnering with us</ButtonLink>
+                  <ButtonLink className="hover:scale-105 transition" type="primary" href={BECOME_PARTNER_LINK}>Partnering with us</ButtonLink>
                 </div>
               </div>
             </ImageTint>

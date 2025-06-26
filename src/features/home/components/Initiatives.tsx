@@ -99,52 +99,13 @@ const Initiatives = () => {
           programs:
         </p>
       </div>
-      {/* <div className="flex flex-col md:flex-row xl:flex-row gap-6">
-        <div className="w-full md:w-[49%] xl:w-1/3">
-          <div className="flex flex-col gap-6 h-full">
-            {initiatives_list_1.map((ele, index) => (
-              <InitiativesItem item={ele} key={index} className="flex-grow" />
-            ))}
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 xl:w-2/3">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-            {initiatives_list_2.map((ele, index) => (
-              <InitiativesItem
-                item={ele}
-                key={index}
-                className={
-                  initiatives_list_2.length == index + 1 && index % 2 == 0
-                    ? "xl:last:col-span-2"
-                    : ""
-                }
-              />
-            ))}
-          </div>
-        </div>
-      </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {initiatives_list.map((ele, ele_index) => {
-            const item_length = initiatives_list.length;
-            let span_length: string = "";
-            if (item_length == ele_index + 1) {
-              switch (ele_index % 3) {
-                case 0:
-                  span_length = "last:col-span-full";
-                  break;
-                case 1:
-                  span_length = "last:sm:col-span-2";
-                  break;
-                case 2:
-                  break;
-              }
-            }
-            return (
-              <div className={`w-full ${span_length}`} key={ele_index}>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          {initiatives_list.map((ele, ele_index) => (
+              <div className={`w-full`} key={ele_index}>
                   <InitiativesItem item={ele} className="flex-grow" />
               </div>
-            );
-          })}
+            )
+          )}
         </div>
       <div className=" flex justify-center mt-10">
         <Link href={"/initiatives"}>

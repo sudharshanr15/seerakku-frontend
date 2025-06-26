@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <HeroBanner />
-      <Intro />
+      {/* <Intro /> */}
       <Initiatives />
       <GetInvolved />
       <Works />

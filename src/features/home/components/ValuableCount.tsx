@@ -1,11 +1,48 @@
 import Button from "@/components/buttons/Button";
 
-import carbon from "../assets/carbon.png";
-import tree from "../assets/tree.png";
-import plastic from "../assets/plastic.png";
-import water from "../assets/water.png";
-import hours from "../assets/hours.png";
-import Image from "next/image";
+import carbon from "../assets/carbon.svg";
+import tree from "../assets/tree.svg";
+import plastic from "../assets/plastic.svg";
+import water from "../assets/water.svg";
+import hours from "../assets/hours.svg";
+import Image, { StaticImageData } from "next/image";
+
+const valuable_count: {
+  icon: StaticImageData,
+  count: string,
+  title: string
+}[] = [
+  {
+    icon: tree,
+    count: "4,00,000",
+    title: "Trees Planted"
+  },
+  {
+    icon: carbon,
+    count: "20",
+    title: "Urban Dense Forests Created"
+  },
+  {
+    icon: tree,
+    count: "400",
+    title: "Farmer Communities Empowered"
+  },
+  {
+    icon: hours,
+    count: "2500+",
+    title: "Volunteering Hours"
+  },
+  {
+    icon: water,
+    count: "1M",
+    title: "Litres Water Stored",
+  },
+  {
+    icon: plastic,
+    count: "5,000 kg",
+    title: "Plastics Recycled"
+  }
+]
 
 const ValuableCount = () => {
   return (
@@ -19,41 +56,16 @@ const ValuableCount = () => {
           {/* <Button type="primary">View More</Button> */}
         </div>
         <div className="w-full xl:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 flex-shrink-0">
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={tree} alt="Trees Planted"></Image>
-            <h4 className="text-white heading-1 mt-2 !text-80">4,00,000</h4>
-            <p className="text-white">Trees Planted</p>
-          </div>
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={carbon} alt="Carbon Offseted"></Image>
+          {
+            valuable_count.map((item, index) => (
+              <div key={index} className="odd:bg-opacity-50 bg-primary transition duration-150 p-5 text-center flex flex-col justify-center items-center xl:aspect-square">
+                <Image src={item.icon} alt="Plastics Collected"></Image>
 
-            <h4 className="text-white heading-1 mt-2 !text-80">20</h4>
-            <p className="text-white">Urban Dense Forests Created</p>
-          </div>
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={tree} alt="Communities Empowered"></Image>
-
-            <h4 className="text-white heading-1 mt-2 !text-80">400</h4>
-            <p className="text-white">Farmer Communities Empowered</p>
-          </div>
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={hours} alt="Volunteering Hours"></Image>
-
-            <h4 className="text-white heading-1 mt-2 !text-80">2500+</h4>
-            <p className="text-white">Volunteering Hours</p>
-          </div>
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={water} alt="Water Conserved"></Image>
-
-            <h4 className="text-white heading-1 mt-2 !text-80">1M</h4>
-            <p className="text-white">Litres Water Stored</p>
-          </div>
-          <div className="odd:bg-primary-green even:bg-secondary-forest transition duration-150 p-5 text-center text-white flex flex-col justify-center items-center xl:aspect-square">
-            <Image src={plastic} alt="Plastics Collected"></Image>
-
-            <h4 className="text-white heading-1 mt-2 !text-80">5,000 kg</h4>
-            <p className="text-white">Plastics Recycled</p>
-          </div>
+                <h4 className="heading-1 mt-2 !text-80">{item.count}</h4>
+                <p className="">{item.title}</p>
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>
