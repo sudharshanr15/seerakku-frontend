@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 
 import Image, { StaticImageData } from "next/image";
 import { image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11 } from "../assets";
+import ImageTint from '@/components/ImageTint';
 
 type FocusListType = {
   title: string;
@@ -76,16 +77,22 @@ function FocusItem({ item }: { item: FocusListType }) {
 	}, []);
 
   return (
-    <div className="">
-      <div className="w-full mb-5">
-        <Image
-          src={item.image}
-          alt={item.title}
-          className="w-full object-cover aspect-video"
-        />
+    <div>
+      <div className="relative mb-5">
+        <div className="w-full h-full">
+          <Image
+            src={item.image}
+            alt={item.title}
+            className="w-full object-cover aspect-video"
+          />
+        </div>
+        <ImageTint>
+          <div className="flex items-end h-full p-7 text-white">
+            <h2 className="heading-3 mb-2">{item.title}</h2>
+          </div>
+        </ImageTint>
       </div>
-      <h2 className="heading-2 mb-2">{item.title}</h2>
-      <p>{item.desc}</p>
+      <p className='text-lg font-medium'>{item.desc}</p>
     </div>
   );
 }
