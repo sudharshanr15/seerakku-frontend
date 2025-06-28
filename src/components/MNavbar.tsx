@@ -112,7 +112,7 @@ const Navbar = () => {
           <div
             className={` ${isMenuOpen ? "block" : "hidden"} z-50 `}
           >
-            <DonateNow type="primary_green" className="me-4 mb-4 text-black" />
+            <DonateNow type="primary" className="me-4 mb-4 text-black" />
             <Button type="primary">Become A Volunteer</Button>
           </div>
         </nav>

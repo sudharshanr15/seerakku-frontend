@@ -106,7 +106,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={` lg:opacity-100 z-50 `}>
-            <DonateNow type="primary_green" className="me-4 text-black" />
+            <DonateNow type="primary" outline className="me-4 hover:text-black hover:bg-primary" />
             <Button className="" type="primary">Become A Volunteer</Button>
           </div>
         </nav>

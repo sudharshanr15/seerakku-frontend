@@ -1,6 +1,7 @@
 import { HTMLAttributeAnchorTarget, MouseEventHandler } from "react";
 import { ButtonFill, ButtonOutline, ButtonType } from "./type";
 import Link from "next/link";
+import Button from "./Button";
 
 const ButtonLink = ({
   type,
@@ -17,17 +18,15 @@ const ButtonLink = ({
   outline?: boolean;
   target?: HTMLAttributeAnchorTarget
 }) => {
-  const class_name = outline ? ButtonOutline[type] : ButtonFill[type];
 
   return (
-    <button
-        type="button"
-        className={`${class_name} ${className} font-medium`}
+    <Button
+        type={type}
     >
-      <Link className="py-3 px-5 hover:px-4 hover:py-2 block hover:border-4" href={href} target={target}>
+      <Link className="" href={href} target={target}>
         {children}
       </Link>
-    </button>
+    </Button>
   );
 };
 

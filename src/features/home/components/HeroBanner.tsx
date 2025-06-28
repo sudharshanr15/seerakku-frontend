@@ -128,7 +128,7 @@ const HeroBanner = () => {
                   <div className="flex gap-8 xl:mt-8 mt-4">
                     <DonateNow type="primary" icon />
                     <Link href="/initiatives">
-                    <Button type="primary_green">Our Initiatives</Button>
+                    <Button type="primary" outline={true} className="hover:text-black hover:bg-primary">Our Initiatives</Button>
                     </Link>
                   </div>
                 </div>
