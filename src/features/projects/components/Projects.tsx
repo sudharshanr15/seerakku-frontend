@@ -84,15 +84,15 @@ export default function Projects() {
   const theme_colors: ColorType[] = [ColorType.primary_green, ColorType.primary, ColorType.secondary_light_green]
 
   return (
-    <section className="layout-section-xl pt-0">
-      <div className="flex flex-wrap justify-center">
+    <section className="container p-4  mx-auto pt-0 xl:layout-section-xl pt-0">
+      <div className="">
         {projects.map((project, index) => (
-          <div key={index} className="w-full py-7 lg:p-7 lg:w-1/2 flex flex-col">
+          <div key={index} className="w-full py-7 lg:p-7 flex flex-col">
             <div className="w-full">
               <Image src={project.image} alt={project.title} className="w-full aspect-video object-cover" />
             </div>
-            <div className="flex-grow">
-              <ShadowContainer shadowTo="left" theme={theme_colors[index % theme_colors.length]}>
+            <div className="w-full md:-translate-y-20 md:w-[80%] mx-auto">
+              <div className="bg-white border-4 md:border-8 border-primary-yellow">
                 <div className="p-7">
                   <h3 className="heading-3">
                     {project.title}
@@ -105,7 +105,7 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-              </ShadowContainer>
+              </div>
             </div>
           </div>
         ))}
