@@ -40,7 +40,7 @@ const Navbar = () => {
     href: string;
   }[] = [
     {
-      name: "Our Focus Area",
+      name: "Focus Area",
       href: "our_focus",
     },
     {
@@ -51,14 +51,18 @@ const Navbar = () => {
       name: "Contact Us",
       href: "contact_us",
     },
+    {
+      name: "Projects",
+      href: "projects"
+    }
   ];
   return (
     <header onClick={closeToggle}
-      className={` hidden lg:block absolute w-full py-6 bg-black z-50`}
+      className={` hidden lg:block absolute w-full py-6 bg-transparent z-50`}
     >
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="container mx-auto">
         <nav className="flex justify-between  items-center gap-8   lg:text-white">
-          <Link className=" flex justify-between pr-10" href={"/"}>
+          <Link className=" flex justify-between" href={"/"}>
             <Image src={logo_text} alt="Seerakku Logo" />
           </Link>
           <ul className={`z-50 flex gap-6 lg:text-white`}>
@@ -73,7 +77,7 @@ const Navbar = () => {
                 className="font-normal text-nowrap"
               >
                 <Link className=" flex items-center gap-2 hover:text-primary " href="#">
-                  <p>Our Initiatives </p>{" "}
+                  <p>Initiatives </p>{" "}
                   <div
                     className={`bg-white w-1 h-1  rounded-full`}
                   ></div>
@@ -106,7 +110,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className={` lg:opacity-100 z-50 `}>
-            <DonateNow type="primary" outline className="me-4 hover:text-black hover:bg-primary" />
+            <DonateNow type="primary" outline className="hidden 2xl:inline-block me-4 hover:text-black hover:bg-primary" />
             <Button className="" type="primary">Become A Volunteer</Button>
           </div>
         </nav>
