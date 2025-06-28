@@ -6,6 +6,13 @@ html {
     color: black;
 }
 
+@layer base{
+
+    .swiper-wrapper_partners .swiper-wrapper{
+        @apply ease-linear items-center;
+    }
+}
+
 @layer components {
     .heading-1 {
         @apply font-bold text-40 xl:text-50 mb-4;

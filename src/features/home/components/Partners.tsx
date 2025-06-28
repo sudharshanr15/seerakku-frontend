@@ -5,9 +5,11 @@ import kauvery from '../assets/partners/kauvery.svg'
 import Gro from '../assets/partners/Gro.png'
 import * as partners from "../assets/partners_new"
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+import { Pagination, Grid, Autoplay } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import 'swiper/css/grid';
+import 'swiper/css/bundle';
 import Link from 'next/link'
 import { useState } from 'react';
 import Button from '@/components/buttons/Button';
@@ -149,18 +151,49 @@ const Partners = () => {
   }
 
   return (
-    <section className="layout-section-lg text-center">
+    <section className="max-w-full layout-section-lg text-center">
       <h2 className="text-center heading-2">Our Partner</h2>
-      <div className="mt-4 grid grid-cols-4 gap-4 items-center">
+
+        <Swiper
+        spaceBetween={15}
+        breakpoints={{
+          640: {
+            slidesPerView: 2.5
+          },
+          768: {
+            slidesPerView: 3.5
+          },
+          1024: {
+            slidesPerView: 5
+          },
+          1440: {
+            slidesPerView: 6
+          }
+        }}
+        slidesPerView={1.7}
+        grid={{
+          rows: 2
+        }}
+        autoplay={{
+          delay: 1,
+        }}
+        speed={2000}
+        loop={true}
+        modules={[Grid, Autoplay]}
+        className='swiper-wrapper_partners h-[220px]'
+      >
         {
-          partners_list.slice(0, end).map((e, index) => (
-            <div className='text-center' key={index}>
-              <Image className="w-[128px] h-auto mx-auto" src={e.image} alt={e.name} />
-            </div>
+          partners_list.map((e, index) => (
+            <SwiperSlide key={index}>
+              <div className='text-center h-[100px] bg-neutral-200 p-4'>
+                <Image className="max-w-[100px] md:max-w-[170px] object-contain h-full mx-auto" src={e.image} alt={e.name} />
+                {/* <p>{index}</p> */}
+              </div>
+            </SwiperSlide>
           ))
         }
-      </div>
-      { viewExist && <Button type="primary" className='mt-12' onClick={viewMore}>View More</Button>}
+      </Swiper>
+      {/* { viewExist && <Button type="primary" className='mt-12' onClick={viewMore}>View More</Button>} */}
     </section>
   );
 };
