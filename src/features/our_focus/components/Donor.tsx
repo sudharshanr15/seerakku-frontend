@@ -1,5 +1,4 @@
 import DonateNow from "@/components/buttons/DonateNow";
-import { donor_bg } from "../assets";
 import Image from "next/image";
 import ImageTint from "@/components/ImageTint";
 
